@@ -1,0 +1,212 @@
+/* 
+Table Of Contents
+=========================
+- Default Typography
+- Custom Typography
+=========================
+*/
+/* 
+--------------------------
+- Default Typography
+--------------------------
+*/
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+	color: #000;
+	letter-spacing: 1.5px;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { 
+	font-weight: inherit; 
+	font-family: 'Open Sans', sans-serif;
+}
+h1 { 
+	font-size: 36px; 
+	line-height: 70px; 
+	letter-spacing: -1px; 
+	margin-bottom: 20px;
+}
+h2 { 
+	font-size: 32px; 
+	line-height: 40px;
+	margin-bottom: 20px; 
+}
+h3 { 
+	font-size: 24px; 
+	line-height: 30px; 
+	margin-bottom: 20px;
+}
+h4 { 
+	font-size: 20px; 
+	line-height: 27px; 
+}
+h5 { 
+	font-size: 16px; 
+	line-height: 24px; 
+}
+h6 { 
+	font-size: 14px; 
+	line-height: 24px; 
+}
+
+p { 
+	margin: 0 0 20px 0; 
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	color: #888;
+	letter-spacing: 1px;
+	line-height: 27px;
+}
+p img { 
+	margin: 0; 
+}
+span {
+	font-family: 'Open Sans', sans-serif;
+}
+/* em and strong */
+em { 
+	font: 15px/30px; 
+}
+strong, 
+b { 
+	font: 15px/30px; 
+}
+small { 
+	font-size: 11px; 
+	line-height: inherit; 
+}
+
+
+/*	blockquotes */
+blockquote {
+   	margin: 10px 0px;
+   	padding-left: 40px;
+   	position: relative;
+   	border-left: 0px;
+}
+blockquote:before {
+   	content: "\201C";
+   	opacity: 0.5;
+   	font-size: 80px;
+   	line-height: 0px;
+   	margin: 0;
+   	font-family: arial, sans-serif;
+   	position: absolute;
+   	top:  30px;
+	left: 0;
+}
+blockquote p {
+   	font-family: 'Exo', serif;
+   	font-style: italic;
+   	padding: 0;
+  	font-size: 18px;
+   	line-height: 36px;
+}
+blockquote cite {
+   	display: block;
+   	font-size: 12px;
+   	font-style: normal;
+   	line-height: 18px;
+}
+blockquote cite:before { content: "\2014 \0020"; }
+blockquote cite a,
+blockquote cite a:visited { color: #8B9798; border: none }
+
+/* abbreviations */
+abbr {
+	color: #444;
+   	font-family: 'Open Sans', sans-serif;
+   	font-weight: 700;
+	font-variant: small-caps;
+	text-transform: lowercase;
+   	letter-spacing: .6px;
+	
+}
+abbr:hover { cursor: help; }
+
+/* links */
+a, a:visited {
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	font-size: 15px;
+	color: #111;
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	outline: 0;
+}
+a:hover, a:active, a:focus {
+	color: #64CE48 !important;
+	text-decoration: none;
+	outline: 0;
+}
+p a, 
+p a:visited { 
+	line-height: inherit; 
+	outline: 0;
+}
+
+
+/* list */
+ul, 
+ol { 
+	margin-bottom: 24px; 
+	margin-top: 12px; 
+}
+ul { 
+	list-style: none outside; 
+}
+ol { 
+	list-style: decimal; 
+}
+ol, 
+ul.square, 
+ul.circle, 
+ul.disc { 
+	margin-left: 30px; 
+}
+ul.square { 
+	list-style: square outside; 
+}
+ul.circle { 
+	list-style: circle outside; 
+}
+ul.disc { 
+	list-style: disc outside; 
+}
+ul ul, 
+ul ol,
+ol ol, 
+ol ul { 
+	margin: 6px 0 6px 30px; 
+}
+ul ul li, 
+ul ol li,
+ol ol li, 
+ol ul li { 
+	margin-bottom: 6px; 
+}
+li { 
+	line-height: 18px; 
+	margin-bottom: 12px; 
+}
+ul.large li { }
+li p { }
+
+/* definition list */
+dl { margin: 12px 0; }
+dt { margin: 0; color:#11ABB0; }
+dd { margin: 0 0 0 20px; }
+
+
+/* 
+--------------------------
+- Custom Typography
+--------------------------
+*/
+/* Your Custom Typography. */
