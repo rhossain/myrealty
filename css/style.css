@@ -22,6 +22,57 @@ Table of Contents
 - Header Section
 ----------------------------------
 */
+.navbar.header-wrapper {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.navbar.header-wrapper .container {
+    width: auto;
+    padding: 0;
+}
+.navbar.header-wrapper .navbar-header {
+    padding-left: 20.5%;
+}
+.navbar.header-wrapper .navbar-header .navbar-brand {
+    height: auto;
+    padding: 10px 15px 10px 5px;
+}
+.navbar.header-wrapper .navbar-header .navbar-brand img {
+    width: 100%;
+    max-width: 170px;
+}
+.navbar.header-wrapper .navbar-default {
+    background-color: transparent;
+    border: 0;
+}
+.navbar.header-wrapper .navbar-nav li {
+    margin-bottom: 5px;
+}
+.navbar.header-wrapper .navbar-nav.nav-contact {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 17%;
+    background-color: rgba(255, 166, 0, 1);
+}
+.navbar.header-wrapper .navbar-nav.nav-contact:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0px;
+    width: 0px;
+    height: 0px;
+    border-top: 58px solid transparent;
+    border-right: 40px solid rgba(255, 166, 0, 1);
+    border-bottom: 0px solid transparent;
+}
+.navbar.header-wrapper .navbar-nav.nav-contact li {
+    width: 100%;
+    margin-bottom: 0;
+}
+.navbar.header-wrapper .navbar-nav.nav-contact li a {
+    padding: 7px 5px;
+    line-height: 15px;
+    color: rgba(255, 255, 255, 1);
+}
 
 /* Navbar with left sidebar */
 .navbar-nav>li>a:hover {
@@ -40,7 +91,7 @@ Table of Contents
 	transform: scale(1, 1);  
 	opacity:1;
 }  
-.dropdown-menu {
+.dropdown-menu { 
 	opacity:.3;
 	-webkit-transform-origin: top;
 	-moz-transform-origin: top;
