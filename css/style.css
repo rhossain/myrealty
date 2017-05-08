@@ -16,6 +16,9 @@ Table of Contents
 .side-on {
 	overflow-x: hidden;
 }
+.container-fluid.site-wrapper {
+	padding: 0;
+}
 
 /* 
 ----------------------------------
@@ -178,7 +181,16 @@ Table of Contents
 	margin-bottom: 3px;
 }
 
+#owl-demo .item img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
 @media screen and (max-width: 767px) {
+	.navbar.header-wrapper .navbar-header {
+		padding-left: 15px;
+	}
 	/* Navbar with left sidebar */
 	.side-collapse-container{
 		width: 100%;

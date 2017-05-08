@@ -21,6 +21,23 @@
           e.stopPropagation()
         });
 
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            navigation : true,
+            slideSpeed : 300,
+            paginationSpeed : 400,
+            items : 1, 
+            itemsDesktop : false,
+            itemsDesktopSmall : false,
+            itemsTablet: false,
+            itemsMobile : false
+        });
+        owl.on('changed.owl.carousel', function(event) {
+            var item = event.item.index - 2;     // Position of the current item
+            $('h1').removeClass('animated bounce');
+            $('.owl-item').not('.cloned').eq(item).find('h1').addClass('animated bounce');
+        });
+
         checkWindowSize();
         $(window).resize(checkWindowSize);
     });
