@@ -322,7 +322,7 @@ Table of Contents
 }
 .owl-caption .caption-wrapper .caption-details {
 	width: 100%;
-	padding: 5px 15px;
+	padding: 0;
 	text-align: right;
 }
 .owl-caption .caption-wrapper .caption-details a {
@@ -343,6 +343,22 @@ Table of Contents
 	width: 7px;
     height: 25px;
     margin: 7px 7px;
+}
+.owl-theme .owl-nav {
+	margin: 0;
+	background-color: rgba(255, 166, 0, 1);
+}
+.owl-theme .owl-nav [class*=owl-] {
+	float: left;
+	background: transparent;
+	padding: 2px 10px;
+	margin: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+
 }
 /*.slider-left, .slider-right {
 	position: absolute;
