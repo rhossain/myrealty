@@ -75,6 +75,10 @@
         $(window).resize(checkWindowSize);
     });
 
+    AOS.init({
+        duration: 1200,
+    });
+
     function checkWindowSize() {
         if (window.matchMedia('(max-width: 767px)').matches) {
             console.log('Max width: 767px');
