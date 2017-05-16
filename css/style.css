@@ -100,6 +100,12 @@ Table of Contents
           transform: rotate(0);
   opacity: 1;
 }
+.owl-item.active .caption-wrapper h5.animated,
+.owl-item.active .caption-wrapper h3.animated,
+.owl-item.active .caption-wrapper .caption-footer.animated,
+.owl-item.active .caption-wrapper .caption-details.animated {
+	animation-name: fadeInUp;
+}
 
 /* 
 ----------------------------------

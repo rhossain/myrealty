@@ -25,6 +25,8 @@
         owl.owlCarousel({
             navigation : true,
             // nav:true,
+            addClassActive: true,
+            transitionStyle : "fade",
             autoplay: false,
     		autoplayTimeout: 5000,
     		loop: true,
@@ -58,11 +60,13 @@
 				});
 			});
 		}
+        $('.owl-item.active .caption-wrapper h5, .owl-item.active .caption-wrapper h3, .owl-item.active .caption-wrapper .caption-footer, .owl-item.active .caption-wrapper .caption-details').addClass('animated');
 		// Fired before current slide change
 		owl.on('change.owl.carousel', function(event) {
 			var $currentItem = $('.owl-item', owl).eq(event.item.index);
 			var $elemsToanim = $currentItem.find("[data-animation-out]");
 			setAnimation ($elemsToanim, 'out');
+            $('.owl-item.active .caption-wrapper h5, .owl-item.active .caption-wrapper h3, .owl-item.active .caption-wrapper .caption-footer, .owl-item.active .caption-wrapper .caption-details').removeClass('animated');
 		});
 		// Fired after current slide has been changed
 		owl.on('changed.owl.carousel', function(event) {
@@ -70,9 +74,15 @@
 			var $elemsToanim = $currentItem.find("[data-animation-in]");
 			setAnimation ($elemsToanim, 'in');
 		});
+        var $firstAnimatingElems = owl.find('.owl-item.active').find("[data-animation-in]");
+        owl.setAnimation($firstAnimatingElems, 'in');
 
         checkWindowSize();
         $(window).resize(checkWindowSize);
+    });
+
+    $('[data-mr-animation-delay]').css('animation-delay', function () {
+        return $(this).data('mr-animation-delay')
     });
 
     AOS.init({
