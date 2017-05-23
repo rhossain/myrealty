@@ -17,6 +17,23 @@
             $('body').toggleClass('side-on side-off');
         });
 
+        // $('.navbar-nav.nav-menu > li').on('mouseenter', function() {
+        //     $(this).addClass('current');
+        // });
+        $(document).on({
+            mouseenter: function () {
+                var mouse_is_inside = true;
+                // console.log('Enter');
+                $(this).addClass('current');
+            },
+
+            mouseleave: function () {
+                var mouse_is_inside = false;
+                // console.log('Leave');
+                $(this).removeClass('current');
+            }
+        }, '.navbar-nav.nav-menu > li');
+
         $(document).on('click', '.mega-dropdown', function(e) {
           e.stopPropagation()
         });
