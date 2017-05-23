@@ -495,12 +495,32 @@ Table of Contents
 
 @media screen and (max-width: 767px) {
 	.navbar.header-wrapper .navbar-header {
-		padding-left: 5%;
 		background-color: rgba(255, 255, 255, 0.8);
+		padding-left: 0;
+		text-align: center;
+	}
+	.side-on .navbar.header-wrapper .navbar-header {
+		background-color: rgba(255, 255, 255, 1);
+	}
+	.navbar-toggle {
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		-ms-border-radius: 0;
+		border-radius: 0;
+		border: 0;
+		margin-left: 8%;
+	}
+	.navbar-toggle:hover {
+		margin-left: 8%;
+	}
+	.navbar-toggle .icon-bar {
+		background-color: rgba(255, 255, 255, 1);
 	}
 	/* Navbar with left sidebar */
-	.side-on .navbar.header-wrapper .navbar-header {
-		padding-left: 25%;
+	.navbar.header-wrapper .navbar-header .navbar-brand {
+		float: none;
+		display: inline-block;
+		margin: auto;
 	}
 	.side-collapse-container{
 		width: 100%;

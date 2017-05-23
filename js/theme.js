@@ -91,8 +91,8 @@
 			var $elemsToanim = $currentItem.find("[data-animation-in]");
 			setAnimation ($elemsToanim, 'in');
 		});
-        var $firstAnimatingElems = owl.find('.owl-item.active').find("[data-animation-in]");
-        owl.setAnimation($firstAnimatingElems, 'in');
+        // var $firstAnimatingElems = owl.find('.owl-item.active').find("[data-animation-in]");
+        // owl.setAnimation($firstAnimatingElems, 'in');
 
         checkWindowSize();
         $(window).resize(checkWindowSize);
@@ -109,9 +109,11 @@
     function checkWindowSize() {
         if (window.matchMedia('(max-width: 767px)').matches) {
             console.log('Max width: 767px');
+            $(".navbar-top").appendTo(".navbar-default.side-collapse .navbar-collapse");
         }
         if (window.matchMedia('(min-width: 768px)').matches) {
             console.log('Min width: 768px');
+            $(".navbar-top").prependTo(".navbar.header-wrapper .navbar-container");
         }
     }
 
