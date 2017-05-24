@@ -109,11 +109,17 @@
     function checkWindowSize() {
         if (window.matchMedia('(max-width: 767px)').matches) {
             console.log('Max width: 767px');
-            $(".navbar-top").appendTo(".navbar-default.side-collapse .navbar-collapse");
+            // $(".navbar-top").appendTo(".side-collapse");
+            // $(".nav-contact > li:last-child").prependTo(".nav-menu");
+            // $(".navbar-top .top-left > li:first-child").prependTo(".nav-menu");
+            // $(".nav-contact > li:first-child").prependTo(".nav-menu");
         }
         if (window.matchMedia('(min-width: 768px)').matches) {
             console.log('Min width: 768px');
-            $(".navbar-top").prependTo(".navbar.header-wrapper .navbar-container");
+            // $(".navbar-top").prependTo(".navbar.header-wrapper .navbar-container");
+            // $(".nav-menu > li:last-child").appendTo(".nav-contact");
+            // $(".nav-menu > li:nth-child(2)").prependTo(".navbar-top .top-left");
+            // $(".nav-menu > li:nth-child(3)").prependTo(".nav-contact");
         }
     }
 

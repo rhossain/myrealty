@@ -141,7 +141,7 @@ a, a:visited {
 	outline: 0;
 }
 a:hover, a:active, a:focus {
-	color: #64CE48 !important;
+	color: #64CE48;
 	text-decoration: none;
 	outline: 0;
 }
