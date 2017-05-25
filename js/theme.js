@@ -38,6 +38,10 @@
           e.stopPropagation()
         });
 
+        $('.btn-toggle').click(function(){
+            $(this).toggleClass('open');
+        });
+
         var owl = $('.owl-carousel');
         owl.owlCarousel({
             navigation : true,
@@ -77,13 +81,13 @@
 				});
 			});
 		}
-        $('.owl-item.active .caption-wrapper h5, .owl-item.active .caption-wrapper h3, .owl-item.active .caption-wrapper .caption-footer, .owl-item.active .caption-wrapper .caption-details').addClass('animated');
+        // $('.owl-item.active .caption-wrapper h5, .owl-item.active .caption-wrapper h3, .owl-item.active .caption-wrapper .caption-footer, .owl-item.active .caption-wrapper .caption-details').addClass('animated');
 		// Fired before current slide change
 		owl.on('change.owl.carousel', function(event) {
 			var $currentItem = $('.owl-item', owl).eq(event.item.index);
 			var $elemsToanim = $currentItem.find("[data-animation-out]");
 			setAnimation ($elemsToanim, 'out');
-            $('.owl-item.active .caption-wrapper h5, .owl-item.active .caption-wrapper h3, .owl-item.active .caption-wrapper .caption-footer, .owl-item.active .caption-wrapper .caption-details').removeClass('animated');
+            // $('.owl-item.active .caption-wrapper h5, .owl-item.active .caption-wrapper h3, .owl-item.active .caption-wrapper .caption-footer, .owl-item.active .caption-wrapper .caption-details').removeClass('animated');
 		});
 		// Fired after current slide has been changed
 		owl.on('changed.owl.carousel', function(event) {
@@ -93,6 +97,20 @@
 		});
         // var $firstAnimatingElems = owl.find('.owl-item.active').find("[data-animation-in]");
         // owl.setAnimation($firstAnimatingElems, 'in');
+
+        function testAnim(x) {
+            $('.modal .modal-dialog').attr('class', 'modal-dialog  ' + x + '  animated');
+        };
+        $('#myModal').on('show.bs.modal', function (e) {
+          // var anim = $('#entrance').val();
+          var anim = 'bounce';
+              testAnim(anim);
+        });
+        $('#myModal').on('hide.bs.modal', function (e) {
+          // var anim = $('#exit').val();
+          var anim = 'fadeOutLeft';
+              testAnim(anim);
+        });
 
         checkWindowSize();
         $(window).resize(checkWindowSize);
