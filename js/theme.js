@@ -98,19 +98,26 @@
         // var $firstAnimatingElems = owl.find('.owl-item.active').find("[data-animation-in]");
         // owl.setAnimation($firstAnimatingElems, 'in');
 
-        function testAnim(x) {
-            $('.modal .modal-dialog').attr('class', 'modal-dialog  ' + x + '  animated');
-        };
-        $('#myModal').on('show.bs.modal', function (e) {
-          // var anim = $('#entrance').val();
-          var anim = 'bounce';
-              testAnim(anim);
-        });
-        $('#myModal').on('hide.bs.modal', function (e) {
-          // var anim = $('#exit').val();
-          var anim = 'fadeOutLeft';
-              testAnim(anim);
-        });
+        // function testAnim(x) {
+        //     $('.modal .modal-dialog').attr('class', 'modal-dialog  ' + x + '  animated');
+        // };
+        // $('#myModal').on('show.bs.modal', function (e) {
+        //   // var anim = $('#entrance').val();
+        //   var anim = 'zoomInDown';
+        //       testAnim(anim);
+        // });
+        // $('#myModal').on('hide.bs.modal', function (e) {
+        //   // var anim = $('#exit').val();
+        //   var anim = 'zoomOutDown';
+        //       testAnim(anim);
+        // });
+
+        $('.modal').on('show.bs.modal', function (e) {
+		  $('.modal .modal-dialog').attr('class', 'modal-dialog  flipInX  animated');
+		})
+		$('.modal').on('hide.bs.modal', function (e) {
+		  $('.modal .modal-dialog').attr('class', 'modal-dialog  flipOutX  animated');
+		})
 
         checkWindowSize();
         $(window).resize(checkWindowSize);

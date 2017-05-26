@@ -636,14 +636,11 @@ Table of Contents
     width: 0; height: 0; border-bottom: 607px solid rgba(255, 166, 0, 1); border-left: 420px solid transparent;
 }*/
 
-.modal.fade{
-  opacity:1;
-}
 .modal.fade .modal-dialog {
-   -webkit-transform: translate(0);
-   -moz-transform: translate(0);
-   transform: translate(0);
-}
+ -webkit-transform: translate(0);
+ -moz-transform: translate(0);
+ transform: translate(0);
+ }
 @media screen and (max-width: 767px) {
 	.btn-effect-2::before {
 		margin: 13px 15px;
