@@ -42,7 +42,7 @@
             $(this).toggleClass('open');
         });
 
-        var owl = $('.owl-carousel');
+        var owl = $('#homeTopSlider');
         owl.owlCarousel({
             navigation : true,
             // nav:true,
@@ -111,6 +111,31 @@
         //   var anim = 'zoomOutDown';
         //       testAnim(anim);
         // });
+
+		$('#navFeaturedProperties').owlCarousel({
+		    loop:true,
+		    margin:10,
+		    responsiveClass:true,
+		    responsive:{
+		        0:{
+		            items:1,
+		            nav:true
+		        },
+		        576:{
+		            items:2,
+		            nav:true
+		        },
+		        768:{
+		            items:3,
+		            nav:true
+		        },
+		        992:{
+		            items:3,
+		            nav:true,
+		            loop:false
+		        }
+		    }
+		});
 
         $('.modal').on('show.bs.modal', function (e) {
 		  $('.modal .modal-dialog').attr('class', 'modal-dialog  flipInX  animated');
