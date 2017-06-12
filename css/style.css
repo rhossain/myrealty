@@ -494,12 +494,177 @@ Table of Contents
 	right: 0;
 	margin-top: 0;
 }
-.mega-dropdown-menu .owl-caption {
+/*.mega-dropdown-menu .owl-caption {
 	position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+}
+.mega-dropdown-menu .owl-caption .p-type {
+	position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+.mega-dropdown-menu .owl-caption .p-type .featured {
+    background-color: #007071;
+    float: left;
+    transform: rotate(-45deg);
+    left: -65px;
+    top: 20px;
+    position: relative;
+    text-align: center;
+    width: 200px;
+    font-size: 12.5px;
+    margin: 0;
+    padding: 5px 0;
+}
+.mega-dropdown-menu .owl-caption .p-type span {
+    color: #fff;
+    display: inline-block;
+    padding: 1px 10px;
+    float: right;
+    background-color: rgba(74,74,76,0.7);
+    border-radius: 3px;
+    top: 15px;
+    right: 15px;
+    position: absolute;
+}
+.listing-img-content {
+    position: absolute;
+    z-index: 99;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25px 30px;
+}
+.mega-dropdown-menu .owl-caption .p-title {
+	position: absolute;
+    bottom: 15px;
+    width: 100%;
+}
+.mega-dropdown-menu .owl-caption .p-price {
+	position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    color: #88A339;
+    padding: 5px 10px;
+    text-align: center;
+}*/
+
+.nav-featured-properties .property-item-container {
+	position: relative;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.nav-featured-properties .property-item-container:after, 
+.nav-featured-properties .property-item-container:before {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: block;
+    top: 0;
+    left: 0;
+    content: "";
+    z-index: 9;
+}
+.nav-featured-properties .property-item-container:before {
+    opacity: 0.9;
+    background: -webkit-linear-gradient(to bottom,transparent 65%,#2f2f2f);
+    background: -moz-linear-gradient(to bottom,transparent 65%,#2f2f2f);
+    background: -o-linear-gradient(to bottom,transparent 65%,#2f2f2f);
+    background: linear-gradient(to bottom,transparent 65%,#2f2f2f);
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -ms-transition: opacity .3s;
+    transition: opacity .3s;
+}
+.nav-featured-properties .property-item-container:after {
+    opacity: 0;
+    background: linear-gradient(to bottom,transparent 60%,#66676b);
+    -webkit-transition: opacity .4s;
+    -moz-transition: opacity .4s;
+    -ms-transition: opacity .4s;
+    transition: opacity .4s;
+}
+.nav-featured-properties .property-item-container:after {
+    background: linear-gradient(to bottom,transparent 60%,#88A339);
+}
+.nav-featured-properties .property-item-container:hover:after {
+    opacity: 0.9;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -ms-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+}
+.nav-featured-properties .property-item-container img {
+    width: 100%;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+}
+.nav-featured-properties .property-item-badges {
+	position: absolute;
+    top: 0;
+    z-index: 999;
+    right: 0;
+    width: 100%;
+    display: block;
+    font-size: 13px;
+    padding: 0px;
+    overflow: hidden;
+    height: 100px;
+}
+.nav-featured-properties .property-item-badges .featured {
+    background-color: #007071;
+    color: #ffffff;
+    float: left;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    left: -65px;
+    top: 20px;
+    position: relative;
+    text-align: center;
+    width: 200px;
+    font-size: 12.5px;
+    margin: 0;
+    padding: 5px 0;
+}
+.nav-featured-properties .property-item-badges span {
+    color: #007071;
+    display: inline-block;
+    padding: 1px 10px;
+    float: right;
+    background-color: rgba(255,255,255,0.7);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    top: 15px;
+    right: 15px;
+    position: absolute;
+}
+.nav-featured-properties .property-item-content {
+	position: absolute;
+    z-index: 99;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25px 30px;
+    color: #ffffff;
+}
+.nav-featured-properties .property-item-content h4 {
+	color: #ffffff;
 }
 
 /* Homepage Slider */
