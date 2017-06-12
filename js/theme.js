@@ -115,6 +115,7 @@
 		$('#navFeaturedProperties').owlCarousel({
 		    loop:true,
 		    margin:10,
+            dots:false,
 		    responsiveClass:true,
 		    responsive:{
 		        0:{
