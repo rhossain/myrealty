@@ -115,38 +115,47 @@
 		$('#navFeaturedProperties').owlCarousel({
 		    loop:true,
 		    margin:10,
+            items : 1, // THIS IS IMPORTAN
             dots:false,
-		    responsiveClass:true,
+            nav:true,
+            navText: ["<i class='fa fa-lg fa-arrow-left' aria-hidden='true'></i>","<i class='fa fa-lg fa-arrow-right' aria-hidden='true'></i>"],
+		    // responsiveClass:true,
 		    responsive:{
 		        0:{
-		            items:1,
-		            nav:true
-		        },
-		        576:{
-		            items:2,
-		            nav:true
+		            items:1
 		        },
 		        768:{
-		            items:3,
-		            nav:true
+		            items:2
 		        },
 		        992:{
 		            items:3,
-		            nav:true,
 		            loop:false
 		        }
 		    }
 		});
 
         $('.modal').on('show.bs.modal', function (e) {
-		  $('.modal .modal-dialog').attr('class', 'modal-dialog  flipInX  animated');
+            console.log('show modal');
+            $('body').addClass('pr-0');
+            $('.modal .modal-dialog').attr('class', 'modal-dialog  flipInX  animated');
 		})
 		$('.modal').on('hide.bs.modal', function (e) {
-		  $('.modal .modal-dialog').attr('class', 'modal-dialog  flipOutX  animated');
+            console.log('hide modal');
+            $('.modal .modal-dialog').attr('class', 'modal-dialog  flipOutX  animated');
 		})
 
         checkWindowSize();
         $(window).resize(checkWindowSize);
+    });
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            $('.header-wrapper .navbar-container').addClass('sticky');
+            console.log('> 100');
+        } else {
+            $('.header-wrapper .navbar-container').removeClass('sticky');
+            console.log('< 100');
+        }
     });
 
     $('[data-mr-animation-delay]').css('animation-delay', function () {
