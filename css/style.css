@@ -863,6 +863,153 @@ Table of Contents
 	 -moz-transform: translate(0);
 	 transform: translate(0);
 }
+
+/* Advance Search */
+.search-form-wrapper {
+	position: relative;
+	top: -55px;
+	z-index: 5;
+}
+.search-form-wrapper .tab-content {
+	padding-top: 25px;
+}
+.search-form-wrapper .nav-tabs {
+	border: 0;
+}
+.search-form-wrapper .nav-tabs > li {
+	margin-right: 10px;
+}
+.search-form-wrapper .nav-tabs > li:last-child {
+	margin-right: 0;
+}
+.
+.search-form-wrapper .nav-tabs > li.open, 
+.search-form-wrapper .nav-tabs > li:hover {
+	border-bottom: 4px solid #fbcdcf;
+}
+.search-form-wrapper .nav-tabs > li.active {
+	border-bottom: 4px solid #f3565d;
+	/*position: relative;*/
+}
+.search-form-wrapper .nav-tabs > li > a {
+	margin-right: 0;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+.search-form-wrapper .nav-tabs > li.active > a, 
+.search-form-wrapper .nav-tabs > li.active > a:focus, 
+.search-form-wrapper .nav-tabs > li.active > a:hover {
+	background-color: rgba(255, 255, 255, 1);
+}
+.search-form-wrapper input[type="text" i] {
+	height: 50px;
+	width: 100%;
+	padding: 0 15px;
+	border: 1px solid #ebebeb;
+}
+/* Default mode */
+/*.tabbable-line > .nav-tabs {
+  border: none;
+  margin: 0px;
+}
+.tabbable-line > .nav-tabs > li {
+  margin-right: 2px;
+}
+.tabbable-line > .nav-tabs > li > a {
+  border: 0;
+  margin-right: 0;
+  color: #737373;
+}
+.tabbable-line > .nav-tabs > li > a > i {
+  color: #a6a6a6;
+}
+.tabbable-line > .nav-tabs > li.open, .tabbable-line > .nav-tabs > li:hover {
+  border-bottom: 4px solid #fbcdcf;
+}
+.tabbable-line > .nav-tabs > li.open > a, .tabbable-line > .nav-tabs > li:hover > a {
+  border: 0;
+  background: none !important;
+  color: #333333;
+}
+.tabbable-line > .nav-tabs > li.open > a > i, .tabbable-line > .nav-tabs > li:hover > a > i {
+  color: #a6a6a6;
+}
+.tabbable-line > .nav-tabs > li.open .dropdown-menu, .tabbable-line > .nav-tabs > li:hover .dropdown-menu {
+  margin-top: 0px;
+}
+.tabbable-line > .nav-tabs > li.active {
+  border-bottom: 4px solid #f3565d;
+  position: relative;
+}
+.tabbable-line > .nav-tabs > li.active > a {
+  border: 0;
+  color: #333333;
+}
+.tabbable-line > .nav-tabs > li.active > a > i {
+  color: #404040;
+}
+.tabbable-line > .tab-content {
+  margin-top: -3px;
+  background-color: #fff;
+  border: 0;
+  border-top: 1px solid #eee;
+  padding: 15px 0;
+}
+.portlet .tabbable-line > .tab-content {
+  padding-bottom: 0;
+}*/
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+	width: 100%;
+}
+.bootstrap-select .btn {
+	border: 1px solid #ebebeb;
+	color: #5d5d5d;
+	border-radius: 0;
+    height: 50px;
+    font-weight: 700;
+    outline: none;
+}
+.bootstrap-select .btn:hover,
+.bootstrap-select .btn-default:active,
+.bootstrap-select .btn-default:focus,
+.bootstrap-select.open > .dropdown-toggle.btn-default {
+	background: #ffffff;
+	-webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    box-shadow: none;
+	border-color: #ebebeb;
+	outline: none !important;
+}
+.bootstrap-select > .dropdown-toggle {
+    width: 100%;
+    padding-right: 25px;
+    z-index: 1;
+}
+.bootstrap-select.btn-group .dropdown-toggle .caret {
+    background: white url(../images/select-bg.png) no-repeat right center;
+}
+.bootstrap-select.btn-group .dropdown-toggle .caret {
+    border: none;
+    width: 50px;
+    height: 23px;
+    right: 0;
+    top: 13px;
+    margin-top: 0;
+}
+.bootstrap-select.btn-group .dropdown-menu {
+	margin-top: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    box-shadow: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0; 
+    border-top: 0;
+    border-color: #ebebeb;
+}
 @media screen and (max-width: 767px) {
 	.btn-effect-2::before {
 		margin: 13px 15px;
@@ -1070,10 +1217,10 @@ Table of Contents
 }
 @media screen and (max-width: 575px) {
 	/* Slider */
-	.slider-container {
+	.slider-wrapper {
 		padding-top: 50px;
 	}
-	.side-on .slider-container {
+	.side-on .slider-wrapper {
 		padding-top: 0;
 	}
 	.home-top-slider .owl-caption {

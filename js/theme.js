@@ -138,11 +138,17 @@
             console.log('show modal');
             $('body').addClass('pr-0');
             $('.modal .modal-dialog').attr('class', 'modal-dialog  flipInX  animated');
-		})
+		});
 		$('.modal').on('hide.bs.modal', function (e) {
             console.log('hide modal');
             $('.modal .modal-dialog').attr('class', 'modal-dialog  flipOutX  animated');
-		})
+		});
+
+        $('.selectpicker').selectpicker({
+            style: 'btn-default',
+            size: 4
+        });
+
 
         checkWindowSize();
         $(window).resize(checkWindowSize);
