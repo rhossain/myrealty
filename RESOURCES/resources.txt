@@ -11,3 +11,10 @@ https://themeforest.net/item/property-expert-real-estate-html-template/11672142?
 mail: esrat.lija@gmail.com
 password: kochimal
 phone: 01881663628
+
+
+Plugins
+-------
+https://silviomoreto.github.io/bootstrap-select/
+https://github.com/seiyria/bootstrap-slider
+http://easyautocomplete.com

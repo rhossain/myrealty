@@ -16,8 +16,11 @@
 		<link href='http://fonts.googleapis.com/css?family=Lato:700,900' rel='stylesheet' type='text/css'>
 
 		<!-- CSS -->
+		<!-- <link rel="stylesheet" href="css/jquery-ui.min.css"> -->		
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/bootstrap-select.min.css">
+		<link rel="stylesheet" href="css/bootstrap-slider.min.css">
+		<link rel="stylesheet" href="css/easy-autocomplete.min.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/default.css">
 		<link rel="stylesheet" href="css/typography.css">
@@ -535,41 +538,84 @@
 					<div class="container">
 						<div class="row tab-content">
 							<div role="tabpanel" class="col-xs-12 tab-pane active" id="statusAny">
-								<div class="row">
-									<div class="col-xs-12 col-sm-6 col-md-6">
-										<input type="text" class="ico-01" placeholder="Enter address e.g. street, city and state or zip" value="">
+								<div class="row search-minus">
+									<div class="col-xs-12 col-sm-12 col-md-6">
+										<input type="text" id="listLocation" class="search-items" placeholder="Enter address e.g. street, city and state or zip" value="">
 									</div>
 									<div class="col-xs-12 col-sm-6 col-md-3">
-										<select title="Any Type" class="selectpicker">
+										<select title="Any Type" class="selectpicker search-items">
 											<option>Mustard</option>
 											<option>Ketchup</option>
 											<option>Relish</option>
 										</select>
 									</div>
 									<div class="col-xs-12 col-sm-6 col-md-3">
-										<select title="Location" class="selectpicker" multiple data-actions-box="true">
+										<select title="Location" class="selectpicker search-items" multiple data-actions-box="true">
 											<option>Mustard</option>
 											<option>Ketchup</option>
 											<option>Relish</option>
 										</select>
 									</div>
 								</div>
+								<div class="row search-plus">
+									<div class="col-xs-12 col-sm-6 col-md-3 range-slider">
+										<div class="button-slider search-items">
+											<div class="btn-group">
+												<div class="btn btn-default px-0 bdr-0">Price:</div>
+												<div class="value-label">$<span id="priceValue">25</span></div>
+												<div class="btn btn-default p-0 bdr-0 range-input">
+													<input id="priceSlider" type="text" data-slider-min="1" data-slider-max="50" data-slider-step="1" data-slider-value="25" data-slider-handle="triangle"/>
+												</div>											
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-md-3 range-slider">
+										<div class="button-slider search-items">
+											<div class="btn-group">
+												<div class="btn btn-default px-0 bdr-0">Area:</div>
+												<div class="value-label"><span id="areaValue">1700</span> sq ft</div>
+												<div class="btn btn-default p-0 bdr-0 range-input">
+													<input id="areaSlider" type="text" data-slider-min="500" data-slider-max="3000" data-slider-step="1" data-slider-value="1700" data-slider-handle="triangle"/>
+												</div>											
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-md-3">
+										<div class="button-slider search-items">
+											<div class="btn-group">
+												<div class="btn btn-default px-0 bdr-0">Bed:</div>
+												<div class="value-label"><span id="bedValue">5</span></div>
+												<div class="btn btn-default p-0 bdr-0 range-input">
+													<input id="bedSlider" type="text" data-slider-min="1" data-slider-max="10" data-slider-step="1" data-slider-value="5" data-slider-handle="triangle"/>
+												</div>											
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-sm-6 col-md-3">
+										<div class="button-slider search-items">
+											<div class="btn-group">
+												<div class="btn btn-default px-0 bdr-0">Bath:</div>
+												<div class="value-label"><span id="bathValue">5</span></div>
+												<div class="btn btn-default p-0 bdr-0 range-input">
+													<input id="bathSlider" type="text" data-slider-min="1" data-slider-max="10" data-slider-step="1" data-slider-value="5" data-slider-handle="triangle"/>
+												</div>											
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 							<div role="tabpanel" class="col-xs-12 tab-pane" id="statusSale">
 								<div class="row">
 									<div class="col-xs-12 col-sm-6 col-md-3">
-										<select class="selectpicker">
-											<option>Mustard</option>
-											<option>Ketchup</option>
-											<option>Relish</option>
-										</select>
+										<!-- <p>
+										  <label for="amount">Price range:</label>
+										  <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+										</p>
+										 
+										<div id="slider-range"></div> -->
 									</div>
 									<div class="col-xs-12 col-sm-6 col-md-3">
-										<select class="selectpicker">
-											<option>Mustard</option>
-											<option>Ketchup</option>
-											<option>Relish</option>
-										</select>
+										
 									</div>
 									<div class="col-xs-12 col-sm-6 col-md-3">
 										<select class="selectpicker">
@@ -754,8 +800,11 @@
 		<!-- <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script> -->
 		<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
 		<!-- <script type="text/javascript" src="js/jquery-migrate-3.0.0.js"></script> -->
+		<!-- <script type="text/javascript" src="js/jquery-ui.min.js"></script> -->		
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap-slider.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easy-autocomplete.min.js"></script>
 		<script type="text/javascript" src="js/aos.js"></script>
 		<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 		<script type="text/javascript" src="js/theme.js"></script>

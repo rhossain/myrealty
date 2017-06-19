@@ -149,9 +149,71 @@
             size: 4
         });
 
+        // $( "#slider-range" ).slider({
+        //   range: true,
+        //   min: 0,
+        //   max: 500,
+        //   values: [ 75, 300 ],
+        //   slide: function( event, ui ) {
+        //     $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+        //   }
+        // });
+        // $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+        //   " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+
+        // Autocomplete for search field
+        var optionsLocation = {
+            data: ["blue", "green", "pink", "red", "yellow"],
+            list: {
+                maxNumberOfElements: 10,
+                match: {
+                    enabled: true
+                },
+                sort: {
+                    enabled: true
+                },
+                showAnimation: {
+                    type: "fade", //normal|slide|fade
+                    time: 400,
+                    callback: function() {}
+                },
+                hideAnimation: {
+                    type: "slide", //normal|slide|fade
+                    time: 400,
+                    callback: function() {}
+                }
+            }
+        };
+        $("#listLocation").easyAutocomplete(optionsLocation);
+
+        // Range slider
+        $("#priceSlider, #areaSlider, #bedSlider, #bathSlider").slider();
+        $("#priceSlider").on("slide", function(slideEvt) {
+            $("#priceValue").text(slideEvt.value);
+        });
+        $("#areaSlider").on("slide", function(slideEvt) {
+            $("#areaValue").text(slideEvt.value);
+        });
+        $("#bedSlider").on("slide", function(slideEvt) {
+            $("#bedValue").text(slideEvt.value);
+        });
+        $("#bathSlider").on("slide", function(slideEvt) {
+            $("#bathValue").text(slideEvt.value);
+        });
+        $('.btn-group > .slider').on("click", function() {
+            var newvalue = $('.tooltip-inner').text();
+            $("#priceValue").text(newvalue);
+            $("#areaValue").text(newvalue);
+            $("#bedValue").text(newvalue);
+            $("#bathValue").text(newvalue);
+        });
+        var rangeSliderWidth = $('.range-slider').width();
+        $('.slider.slider-horizontal').width(rangeSliderWidth);
+        console.log(rangeSliderWidth);
 
         checkWindowSize();
         $(window).resize(checkWindowSize);
+        // $(window).resize($("#priceSlider, #areaSlider, #bedSlider, #bathSlider").slider());
     });
 
     $(window).scroll(function() {
