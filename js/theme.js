@@ -185,9 +185,10 @@
             }
         };
         $("#listLocation").easyAutocomplete(optionsLocation);
+        $("#listLocationSale").easyAutocomplete(optionsLocation);
 
         // Range slider
-        $("#priceSlider, #areaSlider, #bedSlider, #bathSlider").slider();
+        $("#priceSlider, #areaSlider, #bedSlider, #bathSlider, #priceSliderSale, #areaSliderSale, #bedSliderSale, #bathSliderSale").slider();
         $("#priceSlider").on("slide", function(slideEvt) {
             $("#priceValue").text(slideEvt.value);
         });
@@ -200,12 +201,28 @@
         $("#bathSlider").on("slide", function(slideEvt) {
             $("#bathValue").text(slideEvt.value);
         });
+        $("#priceSliderSale").on("slide", function(slideEvt) {
+            $("#priceValueSale").text(slideEvt.value);
+        });
+        $("#areaSliderSale").on("slide", function(slideEvt) {
+            $("#areaValueSale").text(slideEvt.value);
+        });
+        $("#bedSliderSale").on("slide", function(slideEvt) {
+            $("#bedValueSale").text(slideEvt.value);
+        });
+        $("#bathSliderSale").on("slide", function(slideEvt) {
+            $("#bathValueSale").text(slideEvt.value);
+        });
         $('.btn-group > .slider').on("click", function() {
             var newvalue = $('.tooltip-inner').text();
             $("#priceValue").text(newvalue);
             $("#areaValue").text(newvalue);
             $("#bedValue").text(newvalue);
             $("#bathValue").text(newvalue);
+            $("#priceValueSale").text(newvalue);
+            $("#areaValueSale").text(newvalue);
+            $("#bedValueSale").text(newvalue);
+            $("#bathValueSale").text(newvalue);
         });
         var rangeSliderWidth = $('.range-slider').width();
         $('.slider.slider-horizontal').width(rangeSliderWidth);
