@@ -372,6 +372,7 @@ Table of Contents
 	-webkit-border-bottom-right-radius: 0;
 	border-bottom-right-radius: 0;
 }
+
 .all-btn {
 	font-weight: 500;
 	text-align: right;
@@ -385,6 +386,7 @@ Table of Contents
 .all-btn a:hover {
 	text-decoration: none;
 }
+
 .more-btn {
 	width: 100%;
 	font-size: 20px;
@@ -399,9 +401,43 @@ Table of Contents
 .more-btn a:hover {
 	text-decoration: none;
 }
-.title-long {
-/*text-align: center;
-margin: 20px 0 40px;*/
+
+.btn-neutral {
+    background-color: #FFFFFF;
+    color: #f96332;
+}
+.btn-facebook {
+    color: #3b5998;
+}
+.btn-twitter {
+    color: #55acee;
+}
+.btn.btn-icon {
+    border-radius: 50%;
+    font-size: 24px;
+    height: 56px;
+    margin: auto;
+    min-width: 56px;
+    width: 56px;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    line-height: normal;
+}
+.btn.btn-icon.btn-icon-mini {
+    height: 36px;
+    min-width: 36px;
+    width: 36px;
+}
+.btn.btn-icon i.fa, 
+.btn.btn-icon i.now-ui-icons {
+    line-height: 2.4em;
+}
+.btn.btn-icon.btn-icon-mini .fa, 
+.btn.btn-icon.btn-icon-mini .now-ui-icons {
+    font-size: 14px;
+    line-height: 2.2em;
+    vertical-align: bottom;
 }
 
 /* line 4060, ../sass/main.scss */
@@ -1001,66 +1037,95 @@ text-align: center;*/
 .modal-account .modal-content {
 	background-color: #82aa09;
 }
+.modal-account .modal-header,
+.modal-account .modal-footer {
+	border: 0;
+}
 .modal-account .modal-title {
 	padding: 15px 0;
 	color: #ffffff;
 	text-align: center;
 }
-
-
-.btn-neutral {
-    background-color: #FFFFFF;
-    color: #f96332;
-}
-.btn-facebook {
-    color: #3b5998;
-}
-.btn-twitter {
-    color: #55acee;
-}
-.btn.btn-icon {
-    border-radius: 50%;
-    font-size: 24px;
-    height: 56px;
-    margin: auto;
-    min-width: 56px;
-    width: 56px;
-    padding: 0;
-    overflow: hidden;
-    position: relative;
-    line-height: normal;
-}
-.btn.btn-icon.btn-icon-mini {
-    height: 36px;
-    min-width: 36px;
-    width: 36px;
-}
-.social-line .btn.btn-icon, .social-line .btn.btn-icon .btn-icon -mini {
-    margin-left: 5px;
-    margin-right: 5px;
-    box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.2);
-}
-.btn.btn-icon i.fa, .btn.btn-icon i.now-ui-icons {
-    line-height: 2.4em;
-}
-.btn.btn-icon.btn-icon-mini .fa, .btn.btn-icon.btn-icon-mini .now-ui-icons {
-    font-size: 14px;
-    line-height: 2.2em;
-    vertical-align: bottom;
-}
-.social-line {
+.modal-account .social-line {
     text-align: center;
 }
-.input-group-addon {
+.modal-account .social-line .btn.btn-icon, 
+.modal-account .social-line .btn.btn-icon .btn-icon -mini {
+    margin-left: 5px;
+    margin-right: 5px;
+    -webkit-box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 5px 50px 0px rgba(0, 0, 0, 0.2);
+}
+.modal-body {
+	padding: 15px 15px 5px;
+}
+.modal-account .input-group {
+	margin-bottom: 15px;
+}
+.modal-account .input-group:last-child {
+	/*margin-bottom: 0;*/
+}
+.modal-account .input-group-addon {
 	background-color: rgba(255, 255, 255, 0.1);
-	border-radius: 7px;
+	/*border-radius: 7px;*/
 	color: rgba(255, 255, 255, 0.8);
 	border: none;
 }
-.input-group .form-control {
+.modal-account .input-group .form-control {
 	background-color: rgba(255, 255, 255, 0.1);
     color: #FFFFFF;
     border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.modal-account .input-group .form-control::-webkit-input-placeholder {
+	color: #ffffff;
+}
+.modal-account .input-group .form-control::-moz-placeholder {
+	color: #ffffff;
+}
+.modal-account .input-group .form-control:-ms-input-placeholder {
+	color: #ffffff;
+}
+.modal-account .input-group .form-control:-moz-placeholder {
+	color: #ffffff;
+}
+.modal-account .btn-login {
+	width: 100%;
+}
+.modal-account .input-group .checkbox {
+	margin: 0;
+}
+.modal-account .input-group .checkbox label {
+	color: #ffffff;
+	font-size: small;
+}
+.modal-account .input-group .checkbox label input {
+	margin-top: 9px;
+}
+.modal-account .forget-password {
+	padding: 0;	
+}
+.modal-account .forget-password a {
+	font-size: small;
+}
+.modal-account .modal-footer {
+	display: inline-block;
+	width: 100%;
+	padding: 0 15px;
+}
+.modal-account .sign-up-or-login-txt,
+.modal-account .sign-up-or-login-txt a {
+	text-align: left;
+	color: #ffffff;
+	font-size: x-small;
+}
+.modal-account .sign-up-or-login-txt {
+	float: left;
+	width: 100%;
+	/*border-top: 1px #fff solid;*/
 }
 
 /* Advance Search */

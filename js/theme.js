@@ -134,15 +134,41 @@
 		    }
 		});
 
+        // Switching between Login & Regiser form
+        function showRegisterForm(){
+            $('#loginBox').fadeOut('fast',function(){
+                $('#registerBox').fadeIn('fast');
+                $('.sign-up-txt').fadeOut('fast',function(){
+                    $('.login-txt').fadeIn('fast');
+                });
+                $('.modal-title').html('Register');
+            }); 
+            $('.error').removeClass('alert alert-danger').html('');
+               
+        }
+        function showLoginForm(){
+            $('#registerBox').fadeOut('fast',function(){
+                $('#loginBox').fadeIn('fast');
+                $('.login-txt').fadeOut('fast',function(){
+                    $('.sign-up-txt').fadeIn('fast');    
+                });                
+                $('.modal-title').html('Login');
+            });       
+            $('.error').removeClass('alert alert-danger').html(''); 
+        }
+        $('#showRegisterForm, #linkRegister').on('click', showRegisterForm);
+        $('#showLoginForm, #linkLogin').on('click', showLoginForm);
+
+        // Bootstrap modal with animation
         $('.modal').on('show.bs.modal', function (e) {
             console.log('show modal');
             $('body').addClass('pr-0');
-            $('.modal .modal-dialog').attr('class', 'modal-dialog  flipInX  animated');
-		});
-		$('.modal').on('hide.bs.modal', function (e) {
+            $('.modal .modal-dialog').attr('class', 'modal-dialog  zoomIn  animated');
+        });
+        $('.modal').on('hide.bs.modal', function (e) {
             console.log('hide modal');
-            $('.modal .modal-dialog').attr('class', 'modal-dialog  flipOutX  animated');
-		});
+            $('.modal .modal-dialog').attr('class', 'modal-dialog  zoomOut  animated');
+        });
 
         $('.selectpicker').selectpicker({
             style: 'btn-default',
@@ -227,6 +253,27 @@
         var rangeSliderWidth = $('.range-slider').width();
         $('.slider.slider-horizontal').width(rangeSliderWidth);
         console.log(rangeSliderWidth);
+
+        // Change properties view on Homepage
+        $('#grid').css({'opacity' : '0.5', 'user-select' : 'none', 'cursor' : 'not-allowed'});
+        $('#list').click(function(event){
+            event.preventDefault();
+            $('#list').css({'opacity' : '0.5', 'user-select' : 'none', 'cursor' : 'not-allowed'});
+            $('#grid').css({'opacity' : '1', 'user-select' : 'initial', 'cursor' : 'pointer'});
+            $('#latest-properties').addClass('list');
+            $('#latest-properties .property-box').addClass('flipInX');
+            $('#latest-properties .property-box').removeClass('flipInY');
+            $('#latest-properties').removeClass('grid');
+        });
+        $('#grid').click(function(event){
+            event.preventDefault();
+            $('#grid').css({'opacity' : '0.5', 'user-select' : 'none', 'cursor' : 'not-allowed'});
+            $('#list').css({'opacity' : '1', 'user-select' : 'initial', 'cursor' : 'pointer'});
+            $('#latest-properties').removeClass('list');
+            $('#latest-properties .property-box').removeClass('flipInX');
+            $('#latest-properties').addClass('grid');
+            $('#latest-properties .property-box').addClass('flipInY');
+        });
 
         checkWindowSize();
         $(window).resize(checkWindowSize);
