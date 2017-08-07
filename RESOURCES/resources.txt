@@ -18,3 +18,10 @@ Plugins
 https://silviomoreto.github.io/bootstrap-select/
 https://github.com/seiyria/bootstrap-slider
 http://easyautocomplete.com
+
+http://freefrontend.com/css-cards/
+
+https://owlcarousel2.github.io/OwlCarousel2/demos/demos.html
+http://jsfiddle.net/w5b38r6v/ [Owl Carousel 2 responsive]
+
+https://stackoverflow.com/questions/12115833/adding-a-slide-effect-to-bootstrap-dropdown
