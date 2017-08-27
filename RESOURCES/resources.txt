@@ -7,6 +7,14 @@ https://themeforest.net/item/sheltek-real-estate-responsive-template/18911284?s_
 https://themeforest.net/item/property-expert-real-estate-html-template/11672142?s_rank=9
 
 
+Resources
+---------
+https://codepen.io/andymerskin/pen/XNMWvQ [Parallex depth cards]
+https://codepen.io/jorgesanes10/pen/QdMEXr [EC card hover]
+https://codepen.io/szpakoli/pen/xbJjdR [Blog card with hover effect]
+https://codepen.io/nodws/pen/ZpZjpQ [Blog post item]
+https://github.com/codrops/SegmentEffect/ [Segment effect]
+
 
 mail: esrat.lija@gmail.com
 password: kochimal
@@ -19,6 +27,7 @@ https://silviomoreto.github.io/bootstrap-select/
 https://github.com/seiyria/bootstrap-slider
 http://easyautocomplete.com
 
+https://tympanus.net/codrops/2014/06/19/ideas-for-subtle-hover-effects/
 http://freefrontend.com/css-cards/
 
 https://owlcarousel2.github.io/OwlCarousel2/demos/demos.html
