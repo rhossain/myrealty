@@ -2102,7 +2102,7 @@ figure.effect-layla ul {
     position: absolute;
     right: 0;
     bottom: 0;
-    padding: 0 1.5em 7% 0;
+    padding: 0 1.5em 0 0;
 }
 figure.effect-layla ul li a i {
     opacity: 0;
