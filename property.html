@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Basic Page Needs -->
+		<meta charset="utf-8">
+		<title>Properties</title>
+		<meta name="description" content="A real estate template built with HTML, CSS & Bootstrap">
+		<meta name="author" content="Robin Hossain">
+		<meta name="keywords" content="Listings, Apartment, Premium, Real Estate, HTML, Site Template, property, mortgage, CSS">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- Mobile Specific Meta  -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<!-- Google Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato:700,900' rel='stylesheet' type='text/css'>
+
+		<!-- CSS -->
+		<!-- <link rel="stylesheet" href="css/jquery-ui.min.css"> -->		
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-select.min.css">
+		<link rel="stylesheet" href="css/bootstrap-slider.min.css">
+		<link rel="stylesheet" href="css/easy-autocomplete.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/default.css">
+		<link rel="stylesheet" href="css/typography.css">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/aos.css">
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/css/uikit.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/css/components/sticky.min.css">
+		
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/responsive.css">
+
+		<!-- Favicon -->
+		<!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png"> -->
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body class="side-off">
+		
+		<div class="container-fluid site-wrapper">
+
+			<!-- Site Header -->
+			<header class="navbar navbar-fixed-top header-wrapper" data-aos="fade-down" data-aos-offset="200" data-aos-duration="1200" data-aos-once="true">
+				<div class="nav-outer-bg outer-left"></div>
+				<div class="navbar-container container">
+					<div class="navbar-top">						
+						<ul class="list-inline pull-left m-0 top-left">
+							<li class="mb-0">
+								<a href="">abc@xyz.com</a>
+							</li>
+							<li class="mb-0 divider-hor">/</li>
+							<li class="mb-0">
+								<ul class="list-inline m-0">
+									<li class="mb-0">
+										<a href="">
+											<i class="fa fa-facebook" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li class="mb-0">
+										<a href="">
+											<i class="fa fa-twitter" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li class="mb-0">
+										<a href="">
+											<i class="fa fa-instagram" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li class="mb-0">
+										<a href="">
+											<i class="fa fa-google-plus" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li class="mb-0">
+										<a href="">
+											<i class="fa fa-pinterest-p" aria-hidden="true"></i>
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="list-inline pull-right m-0 top-right">
+							<li class="mb-0">
+								<a id="linkLogin" data-toggle="modal" data-target="#modalAccount" href="">Login</a>
+							</li>
+							<li class="mb-0 divider-hor">/</li>
+							<li class="mb-0">
+								<a id="linkRegister" data-toggle="modal" data-target="#modalAccount" href="">Register</a>
+							</li>
+						</ul>						
+					</div>
+					<div class="navbar-header">
+						<button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle">
+							<!-- <span class="icon-bar gray"></span>
+							<span class="icon-bar gray"></span>
+							<span class="icon-bar"></span> -->
+							<div class="btn-toggle">
+							  <span></span>
+							  <span></span>
+							  <span></span>
+							  <span></span>
+							  <span></span>
+							  <span></span>
+							</div>
+						</button>
+						<a class="navbar-brand" href="#">
+							<img src="images/logo-myrealty.png" alt="My Realty" />
+						</a>
+					</div>
+					<div class="navbar-default side-collapse in"> 
+						<nav role="navigation" class="navbar-collapse">
+							<ul class="nav navbar-nav nav-side-collapse">
+								<li>
+									<a href=""><i class="fa fa-volume-control-phone" aria-hidden="true"></i> (0)-123-456-789</a>
+								</li>
+								<li>
+									<a href=""><i class="fa fa-envelope-o" aria-hidden="true"></i> abc@xyz.com</a>
+								</li>
+								<li>
+									<a href=""><i class="fa fa-map-marker" aria-hidden="true"></i> Bayone, New Jersy</a>
+								</li>
+							</ul>
+							<ul class="nav navbar-nav nav-side-collapse accounts">
+								<li class="mb-0">
+									<a id="linkLogin" data-toggle="modal" data-target="#modalAccount" href="">Login</a>
+								</li>
+								<li class="mb-0 divider-hor">/</li>
+								<li class="mb-0">
+									<a id="linkRegister" data-toggle="modal" data-target="#modalAccount" href="">Register</a>
+								</li>
+							</ul>
+							<ul class="nav navbar-nav nav-menu">
+								<li><a class="btn-effect-2" href="#Home" data-hover="Home">Home</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle btn-effect-2" data-toggle="dropdown" data-hover="Pages" role="button" aria-haspopup="true" aria-expanded="false">Pages <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+									<ul class="dropdown-menu">
+										<li class="px-0"><a href="#">Action</a></li>
+										<li class="px-0"><a href="#">Another action</a></li>
+										<li class="px-0"><a href="#">Something else here</a></li>
+										<li><span role="separator" class="divider"></span></li>
+										<li class="px-0"><a href="#">Separated link</a></li>
+										<li><span role="separator" class="divider"></span></li>
+										<li class="px-0"><a href="#">One more separated link</a></li>
+									</ul>
+								</li>
+								<li class="dropdown mega-dropdown">
+									<a href="#" class="dropdown-toggle btn-effect-2" data-hover="Listing" data-toggle="dropdown">Listing <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+									<ul class="dropdown-menu mega-dropdown-menu row">
+										<li class="col-sm-3 col-md-3">
+											<ul class="dd-nav-list">
+												<li><h5>Properties List</h5></li>
+												<li><a href="#">Properties Listing</a></li>
+												<li><a href="#">Single Property</a></li>
+												<li><a href="#">Search by Type</a></li>
+												<li><a href="#">Search by Location</a></li>
+												<li><a href="#">All Properties</a></li>
+											</ul>
+										</li>
+										<li class="col-md-9">
+											<h5>Featured Properties</h5>
+											<div id="navFeaturedProperties" class="owl-carousel owl-theme nav-featured-properties">
+												<div class="item">
+													<a href="#" class="property-item-container">
+														<div class="property-item-badges">
+															<span class="featured">Featured</span>
+															<span>For Rent</span>
+														</div>
+														<div class="property-item-content">
+															<h4>Properties 01</h4>
+															<div class="price">
+																$18,599
+															</div>
+														</div>
+														<img src="images/properties/properties-01.jpg" alt="The Last of us">
+													</a>
+												</div>
+											    <div class="item">
+													<a href="#" class="property-item-container">
+														<div class="property-item-badges">
+															<!-- <span class="featured">Featured</span> -->
+															<span>For Rent</span>
+														</div>
+														<div class="property-item-content">
+															<h4>Properties 02</h4>
+															<div class="price">
+																$18,599
+															</div>
+														</div>
+														<img src="images/properties/properties-02.jpg" alt="The Last of us">
+													</a>
+												</div>
+												<div class="item">
+													<a href="#" class="property-item-container">
+														<div class="property-item-badges">
+															<span class="featured">Featured</span>
+															<span>For Rent</span>
+														</div>
+														<div class="property-item-content">
+															<h4>Properties 03</h4>
+															<div class="price">
+																$18,599
+															</div>
+														</div>
+														<img src="images/properties/properties-03.jpg" alt="The Last of us">
+													</a>
+												</div>
+												<div class="item">
+													<a href="#" class="property-item-container">
+														<div class="property-item-badges">
+															<span class="featured">Featured</span>
+															<span>For Rent</span>
+														</div>
+														<div class="property-item-content">
+															<h4>Properties 04</h4>
+															<div class="price">
+																$18,599
+															</div>
+														</div>
+														<img src="images/properties/properties-04.jpg" alt="The Last of us">
+													</a>
+												</div>
+												<div class="item">
+													<a href="#" class="property-item-container">
+														<div class="property-item-badges">
+															<span class="featured">Featured</span>
+															<span>For Rent</span>
+														</div>
+														<div class="property-item-content">
+															<h4>Properties 05</h4>
+															<div class="price">
+																$18,599
+															</div>
+														</div>
+														<img src="images/properties/properties-05.jpg" alt="The Last of us">
+													</a>
+												</div>
+												<div class="item">
+													<a href="#" class="property-item-container">
+														<div class="property-item-badges">
+															<span class="featured">Featured</span>
+															<span>For Rent</span>
+														</div>
+														<div class="property-item-content">
+															<h4>Properties 06</h4>
+															<div class="price">
+																$18,599
+															</div>
+														</div>
+														<img src="images/properties/properties-06.jpg" alt="The Last of us">
+													</a>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li><a class="btn-effect-2" href="http://placesforlove.com" data-hover="Blog">Blog</a></li>
+								<li><a class="btn-effect-2" href="http://placesforlove.com" data-hover="Contact">Contact</a></li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right nav-contact">
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-plus fa-lg" aria-hidden="true"></i></a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#Home"><i class="fa fa-volume-control-phone" aria-hidden="true"></i> (0)-123-456-789</a>
+										</li>
+										<li>
+											<a href="#users"><i class="fa fa-map-marker" aria-hidden="true"></i> Bayone, New Jersy</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#Home"><i class="fa fa-volume-control-phone" aria-hidden="true"></i> (0)-123-456-789</a>
+								</li>
+								<li>
+									<a href="#users"><i class="fa fa-map-marker" aria-hidden="true"></i> Bayone, New Jersy</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="nav-outer-bg outer-right"></div>
+			</header>
+			<!-- ./Site Header -->
+
+			<!-- Main content -->
+			<div class="side-collapse-container">
+
+				<div class="collapse-overlay"></div>
+
+				<!-- Page Featured -->
+				<div class="page-featured featured-agents">
+					<div class="container-fluid">
+						<div class="container">
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="media">
+										<a class="pull-left media-object img1 animated flipInX" href="./agent-single.html" title="Agent Single">
+											<!-- <img width="100" height="90" class="media-object animated flipInX" alt="Agent Single" src="./images/people/agents-10.jpg"> -->
+										</a>
+										<div class="media-body">
+											<p class="animated fadeInUp">
+												<span class="span2">Property Agent</span>
+											</p>
+											<h4 class="media-heading animated fadeInDown"><a href="./agent-single.html" title="Agent Single">Agent Name</a></h4>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="media">
+										<a class="pull-left media-object img2 animated flipInX" href="./agent-single.html" title="Agent Single">
+											<!-- <img width="100" height="90" class="media-object animated flipInX" alt="Agent Single" src="./images/people/agents-05.jpg"> -->
+										</a>
+										<div class="media-body">
+											<p class="animated fadeInUp">
+												<span class="span2">Property Agent</span>
+											</p>
+											<h4 class="media-heading animated fadeInDown"><a href="./agent-single.html" title="Agent Single">Agent Name</a></h4>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="media">
+										<a class="pull-left media-object img3 animated flipInX" href="./agent-single.html" title="Agent Single">
+											<!-- <img width="100" height="90" class="" alt="Agent Single" src="./images/people/agents-09.jpg"> -->
+										</a>
+										<div class="media-body">
+											<p class="animated fadeInUp">
+												<span class="span2">Property Agent</span>
+											</p>
+											<h4 class="media-heading animated fadeInDown"><a href="./agent-single.html" title="Agent Single">Agent Name</a></h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="btn-group btn-breadcrumb">
+										<a href="#" class="btn btn-default"><i class="glyphicon glyphicon-home"></i></a>
+										<a href="#" class="btn btn-default">Properties</a>
+										<!-- <a href="#" class="btn btn-default">Breadcrumbs</a>
+										<a href="#" class="btn btn-default">Default</a> -->
+									</div>
+									<!-- <ul class="breadcrumb">
+										<li><a href="#">Home</a></li>
+										<li><a href="#">Pictures</a></li>
+										<li><a href="#">Summer 15</a></li>
+										<li>Italy</li>
+									</ul> -->
+								</div>
+								<div class="col-xs-6">
+									<div class="btn-all text-right">
+										<a href="./property.html" title="All Properties" class="hvr-icon-spin">All Agents</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- ./Page Featured -->
+
+				<!-- Latest Properties -->
+		        <div id="property-home" class="properties-grid">
+					<div class="container">
+						<!-- <nav data-uk-sticky id="items" class="uk-navbar">
+							<label class="uk-navbar-content uk-hidden-small">Filter:</label>
+							<ul class="uk-navbar-nav uk-hidden-small">
+								<li data-uk-filter="" class="uk-active"><a href="#">ALL</a></li>
+								<li data-uk-filter="rent"><a href="#">Rent</a></li>
+								<li data-uk-filter="sell"><a href="#">Sell</a></li>
+							</ul>
+
+							<label class="uk-navbar-content uk-hidden-small">Sort:</label>
+							<ul class="uk-navbar-nav uk-hidden-small">
+								<li data-uk-sort="numbers"><a href="#">NUMBERS <i class="uk-icon-sort-numeric-asc"></i></a></li>
+								<li data-uk-sort="numbers:desc"><a href="#">NUMBERS <i class="uk-icon-sort-numeric-desc"></i></a></li>
+								<li data-uk-sort="letters"><a href="#">LETTERS <i class="uk-icon-sort-alpha-asc"></i></a></li>
+								<li data-uk-sort="letters:desc"><a href="#">LETTERS <i class="uk-icon-sort-alpha-desc"></i></a></li>
+							</ul>
+
+							<div data-uk-dropdown="{mode:'click'}">
+								<a href="#" class="uk-navbar-toggle uk-visible-small"></a>
+								<div class="uk-dropdown uk-dropdown-navbar">
+									<ul class="uk-nav uk-nav-navbar">
+										<li class="uk-nav-header">Filter:</li>
+										<li data-uk-filter="" class="uk-active"><a href="#">ALL</a></li>
+										<li data-uk-filter="rent"><a href="#">Rent</a></li>
+										<li data-uk-filter="sell"><a href="#">Sell</a></li>
+										<li class="uk-nav-divider"></li>
+									</ul>
+									<ul class="uk-nav uk-nav-navbar">
+										<li class="uk-nav-header">Sort:</li>
+										<li data-uk-sort="numbers"><a href="#">NUMBERS <i class="uk-icon-sort-numeric-asc"></i></a></li>
+										<li data-uk-sort="numbers:desc"><a href="#">NUMBERS <i class="uk-icon-sort-numeric-desc"></i></a></li>
+										<li data-uk-sort="letters"><a href="#">LETTERS <i class="uk-icon-sort-alpha-asc"></i></a></li>
+										<li data-uk-sort="letters:desc"><a href="#">LETTERS <i class="uk-icon-sort-alpha-desc"></i></a></li>
+									</ul>                 
+								</div>
+							</div>        
+						</nav> -->
+
+						<div id="items" class="controls uk-nav uk-nav-navbar">
+							<button class="uk-active" data-uk-filter="">All</button>
+							<button class="" data-uk-filter="rent">Rent</button>
+							<button class="" data-uk-filter="sell">Sell</button>
+							<button class="" data-uk-sort="numbers"><i class="fa fa-sort-numeric-asc" aria-hidden="true"></i></button>
+							<button class="" data-uk-sort="numbers:desc"><i class="fa fa-sort-numeric-desc" aria-hidden="true"></i></button>
+							<button class="" data-uk-sort="letters"><i class="fa fa-sort-alpha-asc" aria-hidden="true"></i></button>
+							<button class="" data-uk-sort="letters:desc"><i class="fa fa-sort-alpha-desc" aria-hidden="true"></i></button>
+							<div class="btn-group">
+								<a href="#" title="" id="list" class="list btn btn-default">
+									<span data-toggle="tooltip" data-placement="auto" title="List" class="glyphicon glyphicon-th-list"></span>
+								</a>
+								<a href="#" title="" id="grid" class="grid btn btn-default">
+									<span data-toggle="tooltip" data-placement="auto" title="Grid" class="glyphicon glyphicon-th"></span>
+								</a>
+							</div>
+						</div>
+
+						<!-- <ul class="uk-navbar-nav uk-hidden-small">
+							<li data-uk-filter="" class="uk-active"><a href="#">ALL</a></li>
+							<li data-uk-filter="rent"><a href="#">Rent</a></li>
+							<li data-uk-filter="sell"><a href="#">Sell</a></li>
+						</ul> -->
+
+						<div id="latest-properties" class="property-thumbnails latest-properties grid animated">
+							<div class="row" data-uk-grid="{gutter: 0, controls: '#items', duration: 500}">
+								<div class="col-xs-12 col-sm-6 col-md-4 list-width" data-uk-filter="sell" data-numbers="2" data-letters="C">
+									<div class="thumbnail mix category-1">						                
+										<div class="animated property-box" data-aos="zoom-in" data-aos-duration="1000">
+											<div class="property-image grow img-1">
+												<!-- <img class="loaded-image img-responsive" alt="" src="./images/properties/properties-01-sm.jpg"> -->
+												<span class="animated property-type">Apartment</span>
+												<span class="animated property-status">For Sell</span>
+											</div>
+											<div class="property-info">
+												<span class="property-title"><a href="./property-single.html" title="Porperty single">Property Title</a></span>
+												<span class="property-address">Property Address</span>
+											</div>
+											<div class="property-summary">
+												<span class="animated property-address">Property Address</span>
+												<span class="animated property-title"><a href="./property-single.html" title="Porperty single">Property Title</a></span>
+											</div>
+											<div class="property-action">
+												<div class="ribbon">
+													<div class="ribbon-content"><i class="fa fa-usd"></i> 389,000</div>
+												</div>
+												<div class="link-info"><a href="./property-single.html" title="Porperty single">Details</a></div>
+											</div>
+										</div>					                    
+										<div class="clearfix"></div>
+									</div>
+								</div>
+
+								<div class="col-xs-12 col-sm-6 col-md-4 list-width" data-uk-filter="rent" data-numbers="3" data-letters="D">
+									<div class="thumbnail mix category-1">
+										<div class="animated property-box" data-aos="zoom-in" data-aos-duration="1000">
+											<div class="property-image grow img-2">
+												<!-- <img class="loaded-image img-responsive" alt="" src="./images/properties/properties-02-sm.jpg"> -->
+												<span class="animated property-type">Apartment</span>
+												<span class="animated property-status">For Rent</span>
+											</div>
+											<div class="property-info">
+												<span class="property-title"><a href="./property-single.html" title="Porperty single">Property Title</a></span>
+												<span class="property-address">Property Address</span>
+											</div>
+											<div class="property-summary">
+												<span class="animated property-address">Property Address</span>
+												<span class="animated property-title"><a href="./property-single.html" title="Porperty single">Property Title</a></span>
+											</div>
+											<div class="property-action">
+												<div class="ribbon">
+													<div class="ribbon-content"><i class="fa fa-usd"></i> 389,000</div>
+												</div>
+												<div class="link-info"><a href="./property-single.html" title="Porperty single">Details</a></div>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+
+								<div class="col-xs-12 col-sm-6 col-md-4 list-width" data-uk-filter="rent" data-numbers="1" data-letters="B">
+									<div class="thumbnail mix category-1">
+										<div class="animated property-box" data-aos="zoom-in" data-aos-duration="1000">
+											<div class="property-image grow img-3">
+												<!-- <img class="loaded-image img-responsive" alt="" src="./images/properties/properties-03-sm.jpg"> -->
+												<span class="animated property-type">Apartment</span>
+												<span class="animated property-status">For Rent</span>
+											</div>
+											<div class="property-info">
+												<span class="property-title"><a href="./property-single.html" title="Porperty single">Property Title</a></span>
+												<span class="property-address">Property Address</span>
+											</div>
+											<div class="property-summary">
+												<span class="animated property-address">Property Address</span>
+												<span class="animated property-title"><a href="./property-single.html" title="Porperty single">Property Title</a></span>
+											</div>
+											<div class="property-action">
+												<div class="ribbon">
+													<div class="ribbon-content"><i class="fa fa-usd"></i> 389,000</div>
+												</div>
+												<div class="link-info"><a href="./property-single.html" title="Porperty single">Details</a></div>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+
+								<div class="col-xs-12 col-sm-6 col-md-4 list-width" data-uk-filter="sell" data-numbers="5" data-letters="G">
+									<div class="thumbnail mix category-1">
+										<div class="animated property-box" data-aos="zoom-in" data-aos-duration="1200">
+											<div class="property-image grow img-4">
+												<!-- <img class="loaded-image img-responsive" alt="" src="./images/properties/properties-04-sm.jpg"> -->
+												<span class="animated property-type">Apartment</span>
+												<span class="animated property-status">For Sell</span>
+											</div>
+											<div class="property-info">
+												<span class="property-title"><a href="./property-single.html" title="Porperty single">Property Title</a></span>
+												<span class="property-address">Property Address</span>
+											</div>
+											<div class="property-summary">
+												<span class="animated property-address">Property Address</span>
+												<span class="animated property-title"><a href="./property-single.html" title="Porperty single">Property Title</a></span>
+											</div>
+											<div class="property-action">
+												<div class="ribbon">
+													<div class="ribbon-content"><i class="fa fa-usd"></i> 389,000</div>
+												</div>
+												<div class="link-info"><a href="./property-single.html" title="Porperty single">Details</a></div>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+
+								<div class="col-xs-12 col-sm-6 col-md-4 list-width" data-uk-filter="rent" data-numbers="6" data-letters="F">
+									<div class="thumbnail mix category-1">
+										<div class="animated property-box" data-aos="zoom-in" data-aos-duration="1200">
+											<div class="property-image grow img-5">
+												<!-- <img class="loaded-image img-responsive" alt="" src="./images/properties/properties-05-sm.jpg"> -->
+												<span class="animated property-type">Apartment</span>
+												<span class="animated property-status">For Rent</span>
+											</div>
+											<div class="property-info">
+												<span class="property-title"><a href="./property-single.html" title="Porperty single">Property Title</a></span>
+												<span class="property-address">Property Address</span>
+											</div>
+											<div class="property-summary">
+												<span class="animated property-address">Property Address</span>
+												<span class="animated property-title"><a href="./property-single.html" title="Porperty single">Property Title</a></span>
+											</div>
+											<div class="property-action">
+												<div class="ribbon">
+													<div class="ribbon-content"><i class="fa fa-usd"></i> 389,000</div>
+												</div>
+												<div class="link-info"><a href="./property-single.html" title="Porperty single">Details</a></div>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+
+								<div class="col-xs-12 col-sm-6 col-md-4 list-width" data-uk-filter="sell" data-numbers="8" data-letters="E">
+									<div class="thumbnail mix category-1">
+										<div class="animated property-box" data-aos="zoom-in" data-aos-duration="1200">
+											<div class="property-image grow img-6">
+												<!-- <img class="loaded-image img-responsive" alt="" src="./images/properties/properties-06-sm.jpg"> -->
+												<span class="animated property-type">Apartment</span>
+												<span class="animated property-status">For Sell</span>
+											</div>
+											<div class="property-info">
+												<span class="property-title"><a href="./property-single.html" title="Porperty single">Property Title</a></span>
+												<span class="property-address">Property Address</span>
+											</div>
+											<div class="property-summary">
+												<span class="animated property-address">Property Address</span>
+												<span class="animated property-title"><a href="./property-single.html" title="Porperty single">Property Title</a></span>
+											</div>
+											<div class="property-action">
+												<div class="ribbon">
+													<div class="ribbon-content"><i class="fa fa-usd"></i> 389,000</div>
+												</div>
+												<div class="link-info"><a href="./property-single.html" title="Porperty single">Details</a></div>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+								  
+								  <!-- <div class="container">
+								  
+									<div class="col-xs-12" data-uk-grid="{gutter: 0, controls: '#items', duration: 500}" class="property-thumbnails latest-properties grid animated"> -->
+
+										<!-- <div class="col-xs-12 col-sm-2 col-md-3 col-lg-4" data-uk-filter="green" data-numbers="2" data-letters="C">
+										<figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+										  <img class="uk-overlay-fade" src="http://placehold.it/1200x800/9acd32/fff&text=C+2">
+										  <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+											<button class="uk-button" type="button">VIEW MORE</button>
+										  </div>
+										  <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+										</figure>
+									  </div>
+								  
+									  <div class="col-xs-12 col-sm-2 col-md-3 col-lg-4" data-uk-filter="blue" data-numbers="3" data-letters="D">
+										<figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+										  <img class="uk-overlay-fade" src="http://placehold.it/1200x800/1e90ff/fff&text=D+3">
+										  <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+											<button class="uk-button" type="button">VIEW MORE</button>
+										  </div>
+										  <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+										</figure>
+									  </div>
+								  
+									  <div class="col-xs-12 col-sm-2 col-md-3 col-lg-4" data-uk-filter="green" data-numbers="1" data-letters="B">
+										<figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+										  <img class="uk-overlay-fade" src="http://placehold.it/1200x800/9acd32/fff&text=B+1">
+										  <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+											<button class="uk-button" type="button">VIEW MORE</button>
+										  </div>
+										  <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+										</figure>
+									  </div>        
+								  
+									  <div class="col-xs-12 col-sm-2 col-md-3 col-lg-4" data-uk-filter="green" data-numbers="5" data-letters="G">
+										<figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+										  <img class="uk-overlay-fade" src="http://placehold.it/1200x800/9acd32/fff&text=G+5">
+										  <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+											<button class="uk-button" type="button">VIEW MORE</button>
+										  </div>
+										  <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+										</figure>
+									  </div>   
+								  
+									  <div class="col-xs-12 col-sm-2 col-md-3 col-lg-4" data-uk-filter="blue" data-numbers="6" data-letters="F">
+										<figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+										  <img class="uk-overlay-fade" src="http://placehold.it/1200x800/1e90ff/fff&text=F+6">
+										  <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+											<button class="uk-button" type="button">VIEW MORE</button>
+										  </div>
+										  <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+										</figure>
+									  </div>   
+								  
+									  <div class="col-xs-12 col-sm-2 col-md-3 col-lg-4" data-uk-filter="green" data-numbers="8" data-letters="E">
+										<figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+										  <img class="uk-overlay-fade" src="http://placehold.it/1200x800/9acd32/fff&text=E+8">
+										  <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+											<button class="uk-button" type="button">VIEW MORE</button>
+										  </div>
+										  <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+										</figure>
+									  </div>   
+								  
+									  <div class="col-xs-12 col-sm-2 col-md-3 col-lg-4" data-uk-filter="blue" data-numbers="7" data-letters="H">
+										<figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+										  <img class="uk-overlay-fade" src="http://placehold.it/1200x800/1e90ff/fff&text=H+7">
+										  <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+											<button class="uk-button" type="button">VIEW MORE</button>
+										  </div>
+										  <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+										</figure>
+									  </div>   
+								  
+									  <div class="col-xs-12 col-sm-2 col-md-3 col-lg-4" data-uk-filter="green" data-numbers="11" data-letters="L">
+										<figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+										  <img class="uk-overlay-fade" src="http://placehold.it/1200x800/9acd32/fff&text=L+11">
+										  <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+											<button class="uk-button" type="button">VIEW MORE</button>
+										  </div>
+										  <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+										</figure>
+									  </div>   
+								  
+									  <div class="col-xs-12 col-sm-2 col-md-3 col-lg-4" data-uk-filter="blue" data-numbers="9" data-letters="J">
+										<figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+										  <img class="uk-overlay-fade" src="http://placehold.it/1200x800/1e90ff/fff&text=J+9">
+										  <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+											<button class="uk-button" type="button">VIEW MORE</button>
+										  </div>
+										  <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+										</figure>
+									  </div>   
+								  
+									  <div class="col-xs-12 col-sm-2 col-md-3 col-lg-4" data-uk-filter="blue" data-numbers="12" data-letters="K">
+										<figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+										  <img class="uk-overlay-fade" src="http://placehold.it/1200x800/1e90ff/fff&text=K+12">
+										  <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+											<button class="uk-button" type="button">VIEW MORE</button>
+										  </div>
+										  <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+										</figure>
+									  </div>   
+								  
+									  <div class="col-xs-12 col-sm-2 col-md-3 col-lg-4" data-uk-filter="green" data-numbers="10" data-letters="I">
+										<figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+										  <img class="uk-overlay-fade" src="http://placehold.it/1200x800/9acd32/fff&text=I+10">
+										  <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+											<button class="uk-button" type="button">VIEW MORE</button>
+										  </div>
+										  <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+										</figure>
+									  </div>    
+								  
+									  <div class="col-xs-12 col-sm-2 col-md-3 col-lg-4" data-uk-filter="green" data-numbers="13" data-letters="N">
+										<figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+										  <img class="uk-overlay-fade" src="http://placehold.it/1200x800/9acd32/fff&text=N+13">
+										  <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+											<button class="uk-button" type="button">VIEW MORE</button>
+										  </div>
+										  <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+										</figure>
+									  </div>   
+								  
+									  <div class="col-xs-12 col-sm-2 col-md-3 col-lg-4" data-uk-filter="green" data-numbers="15" data-letters="O">
+										<figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+										  <img class="uk-overlay-fade" src="http://placehold.it/1200x800/9acd32/fff&text=O+15">
+										  <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+											<button class="uk-button" type="button">VIEW MORE</button>
+										  </div>
+										  <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+										</figure>
+									  </div>   
+								  
+									  <div class="col-xs-12 col-sm-2 col-md-3 col-lg-4" data-uk-filter="blue" data-numbers="14" data-letters="P">
+										<figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+										  <img class="uk-overlay-fade" src="http://placehold.it/1200x800/1e90ff/fff&text=P+14">
+										  <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+											<button class="uk-button" type="button">VIEW MORE</button>
+										  </div>
+										  <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+										</figure>
+									  </div>   
+								  
+									  <div class="col-xs-12 col-sm-2 col-md-3 col-lg-4" data-uk-filter="green" data-numbers="16" data-letters="M">
+										<figure class="uk-thumbnail uk-thumbnail-expand uk-overlay uk-overlay-hover">
+										  <img class="uk-overlay-fade" src="http://placehold.it/1200x800/9acd32/fff&text=M+16">
+										  <div class="uk-overlay-panel uk-overlay-scale uk-flex uk-flex-center uk-flex-middle uk-text-center">
+											<button class="uk-button" type="button">VIEW MORE</button>
+										  </div>
+										  <figcaption class="uk-thumbnail-caption">My Project</figcaption>
+										</figure>
+									  </div>                          -->
+								  
+									<!-- </div>
+								  
+								  </div> -->
+						
+						
+						
+					</div>
+				</div>
+				<!-- /Latest Properties -->
+
+			</div>
+			<!-- ./Main content -->
+
+			<!-- Footer -->
+			<footer id="footer" class="footer">
+				<div class="container-fluid">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3">
+								<div class="copyright">
+									<a class="img-responsive" href="./index.html" title="My Realty" data-wow-delay=".5s"><img src="./images/logo-myrealty.png" alt="My Realty"></a>
+									<p class="">MyRealty is a Real Estate Agency since 2015.</p>
+								</div>
+							</div>
+							<div class="col-md-offset-1 col-md-5">
+								<div class="quick-contact" data-delay="animation-delay-0.4s">
+									<h3 class="heading wow fadeInUp">Quick contact</h3>
+									<div class="contact-form-quick">
+										<p>Lorem ipsum dolor sit amet, consectetur acinglit sed do eiusmod tempor</p>
+										<form class="form-horizontal" action=" " method="" id="contactForm">
+											<div class="form-group">														
+												<div class="col-md-12">
+													<div class="input-group">
+														<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+														<input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="col-md-12 inputGroupContainer">
+													<div class="input-group">
+														<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+														<textarea class="form-control" name="comment" placeholder="Message"></textarea>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="col-md-12">
+													<button type="submit" class="btn pull-right">Send <span class="glyphicon glyphicon-send"></span></button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="socials">
+									<h3 class="heading wow fadeInUp">Connect with phone</h3>
+									<p class="wow fadeInDown">171-320-4761</p>
+									<h3 class="heading wow fadeInUp">Street Address</h3>
+									<p class="wow fadeInDown">MyRealty, LLC, Madison Avenue, New York, NY 10016</p>
+									<ul class="list-inline wow flipInX">
+										<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Facebook"><i class="social-icons animated fa fa-facebook fa-lg"></i></a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Twitter"><i class="social-icons animated fa fa-twitter fa-lg"></i></a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Google plus"><i class="social-icons animated fa fa-google-plus fa-lg"></i></a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="auto" title="LinkedIn"><i class="social-icons animated fa fa-linkedin fa-lg"></i></a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Pinterest"><i class="social-icons animated fa fa-pinterest fa-lg"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="title-long">
+									<div class="horizontal-border"></div>
+								</div>
+							</div>
+						</div>
+						<div class="row bottom">
+							<div class="col-xs-12 col-sm-6 col-md-6">
+								<p class="wow slideInUp text-left">&COPY; 2015 MyRealty Agency, All rights reserved.</p>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-6">
+								<p class="wow slideInUp text-right">Designed & Developed by: iTechRiders</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- /Footer -->
+
+			<!-- Modal - Account -->
+			<div class="modal fade modal-account" id="modalAccount" tabindex="-1" role="dialog" aria-labelledby="modalAccountLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">						
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="modalAccountLabel">Login</h4>
+							<div class="social-line">
+                                <a href="#pablo" class="btn btn-neutral btn-facebook btn-icon btn-icon-mini">
+                                    <i class="fa fa-facebook-square"></i>
+                                </a>
+                                <a href="#pablo" class="btn btn-neutral btn-google btn-icon">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                                <a href="#pablo" class="btn btn-neutral btn-twitter btn-icon  btn-icon-mini">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </div>
+						</div>
+						<div class="modal-body">
+							<div id="loginBox" class="form login-box">
+								<form>
+									<div class="input-group">
+	                                    <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+	                                    <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+	                                </div>
+	                                <div class="input-group">
+	                                    <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+	                                    <input id="login-password" type="password" class="form-control" name="password" value="" placeholder="password">
+	                                </div>
+	                                <input class="btn btn-default btn-login" type="button" value="Login">
+	                                <div class="input-group pull-left">
+										<div class="checkbox">
+											<label>
+												<input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
+											</label>
+										</div>
+	                                </div>
+	                                <div class="forget-password pull-right">
+	                                	<span><a href="#">Forget password?</a></span>
+	                                </div>
+								</form>
+							</div> 
+							<div id="registerBox" class="form register-box d-none">
+								<form>
+									<div class="input-group">
+	                                    <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+	                                    <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+	                                </div>
+	                                <div class="input-group">
+	                                    <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+	                                    <input id="login-password" type="password" class="form-control" name="password" value="" placeholder="password">
+	                                </div>
+	                                <div class="input-group">
+	                                    <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
+	                                    <input id="login-password-repeat" type="password" class="form-control" name="password-repeat" value="" placeholder="repeat password">
+	                                </div>
+	                                <input class="btn btn-default btn-login" type="button" value="Sign Up">
+								</form>
+							</div>                   
+						</div>
+						<div class="modal-footer">
+							<div class="sign-up-or-login-txt">
+								<div class="sign-up-txt">
+									Don't have an account!
+	                                <a id="showRegisterForm" href="#">
+	                                    <strong>Sign Up Here</strong>
+	                                </a>
+								</div> 
+								<div class="login-txt d-none">
+									Already have an account!
+	                                <a id="showLoginForm" href="#">
+	                                    <strong>Login Here</strong>
+	                                </a>
+								</div>                               
+                            </div>
+						</div>						
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+		<!-- Scripts -->
+		<!-- <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script> -->
+		<!-- <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script> -->
+		<!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
+		<!-- <script type="text/javascript" src="js/jquery-migrate-3.0.0.js"></script> -->
+		<!-- <script type="text/javascript" src="js/jquery-ui.min.js"></script> -->
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap-slider.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easy-autocomplete.min.js"></script>
+		<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+		<script type="text/javascript" src="js/aos.js"></script>
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/js/uikit.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/js/components/grid.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/js/components/sticky.min.js"></script>
+
+		<script type="text/javascript" src="js/theme.js"></script>
+	</body>
+</html>

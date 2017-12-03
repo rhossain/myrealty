@@ -46,55 +46,54 @@
 		<div class="container-fluid site-wrapper">
 
 			<!-- Site Header -->
-			<header class="navbar navbar-fixed-top header-wrapper">
-				<div class="navbar-container">
-					<div class="navbar-top">
-						<div class="container">
-							<ul class="list-inline pull-left m-0 top-left">
-								<li class="mb-0">
-									<a href="">abc@xyz.com</a>
-								</li>
-								<li class="mb-0 divider-hor">/</li>
-								<li class="mb-0">
-									<ul class="list-inline m-0">
-										<li class="mb-0">
-											<a href="">
-												<i class="fa fa-facebook" aria-hidden="true"></i>
-											</a>
-										</li>
-										<li class="mb-0">
-											<a href="">
-												<i class="fa fa-twitter" aria-hidden="true"></i>
-											</a>
-										</li>
-										<li class="mb-0">
-											<a href="">
-												<i class="fa fa-instagram" aria-hidden="true"></i>
-											</a>
-										</li>
-										<li class="mb-0">
-											<a href="">
-												<i class="fa fa-google-plus" aria-hidden="true"></i>
-											</a>
-										</li>
-										<li class="mb-0">
-											<a href="">
-												<i class="fa fa-pinterest-p" aria-hidden="true"></i>
-											</a>
-										</li>
-									</ul>
-								</li>
-							</ul>
-							<ul class="list-inline pull-right m-0 top-right">
-								<li class="mb-0">
-									<a id="linkLogin" data-toggle="modal" data-target="#modalAccount" href="">Login</a>
-								</li>
-								<li class="mb-0 divider-hor">/</li>
-								<li class="mb-0">
-									<a id="linkRegister" data-toggle="modal" data-target="#modalAccount" href="">Register</a>
-								</li>
-							</ul>
-						</div>
+			<header class="navbar navbar-fixed-top header-wrapper" data-aos="fade-down" data-aos-offset="200" data-aos-duration="1200" data-aos-once="true">
+				<div class="nav-outer-bg outer-left"></div>
+				<div class="navbar-container container">
+					<div class="navbar-top">						
+						<ul class="list-inline pull-left m-0 top-left">
+							<li class="mb-0">
+								<a href="">abc@xyz.com</a>
+							</li>
+							<li class="mb-0 divider-hor">/</li>
+							<li class="mb-0">
+								<ul class="list-inline m-0">
+									<li class="mb-0">
+										<a href="">
+											<i class="fa fa-facebook" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li class="mb-0">
+										<a href="">
+											<i class="fa fa-twitter" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li class="mb-0">
+										<a href="">
+											<i class="fa fa-instagram" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li class="mb-0">
+										<a href="">
+											<i class="fa fa-google-plus" aria-hidden="true"></i>
+										</a>
+									</li>
+									<li class="mb-0">
+										<a href="">
+											<i class="fa fa-pinterest-p" aria-hidden="true"></i>
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="list-inline pull-right m-0 top-right">
+							<li class="mb-0">
+								<a id="linkLogin" data-toggle="modal" data-target="#modalAccount" href="">Login</a>
+							</li>
+							<li class="mb-0 divider-hor">/</li>
+							<li class="mb-0">
+								<a id="linkRegister" data-toggle="modal" data-target="#modalAccount" href="">Register</a>
+							</li>
+						</ul>						
 					</div>
 					<div class="navbar-header">
 						<button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".side-collapse-container" type="button" class="navbar-toggle">
@@ -129,11 +128,11 @@
 							</ul>
 							<ul class="nav navbar-nav nav-side-collapse accounts">
 								<li class="mb-0">
-									<a href="">Login</a>
+									<a id="linkLogin" data-toggle="modal" data-target="#modalAccount" href="">Login</a>
 								</li>
 								<li class="mb-0 divider-hor">/</li>
 								<li class="mb-0">
-									<a href="">Register</a>
+									<a id="linkRegister" data-toggle="modal" data-target="#modalAccount" href="">Register</a>
 								</li>
 							</ul>
 							<ul class="nav navbar-nav nav-menu">
@@ -258,49 +257,6 @@
 												</div>
 											</div>
 										</li>
-										<!-- <li class="col-sm-3">
-											<ul>
-												<li class="dropdown-header">Dresses</li>
-												<li><a href="#">Unique Features</a></li>
-												<li><a href="#">Image Responsive</a></li>
-												<li><a href="#">Auto Carousel</a></li>
-												<li><a href="#">Newsletter Form</a></li>
-												<li><a href="#">Four columns</a></li>
-												<li class="divider"></li>
-												<li class="dropdown-header">Tops</li>
-												<li><a href="#">Good Typography</a></li>
-											</ul>
-										</li>
-										<li class="col-sm-3">
-											<ul>
-												<li class="dropdown-header">Jackets</li>
-												<li><a href="#">Easy to customize</a></li>
-												<li><a href="#">Glyphicons</a></li>
-												<li><a href="#">Pull Right Elements</a></li>
-												<li class="divider"></li>
-												<li class="dropdown-header">Pants</li>
-												<li><a href="#">Coloured Headers</a></li>
-												<li><a href="#">Primary Buttons & Default</a></li>
-												<li><a href="#">Calls to action</a></li>
-											</ul>
-										</li>
-										<li class="col-sm-3">
-											<ul>
-												<li class="dropdown-header">Accessories</li>
-												<li><a href="#">Default Navbar</a></li>
-												<li><a href="#">Lovely Fonts</a></li>
-												<li><a href="#">Responsive Dropdown </a></li>
-												<li class="divider"></li>
-												<li class="dropdown-header">Newsletter</li>
-												<form class="form" role="form">
-												  	<div class="form-group">
-													    <label class="sr-only" for="email">Email address</label>
-													    <input type="email" class="form-control" id="email" placeholder="Enter email">
-												  	</div>
-												  	<button type="submit" class="btn btn-primary btn-block">Sign in</button>
-												</form>
-											</ul>
-										</li> -->
 									</ul>
 								</li>
 								<li><a class="btn-effect-2" href="http://placesforlove.com" data-hover="Blog">Blog</a></li>
@@ -328,6 +284,7 @@
 						</nav>
 					</div>
 				</div>
+				<div class="nav-outer-bg outer-right"></div>
 			</header>
 			<!-- ./Site Header -->
 
@@ -339,22 +296,23 @@
 				<!-- Top slider -->
 				<div class="slider-wrapper">
 					<div id="homeTopSlider" class="owl-carousel owl-theme home-top-slider">
-						<div class="item">
-							<img src="images/slider/slider-1.jpg" alt="The Last of us">					
+						<div class="item one">
+							<img src="images/slider/slider-1.jpg" alt="The Last of us">
+							<div class="home-slider-overlay"></div>
 							<div class="owl-caption">
 								<div class="caption-wrapper">
-									<h5 class="" data-animation-in="fadeInUp" data-animation-out="animate-out fadeOutDown" data-mr-animation-delay="1s">
+									<h5 class="">
 										<i class="fa fa-location-arrow" aria-hidden="true"></i>
 										Bayone, New Jersy
 									</h5>
-									<h3 class="mb-0" data-animation-in="fadeInUp" data-animation-out="animate-out fadeOutDown">
+									<h3 class="mb-0">
 										Park Avenue Apartment
 									</h3>
-									<div class="caption-footer pull-left" data-animation-in="fadeInUp" data-animation-out="animate-out fadeOutDown">
+									<div class="caption-footer pull-left">
 										<ul class="list-inline m-0 pull-left">
 											<li class="mb-0 pull-left">
 												<i class="fa fa-lg fa-map-signs pull-left" aria-hidden="true"></i>
-												<div class="pull-right" data-aos="zoom-in">
+												<div class="pull-right">
 													<span>2030 sqft</span>
 													<span>Areas</span>
 												</div>
@@ -389,18 +347,19 @@
 								</div>								
 							</div>							
 						</div>
-						<div class="item">
+						<div class="item two">
 							<img src="images/slider/slider-2.jpg" alt="GTA V">
+							<div class="home-slider-overlay"></div>
 							<div class="owl-caption">
 								<div class="caption-wrapper">
-									<h5 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOutDown">
+									<h5>
 										<i class="fa fa-location-arrow" aria-hidden="true"></i>
 										Bayone, New Jersy
 									</h5>
-									<h3 class="mb-0" data-animation-in="fadeInUp" data-animation-out="animate-out fadeOutDown">
+									<h3 class="mb-0">
 										Park Avenue Apartment
 									</h3>
-									<div class="caption-footer pull-left" data-animation-in="rollIn" data-animation-out="animate-out rollOut">
+									<div class="caption-footer pull-left">
 										<ul class="list-inline m-0 pull-left">
 											<li class="mb-0 pull-left">
 												<i class="fa fa-lg fa-map-signs pull-left" aria-hidden="true"></i>
@@ -429,7 +388,7 @@
 											<span>350, 000</span>
 										</div>
 									</div>
-									<div class="caption-details pull-left" data-animation-in="rollIn" data-animation-out="animate-out rollOut">
+									<div class="caption-details pull-left">
 										<div class="owl-nav pull-left">
 											<div class="owl-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
 											<div class="owl-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
@@ -439,18 +398,19 @@
 								</div>								
 							</div>
 						</div>
-						<div class="item">
+						<div class="item three">
 							<img src="images/slider/slider-3.jpg" alt="Mirror Edge">
+							<div class="home-slider-overlay"></div>
 							<div class="owl-caption">
 								<div class="caption-wrapper">
-									<h5 data-animation-in="fadeInUp" data-animation-out="animate-out fadeOutDown">
+									<h5>
 										<i class="fa fa-location-arrow" aria-hidden="true"></i>
 										Bayone, New Jersy
 									</h5>
-									<h3 class="mb-0" data-animation-in="fadeInUp" data-animation-out="animate-out fadeOutDown">
+									<h3 class="mb-0">
 										Park Avenue Apartment
 									</h3>
-									<div class="caption-footer pull-left" data-animation-in="rollIn" data-animation-out="animate-out rollOut">
+									<div class="caption-footer pull-left">
 										<ul class="list-inline m-0 pull-left">
 											<li class="mb-0 pull-left">
 												<i class="fa fa-lg fa-map-signs pull-left" aria-hidden="true"></i>
@@ -479,7 +439,7 @@
 											<span>350, 000</span>
 										</div>
 									</div>
-									<div class="caption-details pull-left" data-animation-in="rollIn" data-animation-out="animate-out rollOut">
+									<div class="caption-details pull-left">
 										<div class="owl-nav pull-left">
 											<div class="owl-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
 											<div class="owl-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
@@ -488,13 +448,17 @@
 									</div>
 								</div>								
 							</div>
-						</div>			     
-				    </div>
+						</div>		
+						     
+					</div>
+					<div class="container slider-nav-container">
+						<div id="homeSliderNavs" class="owl-dots home-owl-dots"></div>
+					</div>
 				</div>
 				<!-- ./Top slider -->
 
 				<!-- Advanced Search form -->
-				<div class="search-form-wrapper">
+				<div class="search-form-wrapper" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1200" data-aos-once="true">
 					<div class="container">
 						<div class="row">
 							<div class="col-xs-12">
@@ -673,36 +637,83 @@
 								</form>
 							</div>
 							<div role="tabpanel" class="col-xs-12 tab-pane" id="statusRent">
-								<div class="row">
-									<div class="col-xs-12 col-sm-6 col-md-3">
-										<select class="selectpicker">
-											<option>Mustard</option>
-											<option>Ketchup</option>
-											<option>Relish</option>
-										</select>
+								<form class="form-advance-search">
+									<div class="row search-minus">
+										<div class="col-xs-12 col-sm-12 col-md-6">
+											<input type="text" id="listLocationRent" class="search-items" placeholder="Enter address e.g. street, city and state or zip" value="">
+										</div>
+										<div class="col-xs-12 col-sm-6 col-md-3">
+											<select title="Any Type" class="selectpicker search-items">
+												<option>Mustard</option>
+												<option>Ketchup</option>
+												<option>Relish</option>
+											</select>
+										</div>
+										<div class="col-xs-12 col-sm-6 col-md-3">
+											<select title="Location" class="selectpicker search-items" multiple data-actions-box="true">
+												<option>Mustard</option>
+												<option>Ketchup</option>
+												<option>Relish</option>
+											</select>
+										</div>
 									</div>
-									<div class="col-xs-12 col-sm-6 col-md-3">
-										<select class="selectpicker">
-											<option>Mustard</option>
-											<option>Ketchup</option>
-											<option>Relish</option>
-										</select>
+									<div class="row search-plus">
+										<div class="col-xs-12 col-sm-6 col-md-3 range-slider">
+											<div class="button-slider search-items">
+												<div class="btn-group">
+													<div class="btn btn-default px-0 bdr-0">Price:</div>
+													<div class="value-label">$<span id="priceValueRent">25</span></div>
+													<div class="btn btn-default p-0 bdr-0 range-input">
+														<input id="priceSliderRent" type="text" data-slider-min="1" data-slider-max="50" data-slider-step="1" data-slider-value="25" data-slider-handle="triangle"/>
+													</div>											
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-6 col-md-3 range-slider">
+											<div class="button-slider search-items">
+												<div class="btn-group">
+													<div class="btn btn-default px-0 bdr-0">Area:</div>
+													<div class="value-label"><span id="areaValueRent">1700</span> sq ft</div>
+													<div class="btn btn-default p-0 bdr-0 range-input">
+														<input id="areaSliderRent" type="text" data-slider-min="500" data-slider-max="3000" data-slider-step="1" data-slider-value="1700" data-slider-handle="triangle"/>
+													</div>											
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-6 col-md-3 range-slider">
+											<div class="button-slider search-items">
+												<div class="btn-group">
+													<div class="btn btn-default px-0 bdr-0">Bed:</div>
+													<div class="value-label"><span id="bedValueRent">5</span></div>
+													<div class="btn btn-default p-0 bdr-0 range-input">
+														<input id="bedSliderRent" type="text" data-slider-min="1" data-slider-max="10" data-slider-step="1" data-slider-value="5" data-slider-handle="triangle"/>
+													</div>											
+												</div>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-6 col-md-3 range-slider">
+											<div class="button-slider search-items">
+												<div class="btn-group">
+													<div class="btn btn-default px-0 bdr-0">Bath:</div>
+													<div class="value-label"><span id="bathValueRent">5</span></div>
+													<div class="btn btn-default p-0 bdr-0 range-input">
+														<input id="bathSliderRent" type="text" data-slider-min="1" data-slider-max="10" data-slider-step="1" data-slider-value="5" data-slider-handle="triangle"/>
+													</div>											
+												</div>
+											</div>
+										</div>
 									</div>
-									<div class="col-xs-12 col-sm-6 col-md-3">
-										<select class="selectpicker">
-											<option>Mustard</option>
-											<option>Ketchup</option>
-											<option>Relish</option>
-										</select>
+									<div class="row search-button">
+										<div class="col-sm-12 text-right">
+											<button type="submit" class="pull-right btn-main">
+												<span>Search</span>
+												<div class="btn-triangle-left"></div>
+												<div class="btn-triangle-right"></div>
+												<div class="btn-icon"><i class="fa fa-search" aria-hidden="true"></i></div>
+											</button>
+										</div>
 									</div>
-									<div class="col-xs-12 col-sm-6 col-md-3">
-										<select class="selectpicker">
-											<option>Mustard</option>
-											<option>Ketchup</option>
-											<option>Relish</option>
-										</select>
-									</div>
-								</div>
+								</form>
 							</div>
 						</div>
 					</div>
@@ -797,26 +808,30 @@
 				<!-- ./Advanced Search form -->
 
 				<!-- Latest Properties -->
-		        <div id="property-home" class="property-home">
+		        <div id="property-home" class="properties-grid">
 		            <div class="container">
 		            	<div class="title-long">
-		                    <div class="title-text">Latest Properties</div>
-		                    <div class="title-link">
+		                    <div class="title-text" data-aos="fade-up" data-aos-duration="1200">Latest Properties</div>
+		                    <div class="title-link" data-aos="fade-down" data-aos-duration="1200">
 		                        <a href="./property.html" title="All Properties" class="hvr-icon-spin">All Properties</a>
 		                    </div>
 		                    <div class="horizontal-border"></div>
-		                    <div class="btn-group wow flipInX">
-		                        <a href="#" title="" id="list" class="list btn btn-default"><span data-toggle="tooltip" data-placement="auto" title="List" class="glyphicon glyphicon-th-list"></span></a>
-		                        <a href="#" title="" id="grid" class="grid btn btn-default"><span data-toggle="tooltip" data-placement="auto" title="Grid" class="glyphicon glyphicon-th"></span></a>
+		                    <div class="btn-group">
+		                        <a href="#" title="" id="list" class="list btn btn-default">
+									<span data-toggle="tooltip" data-placement="auto" title="List" class="glyphicon glyphicon-th-list"></span>
+								</a>
+								<a href="#" title="" id="grid" class="grid btn btn-default">
+									<span data-toggle="tooltip" data-placement="auto" title="Grid" class="glyphicon glyphicon-th"></span>
+								</a>
 		                    </div>
 		                </div>
 		                <div id="latest-properties" class="property-thumbnails latest-properties grid animated">
 		                	<div class="row">
-		                		<div class="col-sm-6 col-md-4">
-						            <div class="thumbnail wow zoomIn mix category-1">						                
-				                        <div class="animated property-box">
-				                            <div class="property-image grow">
-				                                <img class="loaded-image img-responsive" alt="" src="./images/properties/properties-01-sm.jpg">
+		                		<div class="col-sm-6 col-md-4 list-width">
+						            <div class="thumbnail mix category-1">						                
+				                        <div class="animated property-box" data-aos="zoom-in" data-aos-duration="1000">
+				                            <div class="property-image grow img-1">
+				                                <!-- <img class="loaded-image img-responsive" alt="" src="./images/properties/properties-01-sm.jpg"> -->
 				                                <span class="animated property-type">Apartment</span>
 				                                <span class="animated property-status">For Sell</span>
 				                            </div>
@@ -839,11 +854,11 @@
 						            </div>
 						        </div>
 						        
-						        <div class="col-sm-6 col-md-4">
-						            <div class="thumbnail">
-						                <div class="animated property-box">
-				                            <div class="property-image grow">
-				                                <img class="loaded-image img-responsive" alt="" src="./images/properties/properties-02-sm.jpg">
+						        <div class="col-sm-6 col-md-4 list-width">
+						            <div class="thumbnail mix category-1">
+						                <div class="animated property-box" data-aos="zoom-in" data-aos-duration="1000">
+				                            <div class="property-image grow img-2">
+				                                <!-- <img class="loaded-image img-responsive" alt="" src="./images/properties/properties-02-sm.jpg"> -->
 				                                <span class="animated property-type">Apartment</span>
 				                                <span class="animated property-status">For Sell</span>
 				                            </div>
@@ -866,11 +881,11 @@
 						            </div>
 						        </div>
 						        
-						        <div class="col-sm-6 col-md-4">
-						            <div class="thumbnail">
-						                <div class="animated property-box">
-				                            <div class="property-image grow">
-				                                <img class="loaded-image img-responsive" alt="" src="./images/properties/properties-03-sm.jpg">
+						        <div class="col-sm-6 col-md-4 list-width">
+						            <div class="thumbnail mix category-1">
+						                <div class="animated property-box" data-aos="zoom-in" data-aos-duration="1000">
+				                            <div class="property-image grow img-3">
+				                                <!-- <img class="loaded-image img-responsive" alt="" src="./images/properties/properties-03-sm.jpg"> -->
 				                                <span class="animated property-type">Apartment</span>
 				                                <span class="animated property-status">For Sell</span>
 				                            </div>
@@ -893,11 +908,11 @@
 						            </div>
 						        </div>
 						        
-						        <div class="col-sm-6 col-md-4">
-						            <div class="thumbnail">
-						                <div class="animated property-box">
-				                            <div class="property-image grow">
-				                                <img class="loaded-image img-responsive" alt="" src="./images/properties/properties-04-sm.jpg">
+						        <div class="col-sm-6 col-md-4 list-width">
+						            <div class="thumbnail mix category-1">
+						                <div class="animated property-box" data-aos="zoom-in" data-aos-duration="1200">
+				                            <div class="property-image grow img-4">
+				                                <!-- <img class="loaded-image img-responsive" alt="" src="./images/properties/properties-04-sm.jpg"> -->
 				                                <span class="animated property-type">Apartment</span>
 				                                <span class="animated property-status">For Sell</span>
 				                            </div>
@@ -920,11 +935,11 @@
 						            </div>
 						        </div>
 						        
-						        <div class="col-sm-6 col-md-4">
-						            <div class="thumbnail">
-						                <div class="animated property-box">
-				                            <div class="property-image grow">
-				                                <img class="loaded-image img-responsive" alt="" src="./images/properties/properties-05-sm.jpg">
+						        <div class="col-sm-6 col-md-4 list-width">
+						            <div class="thumbnail mix category-1">
+						                <div class="animated property-box" data-aos="zoom-in" data-aos-duration="1200">
+				                            <div class="property-image grow img-5">
+				                                <!-- <img class="loaded-image img-responsive" alt="" src="./images/properties/properties-05-sm.jpg"> -->
 				                                <span class="animated property-type">Apartment</span>
 				                                <span class="animated property-status">For Sell</span>
 				                            </div>
@@ -947,11 +962,11 @@
 						            </div>
 						        </div>
 						        
-						        <div class="col-sm-6 col-md-4">
-						            <div class="thumbnail">
-						                <div class="animated property-box">
-				                            <div class="property-image grow">
-				                                <img class="loaded-image img-responsive" alt="" src="./images/properties/properties-06-sm.jpg">
+						        <div class="col-sm-6 col-md-4 list-width">
+						            <div class="thumbnail mix category-1">
+						                <div class="animated property-box" data-aos="zoom-in" data-aos-duration="1200">
+				                            <div class="property-image grow img-6">
+				                                <!-- <img class="loaded-image img-responsive" alt="" src="./images/properties/properties-06-sm.jpg"> -->
 				                                <span class="animated property-type">Apartment</span>
 				                                <span class="animated property-status">For Sell</span>
 				                            </div>
@@ -974,126 +989,10 @@
 						            </div>
 						        </div>
 		                	</div>
-		                    
-		                    <!-- <div class="wow zoomIn mix category-1">
-		                        <div class="animated property-box">
-		                            <div class="property-image grow">
-		                                <img class="loaded-image img-responsive" alt="" src="./images/properties/real-estate-002-600x400.jpg">
-		                                <span class="animated property-type">Single Family Home</span>
-		                                <span class="animated property-status">For Sell</span>
-		                            </div>
-		                            <div class="property-info">
-		                                <span class="property-title"><a href="./property-single.html" title="Porperty single">Property Title</a></span>
-		                                <span class="property-address">Property Address</span>
-		                            </div>
-		                            <div class="property-summary">
-		                                <span class="animated property-address">Property Address</span>
-		                                <span class="animated property-title"><a href="./property-single.html" title="Porperty single">Property Title</a></span>
-		                            </div>
-		                            <div class="property-action">
-		                                <div class="ribbon">
-		                                    <div class="ribbon-content"><i class="fa fa-usd"></i> 389,000</div>
-		                                </div>
-		                                <div class="link-info"><a href="./property-single.html" title="Porperty single">Details</a></div>
-		                            </div>
-		                        </div>
-		                    </div>
-		                    <div class="wow zoomIn mix category-2">
-		                        <div class="animated property-box">
-		                            <div class="property-image grow">
-		                                <img class="loaded-image img-responsive" alt="" src="./images/properties/real-estate-003-600x400.jpg">
-		                                <span class="animated property-type">Single Family Home</span>
-		                                <span class="animated property-status">For Rent</span>
-		                            </div>
-		                            <div class="property-info">
-		                                <span class="property-title"><a href="./property-single.html" title="Porperty single">Property Title</a></span>
-		                                <span class="property-address">Property Address</span>
-		                            </div>
-		                            <div class="property-summary">
-		                                <span class="animated property-address">Property Address</span>
-		                                <span class="animated property-title"><a href="./property-single.html" title="Porperty single">Property Title</a></span>
-		                            </div>
-		                            <div class="property-action">
-		                                <div class="ribbon">
-		                                    <div class="ribbon-content"><i class="fa fa-usd"></i> 389,000</div>
-		                                </div>
-		                                <div class="link-info"><a href="./property-single.html" title="Porperty single">Details</a></div>
-		                            </div>
-		                        </div>
-		                    </div>
-		                    <div class="wow zoomIn mix category-2">
-		                        <div class="animated property-box">
-		                            <div class="property-image grow">
-		                                <img class="loaded-image img-responsive" alt="" src="./images/properties/real-estate-004-600x400.jpg">
-		                                <span class="animated property-type">Single Family Home</span>
-		                                <span class="animated property-status">For Rent</span>
-		                            </div>
-		                            <div class="property-info">
-		                                <span class="property-title"><a href="./property-single.html" title="Porperty single">Property Title</a></span>
-		                                <span class="property-address">Property Address</span>
-		                            </div>
-		                            <div class="property-summary">
-		                                <span class="animated property-address">Property Address</span>
-		                                <span class="animated property-title"><a href="./property-single.html" title="Porperty single">Property Title</a></span>
-		                            </div>
-		                            <div class="property-action">
-		                                <div class="ribbon">
-		                                    <div class="ribbon-content"><i class="fa fa-usd"></i> 389,000</div>
-		                                </div>
-		                                <div class="link-info"><a href="./property-single.html" title="Porperty single">Details</a></div>
-		                            </div>
-		                        </div>
-		                    </div>
-		                    <div class="wow zoomIn mix category-1">
-		                        <div class="animated property-box">
-		                            <div class="property-image grow">
-		                                <img class="loaded-image img-responsive" alt="" src="./images/properties/real-estate-005-600x400.jpg">
-		                                <span class="animated property-type">Single Family Home</span>
-		                                <span class="animated property-status">For Rent</span>
-		                            </div>
-		                            <div class="property-info">
-		                                <span class="property-title"><a href="./property-single.html" title="Porperty single">Property Title</a></span>
-		                                <span class="property-address">Property Address</span>
-		                            </div>
-		                            <div class="property-summary">
-		                                <span class="animated property-address">Property Address</span>
-		                                <span class="animated property-title"><a href="./property-single.html" title="Porperty single">Property Title</a></span>
-		                            </div>
-		                            <div class="property-action">
-		                                <div class="ribbon">
-		                                    <div class="ribbon-content"><i class="fa fa-usd"></i> 389,000</div>
-		                                </div>
-		                                <div class="link-info"><a href="./property-single.html" title="Porperty single">Details</a></div>
-		                            </div>
-		                        </div>
-		                    </div>
-		                    <div class="wow zoomIn mix category-2">
-		                        <div class="animated property-box">
-		                            <div class="property-image grow">
-		                                <img class="loaded-image img-responsive" alt="" src="./images/properties/real-estate-006-600x400.jpg">
-		                                <span class="animated property-type">Apartment</span>
-		                                <span class="animated property-status">For Sell</span>
-		                            </div>
-		                            <div class="property-info">
-		                                <span class="property-title"><a href="./property-single.html" title="Porperty single">Property Title</a></span>
-		                                <span class="property-address">Property Address</span>
-		                            </div>
-		                            <div class="property-summary">
-		                                <span class="animated property-address">Property Address</span>
-		                                <span class="animated property-title"><a href="./property-single.html" title="Porperty single">Property Title</a></span>
-		                            </div>
-		                            <div class="property-action">
-		                                <div class="ribbon">
-		                                    <div class="ribbon-content"><i class="fa fa-usd"></i> 389,000</div>
-		                                </div>
-		                                <div class="link-info"><a href="./property-single.html" title="Porperty single">Details</a></div>
-		                            </div>
-		                        </div>
-		                    </div> -->
 		                </div>
-		                <div class="wow fadeIn more-btn cl-effect-21">
-		                    <a href="./property.html" title="All Properties" class="hvr-icon-spin">Load More</a>
-		                </div>
+						<div class="effect-more more-btn" data-aos="fade-up" data-aos-duration="1000">
+							<a href="./property.html" title="All Properties" class="hvr-icon-spin">Load More</a>
+						</div>
 		            </div>
 		        </div>
 				<!-- /Latest Properties -->
@@ -1102,8 +1001,8 @@
 		        <div id="property-agent" class="property-agent">
 		            <div class="container">
 		            	<div class="title-long">
-							<div class="title-text">Other Agents</div>
-							<div class="title-link">
+							<div class="title-text" data-aos="fade-up" data-aos-duration="1200">Other Agents</div>
+							<div class="title-link" data-aos="fade-down" data-aos-duration="1200">
 								<a href="./agent.html" title="All Agents" class="hvr-icon-spin">All Agents</a>
 							</div>
 							<div class="horizontal-border"></div>
@@ -1111,8 +1010,8 @@
 		                <div class="row">
 							<div class="col-md-12">
 								<div id="agent-carousel" class="owl-carousel">
-									<div class="wow fadeIn grid grid-first" data-delay="animation-delay-0.2s">
-										<figure class="effect-layla">
+									<div class="wow fadeIn agent-card" data-delay="animation-delay-0.2s">
+										<figure class="agent-effect">
 											<img class="img-responsive" alt="Agent Name" src="./images/people/agents-05.jpg" />
 											<figcaption>
 												<div class="caption-inner">
@@ -1126,19 +1025,19 @@
 															</a>
 														</div>
 													</div>
-													<ul class="list-inline">
+													<!-- <ul class="list-inline">
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Facebook"><i class="social-icons animated fa fa-facebook"></i></a></li>
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Twitter"><i class="social-icons animated fa fa-twitter"></i></a></li>
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Google plus"><i class="social-icons animated fa fa-google-plus"></i></a></li>
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="LinkedIn"><i class="social-icons animated fa fa-linkedin"></i></a></li>
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Pinterest"><i class="social-icons animated fa fa-pinterest"></i></a></li>
-													</ul>
+													</ul> -->
 												</div>
 											</figcaption>
 										</figure>
 									</div>
-									<div class="wow fadeIn grid grid-first" data-delay="animation-delay-0.4s">
-										<figure class="effect-layla">
+									<div class="wow fadeIn agent-card" data-delay="animation-delay-0.4s">
+										<figure class="agent-effect">
 											<img class="img-responsive" alt="Agent Name" src="./images/people/agents-09.jpg" />
 											<figcaption>
 												<div class="caption-inner">
@@ -1152,19 +1051,19 @@
 															</a>
 														</div>
 													</div>
-													<ul class="list-inline">
+													<!-- <ul class="list-inline">
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Facebook"><i class="social-icons animated fa fa-facebook"></i></a></li>
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Twitter"><i class="social-icons animated fa fa-twitter"></i></a></li>
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Google plus"><i class="social-icons animated fa fa-google-plus"></i></a></li>
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="LinkedIn"><i class="social-icons animated fa fa-linkedin"></i></a></li>
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Pinterest"><i class="social-icons animated fa fa-pinterest"></i></a></li>
-													</ul>
+													</ul> -->
 												</div>
 											</figcaption>
 										</figure>
 									</div>
-									<div class="wow fadeIn grid grid-first" data-delay="animation-delay-0.6s">
-										<figure class="effect-layla">
+									<div class="wow fadeIn agent-card" data-delay="animation-delay-0.6s">
+										<figure class="agent-effect">
 											<img class="img-responsive" alt="Agent Name" src="./images/people/agents-04.jpg" />
 											<figcaption>
 												<div class="caption-inner">
@@ -1178,19 +1077,19 @@
 															</a>
 														</div>
 													</div>
-													<ul class="list-inline">
+													<!-- <ul class="list-inline">
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Facebook"><i class="social-icons animated fa fa-facebook"></i></a></li>
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Twitter"><i class="social-icons animated fa fa-twitter"></i></a></li>
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Google plus"><i class="social-icons animated fa fa-google-plus"></i></a></li>
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="LinkedIn"><i class="social-icons animated fa fa-linkedin"></i></a></li>
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Pinterest"><i class="social-icons animated fa fa-pinterest"></i></a></li>
-													</ul>
+													</ul> -->
 												</div>
 											</figcaption>
 										</figure>
 									</div>
-									<div class="wow fadeIn grid grid-first" data-delay="animation-delay-0.8s">
-										<figure class="effect-layla">
+									<div class="wow fadeIn agent-card" data-delay="animation-delay-0.8s">
+										<figure class="agent-effect">
 											<img class="img-responsive" alt="Agent Name" src="./images/people/agents-10.jpg" />
 											<figcaption>
 												<div class="caption-inner">
@@ -1204,19 +1103,19 @@
 															</a>
 														</div>
 													</div>
-													<ul class="list-inline">
+													<!-- <ul class="list-inline">
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Facebook"><i class="social-icons animated fa fa-facebook"></i></a></li>
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Twitter"><i class="social-icons animated fa fa-twitter"></i></a></li>
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Google plus"><i class="social-icons animated fa fa-google-plus"></i></a></li>
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="LinkedIn"><i class="social-icons animated fa fa-linkedin"></i></a></li>
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Pinterest"><i class="social-icons animated fa fa-pinterest"></i></a></li>
-													</ul>
+													</ul> -->
 												</div>
 											</figcaption>
 										</figure>
 									</div>
-									<div class="wow fadeIn grid grid-first" data-delay="animation-delay-0.8s">
-										<figure class="effect-layla">
+									<div class="wow fadeIn agent-card" data-delay="animation-delay-0.8s">
+										<figure class="agent-effect">
 											<img class="img-responsive" alt="Agent Name" src="./images/people/agents-01.jpg" />
 											<figcaption>
 												<div class="caption-inner">
@@ -1230,19 +1129,19 @@
 															</a>
 														</div>
 													</div>
-													<ul class="list-inline">
+													<!-- <ul class="list-inline">
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Facebook"><i class="social-icons animated fa fa-facebook"></i></a></li>
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Twitter"><i class="social-icons animated fa fa-twitter"></i></a></li>
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Google plus"><i class="social-icons animated fa fa-google-plus"></i></a></li>
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="LinkedIn"><i class="social-icons animated fa fa-linkedin"></i></a></li>
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Pinterest"><i class="social-icons animated fa fa-pinterest"></i></a></li>
-													</ul>
+													</ul> -->
 												</div>
 											</figcaption>
 										</figure>
 									</div>
-									<div class="wow fadeIn grid grid-first" data-delay="animation-delay-0.8s">
-										<figure class="effect-layla">
+									<div class="wow fadeIn agent-card" data-delay="animation-delay-0.8s">
+										<figure class="agent-effect">
 											<img class="img-responsive" alt="Agent Name" src="./images/people/agents-08.jpg" />
 											<figcaption>
 												<div class="caption-inner">
@@ -1256,19 +1155,19 @@
 															</a>
 														</div>
 													</div>
-													<ul class="list-inline">
+													<!-- <ul class="list-inline">
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Facebook"><i class="social-icons animated fa fa-facebook"></i></a></li>
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Twitter"><i class="social-icons animated fa fa-twitter"></i></a></li>
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Google plus"><i class="social-icons animated fa fa-google-plus"></i></a></li>
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="LinkedIn"><i class="social-icons animated fa fa-linkedin"></i></a></li>
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Pinterest"><i class="social-icons animated fa fa-pinterest"></i></a></li>
-													</ul>
+													</ul> -->
 												</div>
 											</figcaption>
 										</figure>
 									</div>
-									<div class="wow fadeIn grid grid-first" data-delay="animation-delay-0.8s">
-										<figure class="effect-layla">
+									<div class="wow fadeIn agent-card" data-delay="animation-delay-0.8s">
+										<figure class="agent-effect">
 											<img class="img-responsive" alt="Agent Name" src="./images/people/agents-02.jpg" />
 											<figcaption>
 												<div class="caption-inner">
@@ -1282,13 +1181,13 @@
 															</a>
 														</div>
 													</div>
-													<ul class="list-inline">
+													<!-- <ul class="list-inline">
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Facebook"><i class="social-icons animated fa fa-facebook"></i></a></li>
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Twitter"><i class="social-icons animated fa fa-twitter"></i></a></li>
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Google plus"><i class="social-icons animated fa fa-google-plus"></i></a></li>
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="LinkedIn"><i class="social-icons animated fa fa-linkedin"></i></a></li>
 														<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Pinterest"><i class="social-icons animated fa fa-pinterest"></i></a></li>
-													</ul>
+													</ul> -->
 												</div>
 											</figcaption>
 										</figure>
@@ -1297,14 +1196,199 @@
 		
 							</div>
 						</div>
-		                <div class="wow fadeIn more-btn cl-effect-21">
+		                <div class="fadeIn effect-more more-btn" data-aos="fade-up" data-aos-duration="1000">
 							<a href="./agent.html" title="All Agents" class="hvr-icon-spin">Load More</a>
 						</div>
 		            </div>
 		        </div>
-		        <!-- /Property agents -->
+				<!-- /Property agents -->
+				
+				<!-- Blog posts -->
+		        <div id="blogPosts" class="blog-posts">
+					<div class="blog-wrapper">
+						<div class="container">
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="fond">
+										<span class="s1">blog </span>
+									</div>
+									<div class="featured-post">
+										<div class="thumbnail"><img class="left" src="https://cdn2.hubspot.net/hubfs/322787/Mychefcom/images/BLOG/Header-Blog/photo-culinaire-pexels.jpg"/></div>
+										<div class="right">
+											<h1>Why you need more Magnesium in your daily</h1>
+											<div class="author">
+												<img src="https://randomuser.me/api/portraits/men/95.jpg"/>
+												<span>Igor MARTY</span>
+											</div>
+											<div class="separator"></div>
+											<p>Magnesium is one of the six essential macro-minerals that is required by the body for energy production and synthesis of protein and enzymes. It contributes to the development of bones and most importantly....</p>
+										</div>
+										<div class="date-card">
+											<h4>12</h4>
+											<h5>JANUARY</h5>
+											<h6>2017</h6>
+										</div>
+										<div class="socials-card">
+											<div class="socials-top">
+												<a href="#">
+													<div class="icon-wrapper"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+												</a>
+												<a href="#">
+													<div class="icon-wrapper"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+												</a>
+											</div>
+											<div class="socials-bottom">
+												<a href="#">
+													<div class="icon-wrapper"><i class="fa fa-google-plus" aria-hidden="true"></i></div>
+												</a>
+												<a href="#">
+													<div class="icon-wrapper"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+												</a>
+												<a href="#">
+													<div class="icon-wrapper"><i class="fa fa-pinterest-p" aria-hidden="true"></i></div>
+												</a>
+											</div>
+										</div>
+										<!-- <ul>
+											<li>
+												<a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fa fa-google-plus fa-lg" aria-hidden="true"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fa fa-pinterest-p fa-lg" aria-hidden="true"></i></a>
+											</li>
+										</ul> -->
+										<a class="fab-btn" href="#">
+											<i class="fa fa-arrow-right fa-3x"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12 col-sm-12 col-md-6">
+									<div class="other-posts">
+										<div class="post-card">
+											<div class="top-info">
+												<img src="https://s3.amazonaws.com/uifaces/faces/twitter/mrvanz/128.jpg"/>
+												<div class="short-info">
+													<h1><a href="#">Francesco Moustache</a></h1>
+													<h3>Python Ninja</h3>
+												</div>
+											</div>
+										</div>
+										<div class="bottom-card">
+											<div class="date-card">
+												17 Nov 2017
+											</div>
+											<ul class="list-inline social-card">
+												<li>
+													<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+												</li>
+												<li>
+													<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+												</li>
+												<li>
+													<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+												</li>
+												<li>
+													<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+												</li>
+												<li>
+													<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+												</li>
+											</ul>
+										</div>										
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-6">
+									<div class="other-posts last">
+										<div class="post-card">
+											<div class="top-info">
+												<img src="https://s3.amazonaws.com/uifaces/faces/twitter/mrvanz/128.jpg"/>
+												<div class="short-info">
+													<h1><a href="#">Francesco Moustache</a></h1>
+													<h3>Python Ninja</h3>
+												</div>
+											</div>
+										</div>
+										<div class="bottom-card">
+											<div class="date-card">
+												17 Nov 2017
+											</div>
+											<ul class="list-inline social-card">
+												<li>
+													<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+												</li>
+												<li>
+													<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+												</li>
+												<li>
+													<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+												</li>
+												<li>
+													<a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+												</li>
+												<li>
+													<a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="effect-more more-btn" data-aos="fade-up" data-aos-duration="1000">
+								<a href="./blogs.html" title="All Blogs" class="hvr-icon-spin">Load More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Blog posts -->
 
-				<div class="container">
+				<!-- Counters -->
+				<div id="counters" class="counters">
+					<div class="container">
+						<div class="row">							
+							<div class="counter-items col-xs-12 col-sm-12 col-md-9">
+								<div class="col-xs-4 col-sm-4 col-md-4">
+									<p class="title">Properties</p>
+									<p class="content">
+										<span class="counter-icon"><i class="fa fa-home"></i></span>
+										<span class="counter">1525</span>
+									</p>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-4">
+									<p class="title">Agents</p>
+									<p class="content">
+										<span class="counter-icon"><i class="fa fa-male"></i></span>
+										<span class="counter">35</span>
+									</p>
+								</div>
+								<div class="col-xs-4 col-sm-4 col-md-4">
+									<p class="title">Clients</p>
+									<p class="content">
+										<span class="counter-icon"><i class="fa fa-users"></i></span>
+										<span class="counter">1050</span>
+									</p>
+								</div>
+							</div>
+							<div class="counter-info col-xs-12 col-sm-12 col-md-3">
+								<p class="brief">Count shows values</p>
+								<h4 class="title">Counters</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Counters & Newsletter -->
+
+				<!-- <div class="container">
 					<div class="row">
 						<div class="col-lg-12">
 							<div class="item-aos" data-aos="example-anim1">1</div>
@@ -1318,9 +1402,87 @@
 							<div class="item-aos" data-aos="example-anim3">9</div>				 
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 			<!-- ./Main content -->
+
+			<!-- Footer -->
+			<footer id="footer" class="footer">
+				<div class="container-fluid">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3">
+								<div class="copyright">
+									<a class="img-responsive" href="./index.html" title="My Realty" data-wow-delay=".5s"><img src="./images/logo-myrealty.png" alt="My Realty"></a>
+									<p class="">MyRealty is a Real Estate Agency since 2015.</p>
+								</div>
+							</div>
+							<div class="col-md-offset-1 col-md-5">
+								<div class="quick-contact" data-delay="animation-delay-0.4s">
+									<h3 class="heading wow fadeInUp">Quick contact</h3>
+									<div class="contact-form-quick">
+										<p>Lorem ipsum dolor sit amet, consectetur acinglit sed do eiusmod tempor</p>
+										<form class="form-horizontal" action=" " method="" id="contactForm">
+											<div class="form-group">														
+												<div class="col-md-12">
+													<div class="input-group">
+														<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+														<input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="col-md-12 inputGroupContainer">
+													<div class="input-group">
+														<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+														<textarea class="form-control" name="comment" placeholder="Message"></textarea>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="col-md-12">
+													<button type="submit" class="btn pull-right">Send <span class="glyphicon glyphicon-send"></span></button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3">
+								<div class="socials">
+									<h3 class="heading wow fadeInUp">Connect with phone</h3>
+									<p class="wow fadeInDown">171-320-4761</p>
+									<h3 class="heading wow fadeInUp">Street Address</h3>
+									<p class="wow fadeInDown">MyRealty, LLC, Madison Avenue, New York, NY 10016</p>
+									<ul class="list-inline wow flipInX">
+										<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Facebook"><i class="social-icons animated fa fa-facebook fa-lg"></i></a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Twitter"><i class="social-icons animated fa fa-twitter fa-lg"></i></a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Google plus"><i class="social-icons animated fa fa-google-plus fa-lg"></i></a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="auto" title="LinkedIn"><i class="social-icons animated fa fa-linkedin fa-lg"></i></a></li>
+										<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Pinterest"><i class="social-icons animated fa fa-pinterest fa-lg"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="title-long">
+									<div class="horizontal-border"></div>
+								</div>
+							</div>
+						</div>
+						<div class="row bottom">
+							<div class="col-xs-12 col-sm-6 col-md-6">
+								<p class="wow slideInUp text-left">&COPY; 2015 MyRealty Agency, All rights reserved.</p>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-6">
+								<p class="wow slideInUp text-right">Designed & Developed by: iTechRiders</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- /Footer -->
 
 			<!-- Modal - Account -->
 			<div class="modal fade modal-account" id="modalAccount" tabindex="-1" role="dialog" aria-labelledby="modalAccountLabel">
@@ -1407,15 +1569,17 @@
 		
 		<!-- Scripts -->
 		<!-- <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script> -->
-		<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+		<!-- <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script> -->
+		<!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
 		<!-- <script type="text/javascript" src="js/jquery-migrate-3.0.0.js"></script> -->
-		<!-- <script type="text/javascript" src="js/jquery-ui.min.js"></script> -->		
+		<!-- <script type="text/javascript" src="js/jquery-ui.min.js"></script> -->
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap-select.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap-slider.min.js"></script>
 		<script type="text/javascript" src="js/jquery.easy-autocomplete.min.js"></script>
-		<script type="text/javascript" src="js/aos.js"></script>
 		<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+		<script type="text/javascript" src="js/aos.js"></script>
 		<script type="text/javascript" src="js/theme.js"></script>
 	</body>
 </html>

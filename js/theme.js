@@ -2,7 +2,7 @@
 "use strict";
 
 	$( window ).load(function() {        
-        
+        // $('*').removeClass('aos-animate');
     });
 
     $( document ).ready(function($){
@@ -46,13 +46,17 @@
         owl.owlCarousel({
             navigation : true,
             // nav:true,
+            dotsContainer: '#homeSliderNavs',
             addClassActive: true,
-            transitionStyle : "fade",
+            // transitionStyle : "fade",
+            animateOut: 'slideOutDown',
+            animateIn: 'fadeIn',
+            smartSpeed: 1000,
             autoplay: false,
-    		autoplayTimeout: 5000,
+    		// autoplayTimeout: 5000,
     		loop: true,
-            slideSpeed : 500,
-            paginationSpeed : 500,
+            // slideSpeed : 500,
+            // paginationSpeed : 500,
             items : 1, 
             itemsDesktop : false,
             itemsDesktopSmall : false,
@@ -66,37 +70,6 @@
 		$('.owl-prev').click(function(){
 		    owl.trigger('prev.owl.carousel');
 		});
-        // add animate.css class(es) to the elements to be animated
-		function setAnimation ( _elem, _InOut ) {
-			// Store all animationend event name in a string.
-			// cf animate.css documentation
-			var animationEndEvent = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-
-			_elem.each ( function () {
-				var $elem = $(this);
-				var $animationType = 'animated ' + $elem.data( 'animation-' + _InOut );
-
-				$elem.addClass($animationType).one(animationEndEvent, function () {
-					$elem.removeClass($animationType); // remove animate.css Class at the end of the animations
-				});
-			});
-		}
-        // $('.owl-item.active .caption-wrapper h5, .owl-item.active .caption-wrapper h3, .owl-item.active .caption-wrapper .caption-footer, .owl-item.active .caption-wrapper .caption-details').addClass('animated');
-		// Fired before current slide change
-		owl.on('change.owl.carousel', function(event) {
-			var $currentItem = $('.owl-item', owl).eq(event.item.index);
-			var $elemsToanim = $currentItem.find("[data-animation-out]");
-			setAnimation ($elemsToanim, 'out');
-            // $('.owl-item.active .caption-wrapper h5, .owl-item.active .caption-wrapper h3, .owl-item.active .caption-wrapper .caption-footer, .owl-item.active .caption-wrapper .caption-details').removeClass('animated');
-		});
-		// Fired after current slide has been changed
-		owl.on('changed.owl.carousel', function(event) {
-			var $currentItem = $('.owl-item', owl).eq(event.item.index);
-			var $elemsToanim = $currentItem.find("[data-animation-in]");
-			setAnimation ($elemsToanim, 'in');
-		});
-        // var $firstAnimatingElems = owl.find('.owl-item.active').find("[data-animation-in]");
-        // owl.setAnimation($firstAnimatingElems, 'in');
 
         // function testAnim(x) {
         //     $('.modal .modal-dialog').attr('class', 'modal-dialog  ' + x + '  animated');
@@ -115,7 +88,7 @@
 		$('#navFeaturedProperties').owlCarousel({
 		    loop:true,
 		    margin:10,
-            items : 1, // THIS IS IMPORTAN
+            items : 1,
             dots:false,
             nav:true,
             navText: ["<i class='fa fa-lg fa-arrow-left' aria-hidden='true'></i>","<i class='fa fa-lg fa-arrow-right' aria-hidden='true'></i>"],
@@ -123,7 +96,7 @@
 		    responsive:{
 		        0:{
 		            items:1
-		        },
+                },
 		        768:{
 		            items:2
 		        },
@@ -138,18 +111,19 @@
             loop:true,
             margin:10,
             responsiveClass:true,
+            navText: ["<i class='fa fa-caret-left' aria-hidden='true'></i>","<i class='fa fa-caret-right' aria-hidden='true'></i>"],
             responsive:{
                 0:{
                     items:1,
                     nav:true
                 },
-                580:{
+                440:{
                     items:2,
-                    nav:false
+                    nav:true
                 },
-                767:{
+                650:{
                     items:3,
-                    nav:false
+                    nav:true
                 },
                 1000:{
                     items:4,
@@ -237,9 +211,10 @@
         };
         $("#listLocation").easyAutocomplete(optionsLocation);
         $("#listLocationSale").easyAutocomplete(optionsLocation);
+        $("#listLocationRent").easyAutocomplete(optionsLocation);
 
         // Range slider
-        $("#priceSlider, #areaSlider, #bedSlider, #bathSlider, #priceSliderSale, #areaSliderSale, #bedSliderSale, #bathSliderSale").slider();
+        $("#priceSlider, #areaSlider, #bedSlider, #bathSlider, #priceSliderSale, #areaSliderSale, #bedSliderSale, #bathSliderSale, #priceSliderRent, #areaSliderRent, #bedSliderRent, #bathSliderRent").slider();
         $("#priceSlider").on("slide", function(slideEvt) {
             $("#priceValue").text(slideEvt.value);
         });
@@ -264,6 +239,18 @@
         $("#bathSliderSale").on("slide", function(slideEvt) {
             $("#bathValueSale").text(slideEvt.value);
         });
+        $("#priceSliderRent").on("slide", function(slideEvt) {
+            $("#priceValueRent").text(slideEvt.value);
+        });
+        $("#areaSliderRent").on("slide", function(slideEvt) {
+            $("#areaValueRent").text(slideEvt.value);
+        });
+        $("#bedSliderRent").on("slide", function(slideEvt) {
+            $("#bedValueRent").text(slideEvt.value);
+        });
+        $("#bathSliderRent").on("slide", function(slideEvt) {
+            $("#bathValueRent").text(slideEvt.value);
+        });
         $('.btn-group > .slider').on("click", function() {
             var newvalue = $('.tooltip-inner').text();
             $("#priceValue").text(newvalue);
@@ -274,17 +261,32 @@
             $("#areaValueSale").text(newvalue);
             $("#bedValueSale").text(newvalue);
             $("#bathValueSale").text(newvalue);
+            $("#priceValueRent").text(newvalue);
+            $("#areaValueRent").text(newvalue);
+            $("#bedValueRent").text(newvalue);
+            $("#bathValueRent").text(newvalue);
         });
-        var rangeSliderWidth = $('.range-slider').width();
-        $('.slider.slider-horizontal').width(rangeSliderWidth);
-        console.log(rangeSliderWidth);
+        function rangeSliderWidth() {
+            var rangeSliderWidth = $('.range-slider').width();
+            $('.slider.slider-horizontal').width(rangeSliderWidth);
+            console.log(rangeSliderWidth);
+        }
+        rangeSliderWidth();
+        $(window).resize(function(){
+            rangeSliderWidth();
+        });
 
         // Change properties view on Homepage
-        $('#grid').css({'opacity' : '0.5', 'user-select' : 'none', 'cursor' : 'not-allowed'});
+        $('#grid').addClass('state-disable');
+        // $('#grid').css({'opacity' : '0.5', 'user-select' : 'none', 'cursor' : 'not-allowed'});
         $('#list').click(function(event){
             event.preventDefault();
-            $('#list').css({'opacity' : '0.5', 'user-select' : 'none', 'cursor' : 'not-allowed'});
-            $('#grid').css({'opacity' : '1', 'user-select' : 'initial', 'cursor' : 'pointer'});
+            $('#list').addClass('state-disable');
+            $('#list').removeClass('state-enable');
+            // $('#list').css({'opacity' : '0.5', 'user-select' : 'none', 'cursor' : 'not-allowed'});
+            $('#grid').addClass('state-enable');
+            $('#grid').removeClass('state-disable');
+            // $('#grid').css({'opacity' : '1', 'user-select' : 'initial', 'cursor' : 'pointer'});
             $('#latest-properties').addClass('list');
             $('#latest-properties .property-box').addClass('flipInX');
             $('#latest-properties .property-box').removeClass('flipInY');
@@ -292,8 +294,12 @@
         });
         $('#grid').click(function(event){
             event.preventDefault();
-            $('#grid').css({'opacity' : '0.5', 'user-select' : 'none', 'cursor' : 'not-allowed'});
-            $('#list').css({'opacity' : '1', 'user-select' : 'initial', 'cursor' : 'pointer'});
+            $('#grid').addClass('state-disable');
+            $('#grid').removeClass('state-enable');
+            // $('#grid').css({'opacity' : '0.5', 'user-select' : 'none', 'cursor' : 'not-allowed'});
+            $('#list').addClass('state-enable');
+            $('#list').removeClass('state-disable');
+            // $('#list').css({'opacity' : '1', 'user-select' : 'initial', 'cursor' : 'pointer'});            
             $('#latest-properties').removeClass('list');
             $('#latest-properties .property-box').removeClass('flipInX');
             $('#latest-properties').addClass('grid');
@@ -307,10 +313,10 @@
 
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) {
-            $('.header-wrapper .navbar-container').addClass('sticky');
+            $('.header-wrapper').addClass('sticky');
             console.log('> 100');
         } else {
-            $('.header-wrapper .navbar-container').removeClass('sticky');
+            $('.header-wrapper').removeClass('sticky');
             console.log('< 100');
         }
     });
@@ -320,7 +326,8 @@
     });
 
     AOS.init({
-        duration: 1200,
+        easing: 'ease-out-back',
+        offset: 150
     });
 
     function checkWindowSize() {

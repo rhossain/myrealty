@@ -7,6 +7,18 @@ https://themeforest.net/item/sheltek-real-estate-responsive-template/18911284?s_
 https://themeforest.net/item/property-expert-real-estate-html-template/11672142?s_rank=9
 
 
+$primary-color: #82aa09 | rgba(130, 170, 9, 1)
+$primary-color-light: #93c203 | rgba(147, 194, 3, 1)
+$primary-color-dark: #688708 | rgba(104, 135, 8, 1)
+$secondary-color: #ec971f | rgba(236, 151, 31, 1)
+$secondary-color-light: #f7bb66 | rgba(247, 187, 102, 1)
+$secondary-color-dark: #b7700c | rgba(183, 112, 12, 1)
+$theme-color-dark: #282828 | rgba(40, 40, 40, 1)
+$theme-color-gray: #d7d7d7 | rgba(215, 215, 215, 1)
+$theme-color-gray-light: #ededed | rgba(237, 237, 237, 1)
+$theme-color-gray-dark: #c4c4c4 | rgba(196, 196, 196, 1)
+
+
 Resources
 ---------
 https://codepen.io/andymerskin/pen/XNMWvQ [Parallex depth cards]
@@ -14,6 +26,7 @@ https://codepen.io/jorgesanes10/pen/QdMEXr [EC card hover]
 https://codepen.io/szpakoli/pen/xbJjdR [Blog card with hover effect]
 https://codepen.io/nodws/pen/ZpZjpQ [Blog post item]
 https://github.com/codrops/SegmentEffect/ [Segment effect]
+https://css-tricks.com/snippets/css/keyframe-animation-syntax/
 
 
 mail: esrat.lija@gmail.com
@@ -23,6 +36,13 @@ phone: 01881663628
 
 Plugins
 -------
+https://www.sitepoint.com/building-responsive-portfolio-uikit/
+https://getuikit.com/v2/docs/sortable.html
+https://codepen.io/SitePoint/pen/doyXqB
+
+https://michalsnik.github.io/aos/
+https://github.com/michalsnik/aos
+
 https://silviomoreto.github.io/bootstrap-select/
 https://github.com/seiyria/bootstrap-slider
 http://easyautocomplete.com
