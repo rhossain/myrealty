@@ -29,9 +29,12 @@
 		<link rel="stylesheet" href="css/owl.carousel.min.css">
 		<link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/css/uikit.min.css">
+		<link rel="stylesheet" href="css/uikit.css">
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/css/uikit.min.css"> -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/css/components/sticky.min.css">
 		
+		<link rel="stylesheet" href="css/utilities.css">
+		<link rel="stylesheet" href="css/global-classes.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/responsive.css">
 
@@ -51,38 +54,38 @@
 
 			<!-- Site Header -->
 			<header class="navbar navbar-fixed-top header-wrapper" data-aos="fade-down" data-aos-offset="200" data-aos-duration="1200" data-aos-once="true">
-				<div class="nav-outer-bg outer-left"></div>
+				<div class="p-absolute nav-outer-bg outer-left"></div>
 				<div class="navbar-container container">
-					<div class="navbar-top">						
+					<div class="d-inline-block w-100 navbar-top navbar-dark">						
 						<ul class="list-inline pull-left m-0 top-left">
 							<li class="mb-0">
-								<a href="">abc@xyz.com</a>
+								<a class="font-size-small" href="">abc@xyz.com</a>
 							</li>
 							<li class="mb-0 divider-hor">/</li>
 							<li class="mb-0">
 								<ul class="list-inline m-0">
 									<li class="mb-0">
-										<a href="">
+										<a class="font-size-small" href="">
 											<i class="fa fa-facebook" aria-hidden="true"></i>
 										</a>
 									</li>
 									<li class="mb-0">
-										<a href="">
+										<a class="font-size-small" href="">
 											<i class="fa fa-twitter" aria-hidden="true"></i>
 										</a>
 									</li>
 									<li class="mb-0">
-										<a href="">
+										<a class="font-size-small" href="">
 											<i class="fa fa-instagram" aria-hidden="true"></i>
 										</a>
 									</li>
 									<li class="mb-0">
-										<a href="">
+										<a class="font-size-small" href="">
 											<i class="fa fa-google-plus" aria-hidden="true"></i>
 										</a>
 									</li>
 									<li class="mb-0">
-										<a href="">
+										<a class="font-size-small" href="">
 											<i class="fa fa-pinterest-p" aria-hidden="true"></i>
 										</a>
 									</li>
@@ -91,11 +94,11 @@
 						</ul>
 						<ul class="list-inline pull-right m-0 top-right">
 							<li class="mb-0">
-								<a id="linkLogin" data-toggle="modal" data-target="#modalAccount" href="">Login</a>
+								<a class="font-size-small" id="linkLogin" data-toggle="modal" data-target="#modalAccount" href="">Login</a>
 							</li>
 							<li class="mb-0 divider-hor">/</li>
 							<li class="mb-0">
-								<a id="linkRegister" data-toggle="modal" data-target="#modalAccount" href="">Register</a>
+								<a class="font-size-small" id="linkRegister" data-toggle="modal" data-target="#modalAccount" href="">Register</a>
 							</li>
 						</ul>						
 					</div>
@@ -113,8 +116,8 @@
 							  <span></span>
 							</div>
 						</button>
-						<a class="navbar-brand" href="#">
-							<img src="images/logo-myrealty.png" alt="My Realty" />
+						<a class="h-auto navbar-brand" href="./index.html">
+							<img class="w-100" src="images/logo-myrealty.png" alt="My Realty" />
 						</a>
 					</div>
 					<div class="navbar-default side-collapse in"> 
@@ -140,155 +143,162 @@
 								</li>
 							</ul>
 							<ul class="nav navbar-nav nav-menu">
-								<li><a class="btn-effect-2" href="#Home" data-hover="Home">Home</a></li>
+								<li>
+									<a class="text-uppercase btn-effect-2" href="./index.html" data-hover="Home">Home</a>
+								</li>
 								<li class="dropdown">
-									<a href="#" class="dropdown-toggle btn-effect-2" data-toggle="dropdown" data-hover="Pages" role="button" aria-haspopup="true" aria-expanded="false">Pages <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+									<a href="#" class="text-uppercase dropdown-toggle btn-effect-2" data-toggle="dropdown" data-hover="Pages" role="button" aria-haspopup="true" aria-expanded="false">Pages <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
 									<ul class="dropdown-menu">
-										<li class="px-0"><a href="#">Action</a></li>
-										<li class="px-0"><a href="#">Another action</a></li>
-										<li class="px-0"><a href="#">Something else here</a></li>
-										<li><span role="separator" class="divider"></span></li>
-										<li class="px-0"><a href="#">Separated link</a></li>
-										<li><span role="separator" class="divider"></span></li>
-										<li class="px-0"><a href="#">One more separated link</a></li>
+										<li class="px-0"><a href="./index.html">Homepage</a></li>
+										<li><span role="separator" class="d-block divider"></span></li>
+										<li class="px-0"><a href="./properties.html">Properties</a></li>
+										<li class="px-0"><a href="./property-single.html">Property single</a></li>
+										<li><span role="separator" class="d-block divider"></span></li>
+										<li class="px-0"><a href="./agents.html">Agents</a></li>
+										<li class="px-0"><a href="./agent-single.html">Agents single</a></li>
+										<li><span role="separator" class="d-block divider"></span></li>
+										<li class="px-0"><a href="./blog.html">Blog</a></li>
+										<li class="px-0"><a href="./blog-single.html">Blog single</a></li>
+										<li><span role="separator" class="d-block divider"></span></li>
+										<li class="px-0"><a href="./contact.html">Contact</a></li>
 									</ul>
 								</li>
 								<li class="dropdown mega-dropdown">
-									<a href="#" class="dropdown-toggle btn-effect-2" data-hover="Listing" data-toggle="dropdown">Listing <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+									<a href="#" class="text-uppercase dropdown-toggle btn-effect-2" data-hover="Listing" data-toggle="dropdown">Listing <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
 									<ul class="dropdown-menu mega-dropdown-menu row">
 										<li class="col-sm-3 col-md-3">
-											<ul class="dd-nav-list">
-												<li><h5>Properties List</h5></li>
-												<li><a href="#">Properties Listing</a></li>
-												<li><a href="#">Single Property</a></li>
-												<li><a href="#">Search by Type</a></li>
-												<li><a href="#">Search by Location</a></li>
-												<li><a href="#">All Properties</a></li>
+											<ul class="m-0 p-0 list-unstyled dd-nav-list">
+												<li><h5 class="p-0-imp font-weight-700 text-uppercase">Properties List</h5></li>
+												<li><a class="d-block font-weight-normal" href="#">Properties Listing</a></li>
+												<li><a class="d-block font-weight-normal" href="#">Single Property</a></li>
+												<li><a class="d-block font-weight-normal" href="#">Search by Type</a></li>
+												<li><a class="d-block font-weight-normal" href="#">Search by Location</a></li>
+												<li><a class="d-block font-weight-normal" href="#">All Properties</a></li>
 											</ul>
 										</li>
 										<li class="col-md-9">
-											<h5>Featured Properties</h5>
+											<h5 class="font-weight-700 text-uppercase">Featured Properties</h5>
 											<div id="navFeaturedProperties" class="owl-carousel owl-theme nav-featured-properties">
 												<div class="item">
-													<a href="#" class="property-item-container">
-														<div class="property-item-badges">
-															<span class="featured">Featured</span>
-															<span>For Rent</span>
+													<a href="./property-single.html" class="p-relative d-block w-100 h-100 property-item-container">
+														<div class="p-absolute d-block w-100 p-0 property-item-badges">
+															<span class="p-relative pull-left m-0 text-center featured">Featured</span>
+															<span class="p-absolute pull-right">For Rent</span>
 														</div>
-														<div class="property-item-content">
-															<h4>Properties 01</h4>
-															<div class="price">
+														<div class="p-absolute w-100 property-item-content">
+															<h4 class="font-weight-500">Properties 01</h4>
+															<div class="font-weight-700 price">
 																$18,599
 															</div>
 														</div>
-														<img src="images/properties/properties-01.jpg" alt="The Last of us">
+														<img class="w-100" src="images/properties/properties-01.jpg" alt="The Last of us">
 													</a>
 												</div>
 											    <div class="item">
-													<a href="#" class="property-item-container">
-														<div class="property-item-badges">
-															<!-- <span class="featured">Featured</span> -->
-															<span>For Rent</span>
+													<a href="./property-single.html" class="p-relative d-block w-100 h-100 property-item-container">
+														<div class="p-absolute d-block w-100 p-0 property-item-badges">
+															<!-- <span class="p-relative pull-left m-0 text-center featured">Featured</span> -->
+															<span class="p-absolute pull-right">For Rent</span>
 														</div>
-														<div class="property-item-content">
-															<h4>Properties 02</h4>
-															<div class="price">
+														<div class="p-absolute w-100 property-item-content">
+															<h4 class="font-weight-500">Properties 02</h4>
+															<div class="font-weight-700 price">
 																$18,599
 															</div>
 														</div>
-														<img src="images/properties/properties-02.jpg" alt="The Last of us">
+														<img class="w-100" src="images/properties/properties-02.jpg" alt="The Last of us">
 													</a>
 												</div>
 												<div class="item">
-													<a href="#" class="property-item-container">
-														<div class="property-item-badges">
-															<span class="featured">Featured</span>
-															<span>For Rent</span>
+													<a href="./property-single.html" class="p-relative d-block w-100 h-100 property-item-container">
+														<div class="p-absolute d-block w-100 p-0 property-item-badges">
+															<span class="p-relative pull-left m-0 text-center featured">Featured</span>
+															<span class="p-absolute pull-right">For Rent</span>
 														</div>
-														<div class="property-item-content">
-															<h4>Properties 03</h4>
-															<div class="price">
+														<div class="p-absolute w-100 property-item-content">
+															<h4 class="font-weight-500">Properties 03</h4>
+															<div class="font-weight-700 price">
 																$18,599
 															</div>
 														</div>
-														<img src="images/properties/properties-03.jpg" alt="The Last of us">
+														<img class="w-100" src="images/properties/properties-03.jpg" alt="The Last of us">
 													</a>
 												</div>
 												<div class="item">
-													<a href="#" class="property-item-container">
-														<div class="property-item-badges">
-															<span class="featured">Featured</span>
-															<span>For Rent</span>
+													<a href="./property-single.html" class="p-relative d-block w-100 h-100 property-item-container">
+														<div class="p-absolute d-block w-100 p-0 property-item-badges">
+															<span class="p-relative pull-left m-0 text-center featured">Featured</span>
+															<span class="p-absolute pull-right">For Rent</span>
 														</div>
-														<div class="property-item-content">
-															<h4>Properties 04</h4>
-															<div class="price">
+														<div class="p-absolute w-100 property-item-content">
+															<h4 class="font-weight-500">Properties 04</h4>
+															<div class="font-weight-700 price">
 																$18,599
 															</div>
 														</div>
-														<img src="images/properties/properties-04.jpg" alt="The Last of us">
+														<img class="w-100" src="images/properties/properties-04.jpg" alt="The Last of us">
 													</a>
 												</div>
 												<div class="item">
-													<a href="#" class="property-item-container">
-														<div class="property-item-badges">
-															<span class="featured">Featured</span>
-															<span>For Rent</span>
+													<a href="./property-single.html" class="p-relative d-block w-100 h-100 property-item-container">
+														<div class="p-absolute d-block w-100 p-0 property-item-badges">
+															<span class="p-relative pull-left m-0 text-center featured">Featured</span>
+															<span class="p-absolute pull-right">For Rent</span>
 														</div>
-														<div class="property-item-content">
-															<h4>Properties 05</h4>
-															<div class="price">
+														<div class="p-absolute w-100 property-item-content">
+															<h4 class="font-weight-500">Properties 05</h4>
+															<div class="font-weight-700 price">
 																$18,599
 															</div>
 														</div>
-														<img src="images/properties/properties-05.jpg" alt="The Last of us">
+														<img class="w-100" src="images/properties/properties-05.jpg" alt="The Last of us">
 													</a>
 												</div>
 												<div class="item">
-													<a href="#" class="property-item-container">
-														<div class="property-item-badges">
-															<span class="featured">Featured</span>
-															<span>For Rent</span>
+													<a href="./property-single.html" class="p-relative d-block w-100 h-100 property-item-container">
+														<div class="p-absolute d-block w-100 p-0 property-item-badges">
+															<span class="p-relative pull-left m-0 text-center featured">Featured</span>
+															<span class="p-absolute pull-right">For Rent</span>
 														</div>
-														<div class="property-item-content">
-															<h4>Properties 06</h4>
-															<div class="price">
+														<div class="p-absolute w-100 property-item-content">
+															<h4 class="font-weight-500">Properties 06</h4>
+															<div class="font-weight-700 price">
 																$18,599
 															</div>
 														</div>
-														<img src="images/properties/properties-06.jpg" alt="The Last of us">
+														<img class="w-100" src="images/properties/properties-06.jpg" alt="The Last of us">
 													</a>
 												</div>
 											</div>
 										</li>
 									</ul>
 								</li>
-								<li><a class="btn-effect-2" href="http://placesforlove.com" data-hover="Blog">Blog</a></li>
-								<li><a class="btn-effect-2" href="http://placesforlove.com" data-hover="Contact">Contact</a></li>
+								<li><a class="text-uppercase btn-effect-2" href="./blog.html" data-hover="Blog">Blog</a></li>
+								<li><a class="text-uppercase btn-effect-2" href="#" data-hover="Contact">Contact</a></li>
 							</ul>
-							<ul class="nav navbar-nav navbar-right nav-contact">
-								<li class="dropdown">
+							<ul class="nav navbar-nav navbar-right p-relative mr-0 nav-contact">
+								<li class="w-100 mb-0 dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-plus fa-lg" aria-hidden="true"></i></a>
 									<ul class="dropdown-menu">
-										<li>
+										<li class="w-100 m-0">
 											<a href="#Home"><i class="fa fa-volume-control-phone" aria-hidden="true"></i> (0)-123-456-789</a>
 										</li>
-										<li>
+										<li class="w-100 m-0">
 											<a href="#users"><i class="fa fa-map-marker" aria-hidden="true"></i> Bayone, New Jersy</a>
 										</li>
 									</ul>
 								</li>
-								<li>
+								<li class="w-100 mb-0">
 									<a href="#Home"><i class="fa fa-volume-control-phone" aria-hidden="true"></i> (0)-123-456-789</a>
 								</li>
-								<li>
+								<li class="w-100 mb-0">
 									<a href="#users"><i class="fa fa-map-marker" aria-hidden="true"></i> Bayone, New Jersy</a>
 								</li>
 							</ul>
 						</nav>
 					</div>
 				</div>
-				<div class="nav-outer-bg outer-right"></div>
+				<div class="p-absolute nav-outer-bg outer-right"></div>
 			</header>
 			<!-- ./Site Header -->
 
@@ -342,24 +352,19 @@
 									</div>
 								</div>
 							</div>
-							<div class="row">
+							<div class="row page-featured-bottom">
 								<div class="col-xs-6">
 									<div class="btn-group btn-breadcrumb">
 										<a href="#" class="btn btn-default"><i class="glyphicon glyphicon-home"></i></a>
 										<a href="#" class="btn btn-default">Properties</a>
-										<!-- <a href="#" class="btn btn-default">Breadcrumbs</a>
-										<a href="#" class="btn btn-default">Default</a> -->
 									</div>
-									<!-- <ul class="breadcrumb">
-										<li><a href="#">Home</a></li>
-										<li><a href="#">Pictures</a></li>
-										<li><a href="#">Summer 15</a></li>
-										<li>Italy</li>
-									</ul> -->
 								</div>
 								<div class="col-xs-6">
-									<div class="btn-all text-right">
-										<a href="./property.html" title="All Properties" class="hvr-icon-spin">All Agents</a>
+									<div class="text-right">
+										<a href="#" data-toggle="modal" data-target="#modalSearch" title="Search properties" class="btn btn-search">
+											Search properties <i class="fa fa-search" aria-hidden="true"></i> 
+											<div class="rotating"></div>
+										</a>
 									</div>
 								</div>
 							</div>
@@ -369,53 +374,54 @@
 				<!-- ./Page Featured -->
 
 				<!-- Latest Properties -->
-		        <div id="property-home" class="properties-grid">
+		        <div id="property-home" class="properties-grid property-page">
 					<div class="container">
-						<!-- <nav data-uk-sticky id="items" class="uk-navbar">
-							<label class="uk-navbar-content uk-hidden-small">Filter:</label>
-							<ul class="uk-navbar-nav uk-hidden-small">
-								<li data-uk-filter="" class="uk-active"><a href="#">ALL</a></li>
-								<li data-uk-filter="rent"><a href="#">Rent</a></li>
-								<li data-uk-filter="sell"><a href="#">Sell</a></li>
-							</ul>
-
-							<label class="uk-navbar-content uk-hidden-small">Sort:</label>
-							<ul class="uk-navbar-nav uk-hidden-small">
-								<li data-uk-sort="numbers"><a href="#">NUMBERS <i class="uk-icon-sort-numeric-asc"></i></a></li>
-								<li data-uk-sort="numbers:desc"><a href="#">NUMBERS <i class="uk-icon-sort-numeric-desc"></i></a></li>
-								<li data-uk-sort="letters"><a href="#">LETTERS <i class="uk-icon-sort-alpha-asc"></i></a></li>
-								<li data-uk-sort="letters:desc"><a href="#">LETTERS <i class="uk-icon-sort-alpha-desc"></i></a></li>
-							</ul>
-
-							<div data-uk-dropdown="{mode:'click'}">
-								<a href="#" class="uk-navbar-toggle uk-visible-small"></a>
-								<div class="uk-dropdown uk-dropdown-navbar">
-									<ul class="uk-nav uk-nav-navbar">
-										<li class="uk-nav-header">Filter:</li>
-										<li data-uk-filter="" class="uk-active"><a href="#">ALL</a></li>
-										<li data-uk-filter="rent"><a href="#">Rent</a></li>
-										<li data-uk-filter="sell"><a href="#">Sell</a></li>
-										<li class="uk-nav-divider"></li>
+						<div id="items" class="p-relative p-0 controls">
+							<nav class="d-inline-block mb-0 navbar">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#filterNav">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span> 
+								</button>
+								<div class="collapse p-0 navbar-collapse" id="filterNav">
+									<ul class="nav mb-0 navbar-nav list-unstyled list-inline">
+										<li class="mb-0">
+											<button class="p-relative d-inline-block font-weight-300 text-uppercase uk-active" data-uk-filter="">All</button>
+										</li>
+										<li class="mb-0">
+											<button class="p-relative d-inline-block font-weight-300 text-uppercase" data-uk-filter="rent">Rent</button>
+										</li>
+										<li class="mb-0">
+											<button class="p-relative d-inline-block font-weight-300 text-uppercase" data-uk-filter="sell">Sell</button>
+										</li>
+										<li class="mb-0">
+											<button class="p-relative d-inline-block font-weight-300 text-uppercase" data-uk-sort="numbers">
+												<i class="fa fa-sort-numeric-asc" aria-hidden="true"></i>
+												<span>1 to 9</span>
+											</button>
+										</li>
+										<li class="mb-0">
+											<button class="p-relative d-inline-block font-weight-300 text-uppercase" data-uk-sort="numbers:desc">
+												<i class="fa fa-sort-numeric-desc" aria-hidden="true"></i>
+												<span>9 to 1</span>
+											</button>
+										</li>
+										<li class="mb-0">
+											<button class="p-relative d-inline-block font-weight-300 text-uppercase" data-uk-sort="letters">
+												<i class="fa fa-sort-alpha-asc" aria-hidden="true"></i>
+												<span>A to Z</span>
+											</button>
+										</li>
+										<li class="mb-0">
+											<button class="p-relative d-inline-block font-weight-300 text-uppercase" data-uk-sort="letters:desc">
+												<i class="fa fa-sort-alpha-desc" aria-hidden="true"></i>
+												<span>Z to A</span>
+											</button>
+										</li>
 									</ul>
-									<ul class="uk-nav uk-nav-navbar">
-										<li class="uk-nav-header">Sort:</li>
-										<li data-uk-sort="numbers"><a href="#">NUMBERS <i class="uk-icon-sort-numeric-asc"></i></a></li>
-										<li data-uk-sort="numbers:desc"><a href="#">NUMBERS <i class="uk-icon-sort-numeric-desc"></i></a></li>
-										<li data-uk-sort="letters"><a href="#">LETTERS <i class="uk-icon-sort-alpha-asc"></i></a></li>
-										<li data-uk-sort="letters:desc"><a href="#">LETTERS <i class="uk-icon-sort-alpha-desc"></i></a></li>
-									</ul>                 
 								</div>
-							</div>        
-						</nav> -->
-
-						<div id="items" class="controls uk-nav uk-nav-navbar">
-							<button class="uk-active" data-uk-filter="">All</button>
-							<button class="" data-uk-filter="rent">Rent</button>
-							<button class="" data-uk-filter="sell">Sell</button>
-							<button class="" data-uk-sort="numbers"><i class="fa fa-sort-numeric-asc" aria-hidden="true"></i></button>
-							<button class="" data-uk-sort="numbers:desc"><i class="fa fa-sort-numeric-desc" aria-hidden="true"></i></button>
-							<button class="" data-uk-sort="letters"><i class="fa fa-sort-alpha-asc" aria-hidden="true"></i></button>
-							<button class="" data-uk-sort="letters:desc"><i class="fa fa-sort-alpha-desc" aria-hidden="true"></i></button>
+							</nav>
+							
 							<div class="btn-group">
 								<a href="#" title="" id="list" class="list btn btn-default">
 									<span data-toggle="tooltip" data-placement="auto" title="List" class="glyphicon glyphicon-th-list"></span>
@@ -771,14 +777,18 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-3">
-								<div class="copyright">
-									<a class="img-responsive" href="./index.html" title="My Realty" data-wow-delay=".5s"><img src="./images/logo-myrealty.png" alt="My Realty"></a>
+								<div class="text-center copyright">
+									<a class="img-responsive" href="./index.html" title="My Realty" data-wow-delay=".5s">
+										<img src="./images/logo-myrealty.png" alt="My Realty">
+									</a>
 									<p class="">MyRealty is a Real Estate Agency since 2015.</p>
 								</div>
 							</div>
 							<div class="col-md-offset-1 col-md-5">
 								<div class="quick-contact" data-delay="animation-delay-0.4s">
-									<h3 class="heading wow fadeInUp">Quick contact</h3>
+									<div class="title-short">
+										<h3 class="heading">Quick contact</h3>
+									</div>
 									<div class="contact-form-quick">
 										<p>Lorem ipsum dolor sit amet, consectetur acinglit sed do eiusmod tempor</p>
 										<form class="form-horizontal" action=" " method="" id="contactForm">
@@ -809,11 +819,15 @@
 							</div>
 							<div class="col-md-3">
 								<div class="socials">
-									<h3 class="heading wow fadeInUp">Connect with phone</h3>
-									<p class="wow fadeInDown">171-320-4761</p>
-									<h3 class="heading wow fadeInUp">Street Address</h3>
-									<p class="wow fadeInDown">MyRealty, LLC, Madison Avenue, New York, NY 10016</p>
-									<ul class="list-inline wow flipInX">
+									<div class="title-short">
+										<h3 class="heading">Connect with phone</h3>
+									</div>
+									<p class="">171-320-4761</p>
+									<div class="title-short">
+										<h3 class="heading">Street Address</h3>
+									</div>
+									<p class="">MyRealty, LLC, Madison Avenue, New York, NY 10016</p>
+									<ul class="list-inline">
 										<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Facebook"><i class="social-icons animated fa fa-facebook fa-lg"></i></a></li>
 										<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Twitter"><i class="social-icons animated fa fa-twitter fa-lg"></i></a></li>
 										<li><a href="#" data-toggle="tooltip" data-placement="auto" title="Google plus"><i class="social-icons animated fa fa-google-plus fa-lg"></i></a></li>
@@ -825,17 +839,17 @@
 						</div>
 						<div class="row">
 							<div class="col-md-12">
-								<div class="title-long">
-									<div class="horizontal-border"></div>
+								<div class="p-relative title-long">
+									<div class="p-absolute w-100 horizontal-border"></div>
 								</div>
 							</div>
 						</div>
-						<div class="row bottom">
+						<div class="row text-uppercase bottom">
 							<div class="col-xs-12 col-sm-6 col-md-6">
-								<p class="wow slideInUp text-left">&COPY; 2015 MyRealty Agency, All rights reserved.</p>
+								<p class="text-left">&COPY; 2015 MyRealty Agency, All rights reserved.</p>
 							</div>
 							<div class="col-xs-12 col-sm-6 col-md-6">
-								<p class="wow slideInUp text-right">Designed & Developed by: iTechRiders</p>
+								<p class="text-right">Designed & Developed by: iTechRiders</p>
 							</div>
 						</div>
 					</div>
@@ -843,8 +857,119 @@
 			</footer>
 			<!-- /Footer -->
 
+			<!-- Modal - Search -->
+			<div id="modalSearch" class="modal fade modal-green modal-search" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Search properties</h4>
+						</div>
+						<div class="modal-body">
+							<form class="form-advance-search">
+								<div class="row">
+									<div class="col-xs-12">
+										<select title="Status" class="selectpicker search-items">
+											<option>Any Status</option>
+											<option>For Sale</option>
+											<option>For Rent</option>
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12">
+										<input type="text" id="listLocation" class="search-items w-100" placeholder="Enter address e.g. street, city and state or zip" value="">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12">
+										<select title="Any Type" class="selectpicker search-items">
+											<option>Mustard</option>
+											<option>Ketchup</option>
+											<option>Relish</option>
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12">
+										<select title="Location" class="selectpicker search-items" multiple data-actions-box="true">
+											<option>Mustard</option>
+											<option>Ketchup</option>
+											<option>Relish</option>
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12 range-slider">
+										<div class="button-slider search-items">
+											<div class="btn-group">
+												<div class="btn btn-text p-0-imp brdr-0">Price:</div>
+												<div class="pull-right value-label">$<span id="priceValue">25</span></div>
+												<div class="btn btn-default p-0-imp brdr-0 range-input">
+													<input id="priceSlider" type="text" data-slider-min="1" data-slider-max="50" data-slider-step="1" data-slider-value="25" data-slider-handle="triangle"/>
+												</div>											
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12 range-slider">
+										<div class="button-slider search-items">
+											<div class="btn-group">
+												<div class="btn btn-text p-0-imp brdr-0">Area:</div>
+												<div class="pull-right value-label"><span id="areaValue">1700</span> sq ft</div>
+												<div class="btn btn-default p-0-imp brdr-0 range-input">
+													<input id="areaSlider" type="text" data-slider-min="500" data-slider-max="3000" data-slider-step="1" data-slider-value="1700" data-slider-handle="triangle"/>
+												</div>											
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12 range-slider">
+										<div class="button-slider search-items">
+											<div class="btn-group">
+												<div class="btn btn-text p-0-imp brdr-0">Bed:</div>
+												<div class="pull-right value-label"><span id="bedValue">5</span></div>
+												<div class="btn btn-default p-0-imp brdr-0 range-input">
+													<input id="bedSlider" type="text" data-slider-min="1" data-slider-max="10" data-slider-step="1" data-slider-value="5" data-slider-handle="triangle"/>
+												</div>											
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12 range-slider">
+										<div class="button-slider search-items">
+											<div class="btn-group">
+												<div class="btn btn-text p-0-imp brdr-0">Bath:</div>
+												<div class="pull-right value-label"><span id="bathValue">5</span></div>
+												<div class="btn btn-default p-0-imp brdr-0 range-input">
+													<input id="bathSlider" type="text" data-slider-min="1" data-slider-max="10" data-slider-step="1" data-slider-value="5" data-slider-handle="triangle"/>
+												</div>											
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row search-button-wrapper">
+									<div class="col-xs-12">
+										<button type="submit" class="pull-right btn-main">
+											<span>Search</span>
+											<div class="btn-triangle-left"></div>
+											<div class="btn-triangle-right"></div>
+											<div class="btn-icon"><i class="fa fa-search" aria-hidden="true"></i></div>
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /Modal - Search -->
+
 			<!-- Modal - Account -->
-			<div class="modal fade modal-account" id="modalAccount" tabindex="-1" role="dialog" aria-labelledby="modalAccountLabel">
+			<div class="modal fade modal-green modal-account" id="modalAccount" tabindex="-1" role="dialog" aria-labelledby="modalAccountLabel">
 				<div class="modal-dialog" role="document">
 					<div class="modal-content">						
 						<div class="modal-header">
@@ -867,11 +992,11 @@
 								<form>
 									<div class="input-group">
 	                                    <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-	                                    <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+	                                    <input type="text" class="form-control" name="username" value="" placeholder="username or email">
 	                                </div>
 	                                <div class="input-group">
 	                                    <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-	                                    <input id="login-password" type="password" class="form-control" name="password" value="" placeholder="password">
+	                                    <input type="password" class="form-control" name="password" value="" placeholder="password">
 	                                </div>
 	                                <input class="btn btn-default btn-login" type="button" value="Login">
 	                                <div class="input-group pull-left">
@@ -890,11 +1015,11 @@
 								<form>
 									<div class="input-group">
 	                                    <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
-	                                    <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+	                                    <input type="text" class="form-control" name="username" value="" placeholder="username or email">
 	                                </div>
 	                                <div class="input-group">
 	                                    <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
-	                                    <input id="login-password" type="password" class="form-control" name="password" value="" placeholder="password">
+	                                    <input type="password" class="form-control" name="password" value="" placeholder="password">
 	                                </div>
 	                                <div class="input-group">
 	                                    <span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
@@ -926,24 +1051,36 @@
 
 		</div>
 		
-		<!-- Scripts -->
-		<!-- <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script> -->
-		<!-- <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script> -->
-		<!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
-		<!-- <script type="text/javascript" src="js/jquery-migrate-3.0.0.js"></script> -->
-		<!-- <script type="text/javascript" src="js/jquery-ui.min.js"></script> -->
+		<!-- jQuery v1.11.0 -->
 		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+		
+		<!-- Bootstrap v3.7 -->
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+		<!-- Bootstrap Selectbox style -->
 		<script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+
+		<!-- Bootstrap Range slider -->
 		<script type="text/javascript" src="js/bootstrap-slider.min.js"></script>
+
+		<!-- Autocomplete with suggestion -->
 		<script type="text/javascript" src="js/jquery.easy-autocomplete.min.js"></script>
+
+		<!-- OWL Carousel -->
 		<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+
+		<!-- AOS animation -->
 		<script type="text/javascript" src="js/aos.js"></script>
 
+		<!-- Truncate multiple lines of text -->
+		<script type="text/javascript" src="js/jQuery.succinct.min.js"></script>
+
+		<!-- UI Kit to filter properties -->
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/js/uikit.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/js/components/grid.min.js"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/js/components/sticky.min.js"></script>
 
+		<!-- Main & custom JavaScripts -->
 		<script type="text/javascript" src="js/theme.js"></script>
 	</body>
 </html>

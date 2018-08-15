@@ -58,7 +58,7 @@ p {
 	font-size: 14px;
 	color: #888;
 	letter-spacing: 1px;
-	line-height: 27px;
+	line-height: 25px;
 }
 p img { 
 	margin: 0; 
@@ -133,7 +133,7 @@ a, a:visited {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
 	/* font-size: 15px; */
-	color: #111;
+	/* color: #111; */
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;

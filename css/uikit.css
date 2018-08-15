@@ -175,9 +175,9 @@ video {
 /*
  * Remove border when inside `a` element in IE 8/9/10.
  */
-img {
+/* img {
   border: 0;
-}
+} */
 /*
  * Correct overflow not hidden in IE 9/10/11.
  */
@@ -189,14 +189,14 @@ svg:not(:root) {
 /*
  * Reset margin
  */
-blockquote,
+/* blockquote,
 figure {
   margin: 0;
-}
+} */
 /*
  * Margins
  */
-p,
+/* p,
 ul,
 ol,
 dl,
@@ -217,10 +217,10 @@ figure {
 * + fieldset,
 * + figure {
   margin-top: 15px;
-}
+} */
 /* Headings
  ========================================================================== */
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -231,121 +231,112 @@ h6 {
   font-weight: normal;
   color: #444;
   text-transform: none;
-}
+} */
 /*
  * Margins
  */
-* + h1,
+/* * + h1,
 * + h2,
 * + h3,
 * + h4,
 * + h5,
 * + h6 {
   margin-top: 25px;
-}
+} */
 /*
  * Sizes
  */
-h1,
 .uk-h1 {
   font-size: 36px;
   line-height: 42px;
 }
-h2,
 .uk-h2 {
   font-size: 24px;
   line-height: 30px;
 }
-h3,
 .uk-h3 {
   font-size: 18px;
   line-height: 24px;
 }
-h4,
 .uk-h4 {
   font-size: 16px;
   line-height: 22px;
 }
-h5,
 .uk-h5 {
   font-size: 14px;
   line-height: 20px;
 }
-h6,
 .uk-h6 {
   font-size: 12px;
   line-height: 18px;
 }
 /* Lists
  ========================================================================== */
-ul,
+/* ul,
 ol {
   padding-left: 30px;
-}
+} */
 /*
  * Reset margin for nested lists
  */
-ul > li > ul,
+/* ul > li > ul,
 ul > li > ol,
 ol > li > ol,
 ol > li > ul {
   margin: 0;
-}
+} */
 /* Description lists
  ========================================================================== */
-dt {
+/* dt {
   font-weight: bold;
 }
 dd {
   margin-left: 0;
-}
+} */
 /* Horizontal rules
  ========================================================================== */
 /*
  * 1. Address differences between Firefox and other browsers.
  * 2. Style
  */
-hr {
-  /* 1 */
+/* hr {
   box-sizing: content-box;
   height: 0;
-  /* 2 */
   margin: 15px 0;
   border: 0;
   border-top: 1px solid #ddd;
-}
+} */
 /* Address
  ========================================================================== */
-address {
+/* address {
   font-style: normal;
-}
+} */
 /* Blockquotes
  ========================================================================== */
-blockquote {
+/* blockquote {
   padding-left: 15px;
   border-left: 5px solid #ddd;
   font-size: 16px;
   line-height: 22px;
   font-style: italic;
-}
+} */
 /* Preformatted text
  ========================================================================== */
 /*
  * 1. Contain overflow in all browsers.
  */
-pre {
+/* pre {
   padding: 10px;
   background: #f5f5f5;
   font: 12px / 18px Consolas, monospace, serif;
   color: #444;
   -moz-tab-size: 4;
   tab-size: 4;
-  /* 1 */
   overflow: auto;
-}
+} */
 /* Selection pseudo-element
  ========================================================================== */
-::-moz-selection {
+/* ::-moz-selection {
   background: #39f;
   color: #fff;
   text-shadow: none;
@@ -354,7 +345,7 @@ pre {
   background: #39f;
   color: #fff;
   text-shadow: none;
-}
+} */
 /* HTML5 elements
  ========================================================================== */
 /*
@@ -362,7 +353,7 @@ pre {
  * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
-article,
+/* article,
 aside,
 details,
 figcaption,
@@ -374,32 +365,32 @@ nav,
 section,
 summary {
   display: block;
-}
+} */
 /*
  * Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
-progress {
+/* progress {
   vertical-align: baseline;
-}
+} */
 /*
  * Prevent displaying `audio` without controls in Chrome, Safari and Opera
  */
-audio:not([controls]) {
+/* audio:not([controls]) {
   display: none;
-}
+} */
 /*
  * Address `[hidden]` styling not present in IE 8/9/10.
  * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
  */
-[hidden],
+/* [hidden],
 template {
   display: none;
-}
+} */
 /* Iframe
  ========================================================================== */
-iframe {
+/* iframe {
   border: 0;
-}
+} */
 /* Fix viewport for IE10 snap mode
  ========================================================================== */
 @media screen and (max-width: 400px) {

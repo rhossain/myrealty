@@ -174,17 +174,14 @@
             size: 4
         });
 
-        // $( "#slider-range" ).slider({
-        //   range: true,
-        //   min: 0,
-        //   max: 500,
-        //   values: [ 75, 300 ],
-        //   slide: function( event, ui ) {
-        //     $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-        //   }
-        // });
-        // $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-        //   " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox({
+                alwaysShowClose: true,
+                leftArrow: '<span><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>',
+                rightArrow: '<span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>'
+            });
+        });
 
         // Autocomplete for search field
         var optionsLocation = {
@@ -306,6 +303,41 @@
             $('#latest-properties .property-box').addClass('flipInY');
         });
 
+        // Rating with star
+        $('.rating input').change(function () {
+            var $radio = $(this);
+            $('.rating .selected').removeClass('selected');
+            $radio.closest('label').addClass('selected');
+        });
+
+        $('#allReviews').on('click', function(event) {
+            event.preventDefault();
+            console.log('hide modal');
+            $('.review-list').toggleClass('show-review hide-review');
+        });
+
+        //Auto-clamp based on a fixed element height
+        // var myParagraph = document.getElementsByClassName("post-paragraph");
+        // $clamp(myParagraph, {clamp: 2});
+        $('.post-paragraph').succinct({
+            // omission: '&rarr;',
+            size: 200
+        });
+        $('.recent-blogs h4').succinct({
+            // omission: '&rarr;',
+            size: 50
+        });
+
+        // Accordion icon change on toggle
+        function toggleChevron(e) {
+            $(e.target)
+                .prev('.panel-heading')
+                .find("i.indicator")
+                .toggleClass('fa-minus-circle fa-plus-circle');
+        }
+        $('#accordion').on('hidden.bs.collapse', toggleChevron);
+        $('#accordion').on('shown.bs.collapse', toggleChevron);
+
         checkWindowSize();
         $(window).resize(checkWindowSize);
         // $(window).resize($("#priceSlider, #areaSlider, #bedSlider, #bathSlider").slider());
@@ -327,7 +359,12 @@
 
     AOS.init({
         easing: 'ease-out-back',
-        offset: 150
+        offset: 150,
+        once: true,
+        disable: function () {
+            var someText = $("body").hasClass("no-animation");
+            return someText;
+        }
     });
 
     function checkWindowSize() {
