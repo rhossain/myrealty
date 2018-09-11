@@ -1182,7 +1182,7 @@ a:hover, a:focus, a:active {
 .search-form-wrapper .button-slider .btn-default:hover,
 .search-form-wrapper .button-slider .btn-default:active,
 .search-form-wrapper .button-slider .btn-default:focus {
-	background-color: transparent;
+	background-color: transparent; 
 }
 
 /* 
