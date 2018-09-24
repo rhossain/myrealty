@@ -1214,9 +1214,9 @@ a.btn-search:focus i {
 .paginate .pagination>.active>span, 
 .paginate .pagination>.active>span:focus, 
 .paginate .pagination>.active>span:hover {
-	background-color: #688708;
+	background-color: rgba(99, 178, 44, 0.6);
 	color: #fff;
-    border-color: #688708;
+    border-color: #63b22c;
 }
 .paginate .pagination>li.page-prev > a, 
 .paginate .pagination>li.page-prev > span,
@@ -1231,12 +1231,12 @@ a.btn-search:focus i {
 	color: #f7bb66;
 }
 .paginate .pagination>li.page-prev {
-	position: absolute;
-	right: 44px;
+	/* position: absolute;
+	right: 44px; */
 }
 .paginate .pagination>li.page-next {
-	position: absolute;
-	right: 0px;
+	/* position: absolute;
+	right: 0px; */
 }
 .paginate .pagination>li.page-prev a,
 .paginate .pagination>li.page-prev span,
@@ -1249,6 +1249,21 @@ a.btn-search:focus i {
 	background-color: transparent;
 	font-weight: 700;
     letter-spacing: 5px;
+}
+.paginate .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+	width: 90px;
+}
+.paginate .bootstrap-select .btn {
+	padding-left: 15px;
+	background-color: #63b22c;
+	color: #ffffff;
+	border-color: #63b22c;
+}
+.paginate .bootstrap-select>.dropdown-toggle.bs-placeholder, 
+.paginate .bootstrap-select>.dropdown-toggle.bs-placeholder:active, 
+.paginate .bootstrap-select>.dropdown-toggle.bs-placeholder:focus, 
+.paginate .bootstrap-select>.dropdown-toggle.bs-placeholder:hover {
+	color: #ffffff;
 }
 
 /* 
@@ -1854,7 +1869,7 @@ a.btn-search:focus i {
 	font-size: 15px;
 	font-weight: 700;
 	border-top: 0;
-	border-right: 5px #b6e32b solid;
+	border-right: 5px #53c702 solid;
 	border-bottom: 0;
 	border-left: 0;
 	-moz-border-radius-topright: 10px;
@@ -1867,7 +1882,7 @@ a.btn-search:focus i {
 	width: auto;
 	left: -10px;
 	position: absolute;
-	background-color: #9aa86c;
+	background-color: #448517;
 	color: #ffffff;
 	text-align: center;
 	padding: 2px 15px;

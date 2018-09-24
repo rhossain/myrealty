@@ -50,39 +50,6 @@ a:hover, a:focus, a:active {
 - Header Section
 ----------------------------------
 */
-.header.navbar {
-	background-color: transparent;
-}
-
-.header .header--outer-bg {
-	width: 19%;
-	height: 58px;
-	z-index: -1;
-}
-
-.header .header--outer-bg.outer-left {
-	background-color: transparent;
-	left: 0;
-	-webkit-transition: background-color .3s ease-in-out;
-	-moz-transition: background-color .3s ease-in-out;
-	-o-transition: background-color .3s ease-in-out;
-	transition: background-color .3s ease-in-out;
-}
-
-.header .header--outer-bg.outer-right {
-	background-color: #63b22c;
-	right: 0;
-}
-
-.header .header--navbar-nav.navbar-nav.nav-side-collapse {
-	display: none;
-}
-
-/* 
-----------------------------------
-- Header Section
-----------------------------------
-*/
 .nav-outer-bg {
 	/* position: absolute; */
 	width: 19%;
@@ -123,6 +90,7 @@ a:hover, a:focus, a:active {
 }
 .navbar-top li.divider-hor {
 	vertical-align: sub;
+	color: #ffffff;
 }
 .navbar-top li a {
 	color: #ffffff;
@@ -287,6 +255,24 @@ a:hover, a:focus, a:active {
 .navbar-nav > li > .dropdown-menu .divider {
 	/* display: block; */
 	margin: 3px 0;
+}
+
+/* 
+----------------------------------
+- Header -  Navbar Dark
+----------------------------------
+*/
+.navbar.navbar-dark.header-wrapper .navbar-default {
+	background-color: rgba(99,178,44, 0.1);
+}
+.navbar.navbar-dark .navbar-top li.divider-hor {
+	color: #333333;
+}
+.navbar.navbar-dark .navbar-top li a {
+	color: #333333;
+}
+.navbar.navbar-dark .navbar-nav.nav-menu > li > a {
+	color: #333333;
 }
 
 /* 

@@ -31,6 +31,13 @@ $theme-color-gray: #d7d7d7 | rgba(215, 215, 215, 1)
 $theme-color-gray-light: #ededed | rgba(237, 237, 237, 1)
 $theme-color-gray-dark: #c4c4c4 | rgba(196, 196, 196, 1)
 
+$primary-color: #63b22c | rgba(130, 170, 9, 1)
+$primary-color-light: #53c702 | rgba(147, 194, 3, 1)
+$primary-color-dark: #448517 | rgba(104, 135, 8, 1)
+$secondary-color: #FFB236 | rgba(236, 151, 31, 1)
+$secondary-color-light: #f7bb66 | rgba(247, 187, 102, 1)
+$secondary-color-dark: #b7700c | rgba(183, 112, 12, 1)
+
 
 Resources
 ---------
