@@ -429,3 +429,8 @@ Table of Contents
 .brdr-0 {
 	border-width: 0;
 }
+
+.svg:hover {
+	cursor: pointer;
+	filter: invert(.5) sepia(1) saturate(5) hue-rotate(175deg);
+}
