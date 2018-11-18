@@ -256,6 +256,9 @@ a:hover, a:focus, a:active {
 	/* display: block; */
 	margin: 3px 0;
 }
+.navbar.header-wrapper .navbar-header .navbar-brand.brand-sticky {
+	display: none;
+}
 
 /* 
 ----------------------------------
@@ -1289,7 +1292,7 @@ a:hover, a:focus, a:active {
 	overflow: hidden;
 }
 .blog-posts .more-btn {
-	padding-top: 85px;
+	margin-top: 75px;
 }
 .blog-posts .blog-wrapper {
 	background-color: rgba(53, 59, 63, 0.5);

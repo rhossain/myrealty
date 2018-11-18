@@ -212,8 +212,11 @@
 	.navbar.header-wrapper.sticky .navbar-default {
 		background-color: #ffffff;
 	}
-	.navbar.header-wrapper.sticky .navbar-brand svg text {
-		fill: #63B22C !important;
+	.navbar.header-wrapper.sticky .navbar-brand {
+		display: none;
+	}
+	.navbar.header-wrapper.sticky .navbar-brand.brand-sticky {
+		display: block;
 	}
 	.navbar.header-wrapper.sticky .navbar-nav.nav-menu > li > a {
 		color: #63B22C;

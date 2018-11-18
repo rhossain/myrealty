@@ -12,6 +12,7 @@ Table of Contents
 - Button - Search on top featured
 - Button - Search on advanced form
 - Button - Socials on modal
+- Button group & divider
 - Disable state
 - Breadcrumb
 - Page featured items
@@ -794,6 +795,24 @@ a.btn-search:focus i {
     line-height: 2.2em;
     vertical-align: bottom;
 }
+
+/* 
+----------------------------------
+- Button group & divider
+----------------------------------
+*/
+/* .title-long .btn-group {
+	background-color: #63b22c;
+	padding: 0px;
+	top: 20px;
+}
+.title-long .btn-group .btn-divider {
+	position: relative;
+	display: inline-block;
+	width: 2px;
+	height: 35px;
+	background-color: #fff;
+} */
 
 /* 
 ----------------------------------
