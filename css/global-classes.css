@@ -436,6 +436,12 @@ Table of Contents
 .title-long .title-link a:hover {
 	text-decoration: none;
 }
+.title-long .title-link a:hover i {
+	-webkit-animation: rotating 2s linear infinite;
+	-moz-animation: rotating 2s linear infinite;
+	-o-animation: rotating 2s linear infinite;
+	animation: rotating 2s linear infinite;
+}
 .title-long .horizontal-border {
 	/* position: absolute; */
 	top: 35px;
@@ -785,14 +791,14 @@ a.btn-search:focus i {
     min-width: 36px;
     width: 36px;
 }
-.btn.btn-icon i.fa, 
+.btn.btn-icon i.fab, 
 .btn.btn-icon i.now-ui-icons {
-    line-height: 2.4em;
+    line-height: 57.6px;
 }
-.btn.btn-icon.btn-icon-mini .fa, 
+.btn.btn-icon.btn-icon-mini .fab, 
 .btn.btn-icon.btn-icon-mini .now-ui-icons {
     font-size: 14px;
-    line-height: 2.2em;
+    line-height: 35px;
     vertical-align: bottom;
 }
 
@@ -1339,8 +1345,16 @@ a.btn-search:focus i {
 	margin-top: -10px;
     margin-right: -10px;
 }
+.modal-green .modal-header .close:hover,
+.modal-green .modal-header .close:focus,
+.modal-green .modal-header .close:active {
+	color: #FFB236;
+}
 .modal-body {
    padding: 15px 15px 5px;
+}
+.modal-body input:-webkit-autofill {
+	background-color: transparent !important;
 }
 .modal-green .modal-footer {
    display: inline-block;
@@ -1508,12 +1522,16 @@ a.btn-search:focus i {
 	line-height: 22px;
 }
 .contact-form-quick .glyphicon {
-	color: #FFB236;
+	color: #63b22c;
 }
 .contact-form-quick .btn {
 	color: #fff;
-    background-color: #FFB236;
-    border-color: #FFB236;
+    background-color: #63b22c;
+    border-color: #63b22c;
+}
+.contact-form-quick .btn:hover {
+	border-color: #FFB236;
+	background-color: #FFB236;
 }
 .contact-form-quick .btn .glyphicon {
 	color: #fff;
@@ -1772,9 +1790,9 @@ a.btn-search:focus i {
 .agent-card .btn-details a .round i {
 	position: absolute;
 	top: 50%;
-	margin-top: -6px;
+	margin-top: -9px;
 	left: 50%;
-	margin-left: -4px;
+	margin-left: -3px;
 	-moz-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	-webkit-transition: all 0.3s;
@@ -1840,7 +1858,7 @@ a.btn-search:focus i {
 }
 .properties-grid {
 	overflow: hidden;
-	padding: 0 0 50px;
+	padding: 0 0 70px;
 }
 .properties-grid .title-long .title-link {
 	left: 155px;
@@ -2020,6 +2038,16 @@ a.btn-search:focus i {
 	left: 40px;
 	animation-name: fadeOutLeft;
 }
+.property-thumbnails .property-box .property-featured { 
+	position: absolute;
+    top: 5px;
+    margin: 0 auto;
+	width: 100%;
+	color: #FFB236;
+    text-align: center;
+	font-size: 20px;
+	transition: .5s ease-in;
+}
 .property-thumbnails .property-box .property-summary {
 	position: absolute;
 	top: 35%;
@@ -2038,7 +2066,7 @@ a.btn-search:focus i {
 	font-size: 20px;
 	font-weight: 700;
 	text-transform: uppercase;
-	padding: 2px 0;
+	padding: 2px 10px;
 	-webkit-transition: 1s ease;
 	-o-transition: 1s ease;
 	transition: 1s ease;
@@ -2047,7 +2075,7 @@ a.btn-search:focus i {
 	color: #ffffff;
 }
 .property-thumbnails .property-box span.property-title a:hover {
-	color: #d0ed77;
+	color: #FFB236;
 	text-decoration: none;
 }
 .property-thumbnails .property-box span.property-address {
@@ -2055,7 +2083,7 @@ a.btn-search:focus i {
 	display: inline-block;
 	width: 100%;
 	background-color: transparent;
-	padding: 5px 0 3px;
+	padding: 5px 10px 3px;
 	text-align: center;
 	color: rgba(255, 255, 255, 0.7);
 	font-size: 14px;
@@ -2179,6 +2207,10 @@ a.btn-search:focus i {
 .property-thumbnails .property-box:hover .property-status {
 	opacity: 1;
 	animation-name: slideInDown;
+}
+.property-thumbnails .property-box:hover .property-featured {
+	top: 21px;
+	font-size: 17px;
 }
 .property-thumbnails .property-box:hover span.property-title {
   	background-color: rgba(154, 168, 108, 0.8);

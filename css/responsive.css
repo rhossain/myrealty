@@ -219,7 +219,7 @@
 		display: block;
 	}
 	.navbar.header-wrapper.sticky .navbar-nav.nav-menu > li > a {
-		color: #63B22C;
+		color: #585858;
 	}
 	.nav-menu > li.dropdown:hover > a > .fa-chevron-down:before {
 	    content: "\f077";

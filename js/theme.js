@@ -178,8 +178,8 @@
             event.preventDefault();
             $(this).ekkoLightbox({
                 alwaysShowClose: true,
-                leftArrow: '<span><i class="fa fa-long-arrow-left" aria-hidden="true"></i></span>',
-                rightArrow: '<span><i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>'
+                leftArrow: '<span><i class="fas fa-long-arrow-alt-left"></i></span>',
+                rightArrow: '<span><i class="fas fa-long-arrow-alt-right"></i></span>'
             });
         });
 
