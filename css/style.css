@@ -257,6 +257,7 @@ a:hover, a:focus, a:active {
 	/* display: block; */
 	margin: 3px 0;
 }
+.navbar.header-wrapper .navbar-header .navbar-brand.brand-dark,
 .navbar.header-wrapper .navbar-header .navbar-brand.brand-sticky {
 	display: none;
 }
@@ -266,6 +267,13 @@ a:hover, a:focus, a:active {
 - Header -  Navbar Dark
 ----------------------------------
 */
+.navbar.navbar-dark.header-wrapper .navbar-header .navbar-brand.brand-default,
+.navbar.navbar-dark.header-wrapper.sticky .navbar-header .navbar-brand.brand-dark {
+	display: none;
+}
+.navbar.navbar-dark.header-wrapper .navbar-header .navbar-brand.brand-dark {
+	display: block;
+}
 .navbar.navbar-dark.header-wrapper .navbar-default {
 	background-color: rgba(99,178,44, 0.1);
 }
