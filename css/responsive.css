@@ -828,6 +828,16 @@ Table of Contents
 }
 
 @media screen and (max-width: 575px) {
+	.properties-grid .title-long .title-link {
+		left: 0;
+	}
+	.properties-grid .btn-group {
+		top: 9px;
+		padding: 5px 5px;
+	}
+	.properties-grid .controls .navbar {
+		top: -20px;
+	}
 	.properties-grid .list.btn-default {
 		display: none;
 	}
@@ -837,13 +847,8 @@ Table of Contents
 }
 
 @media screen and (max-width: 400px) {
-	.properties-grid .title-long .title-link {
-		left: 0;
-	}
-	.properties-grid .btn-group {
-		top: 9px;
-		padding: 5px 5px;
-	}
+	
+	
 }
 
 @media screen and (min-width: 1200px) {
@@ -955,7 +960,7 @@ Table of Contents
 @media only screen and (max-width: 575px) {
 	.paginate .pagination {
 		width: 100%;
-		text-align: center;
+		text-align: left;
 	}
 	.paginate .pagination li {
 		display: inline-block;
@@ -972,6 +977,18 @@ Table of Contents
 	.paginate .pagination>li>span.page-next {
 		position: relative;
 		right: 0;
+	}
+	.paginate .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+		top: 14px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.paginate .pagination {
+		text-align: center;
+	}
+	.paginate .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+		display: none;
 	}
 }
 
@@ -993,17 +1010,8 @@ Table of Contents
     }
 }
 
-@media only screen and (max-width: 575px) {
-	.page-featured .btn-breadcrumb {
-		padding: 25px 0 10px;
-	}
-    .btn-breadcrumb > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
-        margin-bottom: 5px;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .page-featured .media .media-body {
+@media only screen and (max-width: 575px) {	
+	.page-featured .media .media-body {
         padding: 20px 0 0;
     }
     .page-featured .media .media-body p {
@@ -1016,7 +1024,7 @@ Table of Contents
         margin-bottom: 0;
 	}
 	.page-featured .page-featured-bottom {
-		padding: 35px 0 5px;
+		padding: 20px 0;
 	}
 	.page-featured .page-featured-bottom,
 	.page-featured .page-featured-bottom .text-right {
@@ -1028,6 +1036,13 @@ Table of Contents
 	.page-featured a.btn-search {
 		width: calc(100% - 25px);
 	}
+    .btn-breadcrumb > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {

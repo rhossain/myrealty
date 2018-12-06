@@ -439,6 +439,30 @@ Table of Contents
 
 /* 
 ----------------------------------
+- Custom mobile column
+----------------------------------
+*/
+.col-mobile-4, .col-mobile-6, .col-mobile-12 {
+	position: relative;
+	float: left;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;	
+}
+@media screen and (max-width: 575px) {
+	.col-mobile-4 {
+		width: 33.33333333% !important;
+	}
+	.col-mobile-6 {
+		width: 50% !important;
+	}
+	.col-mobile-12 {
+		width: 100% !important;
+	}
+}
+
+/* 
+----------------------------------
 - Section header long
 ----------------------------------
 */
