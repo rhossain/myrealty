@@ -15,6 +15,7 @@ Table of Contents
 - Pagination
 - Page featured items
 - PAGE - Properties
+- PAGE - Property single
 - PAGE - Agent single
 - PAGE - Blog home
 ======================================
@@ -822,6 +823,9 @@ Table of Contents
 -----------------------------------
 */
 @media screen and (max-width: 767px) {
+	.properties-grid .list.btn-default {
+		display: none;
+	}
 	.property-thumbnails .property-box .property-image {
 		min-height: 350px;
 	}
@@ -837,9 +841,6 @@ Table of Contents
 	}
 	.properties-grid .controls .navbar {
 		top: -20px;
-	}
-	.properties-grid .list.btn-default {
-		display: none;
 	}
 	.property-thumbnails .property-box .property-image {
 		min-height: 250px;
@@ -1006,8 +1007,11 @@ Table of Contents
     }
     .page-featured .btn-breadcrumb,
     .page-featured .btn-all {
-        padding: 25px 0 0;
-    }
+        padding: 0 0 0;
+	}
+	.page-featured.featured-agents {
+		background-size: cover;
+	}
 }
 
 @media only screen and (max-width: 575px) {	
@@ -1062,11 +1066,12 @@ Table of Contents
 */
 @media only screen and (max-width: 767px) {
     .properties-grid .controls .navbar-toggle {
-        left: 0;
+        left: 2px;
+		top: -18px;
 	}
 	.properties-grid .controls .navbar-collapse {
 		position: absolute;
-		top: 33px;
+		top: 21px;
 		left: -2px;
 		width: 100px;
 		z-index: 1;
@@ -1110,10 +1115,31 @@ Table of Contents
 	}
 }
 
+@media only screen and (max-width: 575px) {
+	.properties-grid .controls .navbar-toggle {
+        top: 0;
+	}
+}
+
 @media only screen and (min-width: 768px) {
     .properties-grid .controls .navbar-toggle {
         display: none;
     }
+}
+
+/* 
+-----------------------------------
+- PAGE - Property single
+-----------------------------------
+*/
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+	.property-gallery {
+		text-align: center;
+	}
+	.agent-info .card.agent-card .card-background img {
+		margin-top: -225px;
+		min-width: 120%;
+	}
 }
 
 /* 
