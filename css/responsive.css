@@ -16,8 +16,10 @@ Table of Contents
 - Page featured items
 - PAGE - Properties
 - PAGE - Property single
+- PAGE - Agents
 - PAGE - Agent single
 - PAGE - Blog home
+- PAGE - Contact
 ======================================
 */
 
@@ -961,7 +963,7 @@ Table of Contents
 @media only screen and (max-width: 575px) {
 	.paginate .pagination {
 		width: 100%;
-		text-align: left;
+		text-align: center;
 	}
 	.paginate .pagination li {
 		display: inline-block;
@@ -1038,7 +1040,11 @@ Table of Contents
 		padding: 25px 0 10px;
 	}
 	.page-featured a.btn-search {
-		width: calc(100% - 25px);
+		position: relative;
+	}
+	.page-featured a.btn-search i, 
+	.page-featured a.btn-search div {
+		right: -20px;
 	}
     .btn-breadcrumb > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
         margin-bottom: 5px;
@@ -1144,6 +1150,17 @@ Table of Contents
 
 /* 
 -----------------------------------
+- PAGE - Agents
+-----------------------------------
+*/
+@media only screen and (max-width: 575px) {
+	.agent-card figure img {
+		width: 100%;
+	}
+}
+
+/* 
+-----------------------------------
 - PAGE - Agent single
 -----------------------------------
 */
@@ -1188,9 +1205,15 @@ Table of Contents
 	.blog-featured .featured-content .post-heading {
 		margin: 20px 0 10px;
 	}
+	.blog-featured .white-gradient-h {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 575px) {
+	.blog-others .col-left {
+		margin-bottom: 30px;
+	}
 	.blog-categories .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn),
 	.blog-search {
 		width: 100%;
@@ -1204,6 +1227,7 @@ Table of Contents
 		padding-right: 0;
 		text-align: left;
 		border-right: 0;
+		border-left: 0;
 	}
 	.other-posts li .blog-title .post-date span:first-child,
 	.other-posts li .blog-title .post-date span:nth-child(2),
@@ -1232,5 +1256,19 @@ Table of Contents
 		padding-right: 0;
 		padding-bottom: 10px;
 		max-width: 100%;
+	}
+}
+
+/* 
+-----------------------------------
+- PAGE - Contact
+-----------------------------------
+*/
+@media only screen and (max-width: 575px) {
+	.contact-address {
+		margin-bottom: 35px;
+	}
+	.contact-socials {
+		margin-bottom: 35px;
 	}
 }

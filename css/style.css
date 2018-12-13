@@ -2311,6 +2311,8 @@ a:hover, a:focus, a:active {
 }
 .blog-categories {
 	margin: 0 0 20px;
+	position: relative;
+    z-index: 1;
 }
 .blog-categories .bootstrap-select {
 	width: auto;
@@ -2344,9 +2346,10 @@ a:hover, a:focus, a:active {
 	color: #ffffff;
 }
 .blog-categories .bootstrap-select.btn-group .dropdown-toggle .caret {
-	top: 7px;
+	top: 8px;
 	background-color: transparent;
 	background-image: none;
+	border: 0;
 }
 .blog-categories .bootstrap-select.btn-group .dropdown-toggle .caret::before {
 	content: "\f0dd";
