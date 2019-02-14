@@ -3,7 +3,7 @@
 	<head>
 		<!-- Basic Page Needs -->
 		<meta charset="utf-8">
-		<title>Contact Us</title>
+		<title>Add property</title>
 		<meta name="description" content="A real estate template built with HTML, CSS & Bootstrap">
 		<meta name="author" content="Robin Hossain">
 		<meta name="keywords" content="Listings, Apartment, Premium, Real Estate, HTML, Site Template, property, mortgage, CSS">
@@ -27,11 +27,70 @@
 		<link rel="stylesheet" href="css/typography.css">
 		<link rel="stylesheet" href="css/animate.min.css">
 		<link rel="stylesheet" href="css/aos.css">
+		<link rel="stylesheet" href="css/fine-uploader-new.css">
 		<link rel="stylesheet" href="css/owl.carousel.min.css">
 		<link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/css/uikit.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/css/components/sticky.min.css">
+		<script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
+		<link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css">
+		<style>
+				html, body {
+				  height: 100%;
+				}
+				#actions {
+				  margin: 2em 0;
+				}
+			
+			
+				/* Mimic table appearance */
+				div.table {
+				  display: table;
+				}
+				div.table .file-row {
+				  display: table-row;
+				}
+				div.table .file-row > div {
+				  display: table-cell;
+				  vertical-align: top;
+				  border-top: 1px solid #ddd;
+				  padding: 8px;
+				}
+				div.table .file-row:nth-child(odd) {
+				  background: #f9f9f9;
+				}
+			
+			
+			
+				/* The total progress gets shown by event listeners */
+				#total-progress {
+				  opacity: 0;
+				  transition: opacity 0.3s linear;
+				}
+			
+				/* Hide the progress bar when finished */
+				#previews .file-row.dz-success .progress {
+				  opacity: 0;
+				  transition: opacity 0.3s linear;
+				}
+			
+				/* Hide the delete button initially */
+				#previews .file-row .delete {
+				  display: none;
+				}
+			
+				/* Hide the start and cancel buttons and show the delete button */
+			
+				#previews .file-row.dz-success .start,
+				#previews .file-row.dz-success .cancel {
+				  display: none;
+				}
+				#previews .file-row.dz-success .delete {
+				  display: block;
+				}
+			
+			
+			  </style>
+			
 		
 		<link rel="stylesheet" href="css/utilities.css">
 		<link rel="stylesheet" href="css/global-classes.css">
@@ -53,7 +112,7 @@
 		<div class="container-fluid site-wrapper">
 
 			<!-- Site Header -->
-			<header class="navbar navbar-dark header-wrapper" data-aos="fade-down" data-aos-offset="200" data-aos-duration="1200" data-aos-once="true">
+			<header class="navbar navbar-dark navbar-fixed-top header-wrapper" data-aos="fade-down" data-aos-offset="200" data-aos-duration="1200" data-aos-once="true">
 				<div class="p-absolute nav-outer-bg outer-left"></div>
 				<div class="navbar-container container">
 					<div class="d-inline-block w-100 navbar-top">						
@@ -108,12 +167,12 @@
 							<span class="icon-bar gray"></span>
 							<span class="icon-bar"></span> -->
 							<div class="btn-toggle">
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
+							  <span></span>
+							  <span></span>
+							  <span></span>
+							  <span></span>
+							  <span></span>
+							  <span></span>
 							</div>
 						</button>
 						<a class="h-auto navbar-brand brand-default" href="./index.html">
@@ -200,7 +259,7 @@
 														<img class="w-100" src="images/properties/properties-01.jpg" alt="The Last of us">
 													</a>
 												</div>
-												<div class="item">
+											    <div class="item">
 													<a href="./property-single.html" class="p-relative d-block w-100 h-100 property-item-container">
 														<div class="p-absolute d-block w-100 p-0 property-item-badges">
 															<!-- <span class="p-relative pull-left m-0 text-center featured">Featured</span> -->
@@ -313,112 +372,276 @@
 
 				<div class="collapse-overlay"></div>
 
-				<!-- Page Featured with content -->
-				<div class="page-featured overlapping-content">
+				<!-- Page Featured -->
+				<div class="page-featured featured-properties">
 					<div class="container-fluid">
-						<!-- <div id="mapCanvas" class="map-canvas"></div> -->
-						<div class="mapouter">
-							<div class="gmap_canvas">
-								<iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Dhaka&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-							</div>
-						</div>
-
-						<div class="container pt-100 pb-100">
+						<div class="container">
 							<div class="row">
 								<div class="col-sm-4">
-									<div class="contact-address">
-										<div class="title-short">
-											<h3 class="heading">
-												Address
-											</h3>
+									<div class="media">
+										<a class="pull-left media-object img1 animated flipInX" href="./property-single.html" title="Agent Single">
+											<!-- <img width="100" height="90" class="media-object animated flipInX" alt="Agent Single" src="./images/people/agents-10.jpg"> -->
+											<span class="property-price">
+												<i class="fas fa-dollar-sign"></i> 389,000
+											</span>
+										</a>
+										<div class="media-body">
+											<p class="animated fadeInUp">
+												<span class="span2">Property address</span>
+											</p>
+											<h4 class="media-heading animated fadeInDown"><a href="./property-single.html" title="Agent Single">Property Name</a></h4>
 										</div>
-										<ul class="list-unstyled  mt-0">
-											<li>
-												<i class="fa fa-map-marker" aria-hidden="true"></i>
-												<a href="#" title="">
-													900 Biscayne Blvd Way Miami, FL, USA
-												</a>
-											</li>
-											<li>
-												<i class="fas fa-phone-volume"></i>
-												<a href="#" title="">
-													123-456-789
-												</a>
-											</li>
-											<li>
-												<i class="far fa-envelope"></i>
-												<a href="#" title="">
-													contact@myrealty.com
-												</a>
-											</li>
-										</ul>
-									</div>
-									<div class="contact-socials">
-										<div class="title-short">
-											<h3 class="heading">
-												Follow Us
-											</h3>
-										</div>
-										<ul class="list-inline mt-0" data-aos="fade-up" data-aos-duration="900">
-											<li>
-												<a href="#" title="">
-													<i class="fab fa-facebook-f"></i>
-												</a>
-											</li>
-											<li>
-												<a href="#" title="">
-													<i class="fab fa-twitter"></i>
-												</a>
-											</li>
-											<li>
-												<a href="#" title="">
-													<i class="fab fa-google-plus-g"></i>
-												</a>
-											</li>
-											<li>
-												<a href="#" title="">
-													<i class="fab fa-linkedin-in"></i>
-												</a>
-											</li>
-											<li>
-												<a href="#" title="">
-													<i class="fab fa-pinterest-p"></i>
-												</a>
-											</li>
-										</ul>
 									</div>
 								</div>
-								<div class="col-sm-offset-1 col-sm-7">
-									<div class="d-inline-block w-100 contact-form page-contact">
-										<div class="title-short">
-											<h3 class="heading">
-												Give your feedback or query
-											</h3>
+								<div class="col-sm-4">
+									<div class="media">
+										<a class="pull-left media-object img2 animated flipInX" href="./property-single.html" title="Agent Single">
+											<!-- <img width="100" height="90" class="media-object animated flipInX" alt="Agent Single" src="./images/people/agents-05.jpg"> -->
+											<span class="property-price">
+												<i class="fas fa-dollar-sign"></i> 389,000
+											</span>
+										</a>
+										<div class="media-body">
+											<p class="animated fadeInUp">
+												<span class="span2">Property address</span>
+											</p>
+											<h4 class="media-heading animated fadeInDown"><a href="./property-single.html" title="Agent Single">Property Name</a></h4>
 										</div>
-										<form class="mt-0-imp go-right" method="post" id="commentform">
-											<div class="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-												<input id="author" name="author" type="text" value="" class="form-control" required>
-												<label for="author">Your Name</label>
-											</div>
-											<div class="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-												<input id="email-contact" name="email" type="tel" value="" class="form-control" required>
-												<label for="email">Your Email</label>
-											</div>
-											<div class="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-												<textarea id="message" name="phone" class="form-control" required></textarea>
-												<label for="message">Message</label>
-											</div>
-											<div class="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-												<button class="btn pull-right">Submit</button>
-											</div>
-										</form>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="media">
+										<a class="pull-left media-object img3 animated flipInX" href="./property-single.html" title="Agent Single">
+											<!-- <img width="100" height="90" class="" alt="Agent Single" src="./images/people/agents-09.jpg"> -->
+											<span class="property-price">
+												<i class="fas fa-dollar-sign"></i> 389,000
+											</span>
+										</a>
+										<div class="media-body">
+											<p class="animated fadeInUp">
+												<span class="span2">Property address</span>
+											</p>
+											<h4 class="media-heading animated fadeInDown"><a href="./property-single.html" title="Agent Single">Property Name</a></h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row page-featured-bottom">
+								<div class="col-mobile-12 col-xs-7 col-sm-6">
+									<div class="btn-group btn-breadcrumb">
+										<a href="./index.html" class="btn btn-default"><i class="glyphicon glyphicon-home"></i></a>
+										<a href="#" class="btn btn-default">Add property</a>
+									</div>
+								</div>
+								<div class="col-mobile-12 col-xs-5 col-sm-6">
+									<div class="text-right">
+										<a href="./property.html" data-toggle="modal" data-target="#modalSearch" title="Search properties" class="btn btn-search">
+											Search properties <i class="fa fa-search" aria-hidden="true"></i> 
+											<div class="rotating"></div>
+										</a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- ./Page Featured with content -->
+				<!-- ./Page Featured -->
+
+				<!-- Add property block -->
+		        <div id="addProperty" class="container-fluid main-content">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12 col-md-12">
+								<form class="form-add-property">
+									<div class="card-white-shadow no-hover">
+										<div class="title-short">
+											<h3 class="heading">Basic Information</h3>
+										</div>
+										<div class="form-group">
+											<input type="text" class="form-control" id="pTitle" placeholder="Property Title">
+										</div>
+										<div class="form-group">
+											<textarea  class="form-control" id="pDescription" rows="3" placeholder="Property Description"></textarea>
+										</div>
+									</div>
+									<div class="card-white-shadow no-hover">
+										<div class="title-short">
+											<h3 class="heading">Attributes</h3>
+										</div>
+										<div class="row">
+											<div class="col-xs-12 col-sm-6 col-md-6">
+												<div class="form-group">
+													<select title="Property Type" class="selectpicker">
+														<option>Apartment</option>
+														<option>Condo</option>
+														<option>House</option>
+														<option>Villa</option>
+													</select>
+												</div>
+												<div class="form-group">
+													<select title="Status" class="selectpicker">
+														<option>Rent</option>
+														<option>Sale</option>
+													</select>
+												</div>
+												<div class="form-group">
+													<select title="Agent" class="selectpicker">
+														<option>Carolyn Sloan</option>
+														<option>Charles Watson</option>
+														<option>David Strozier</option>
+														<option>Erika Green</option>
+														<option>Jennie Wilson</option>
+														<option>Kristine Hicks</option>
+														<option>Robert Farley</option>
+														<option>Tom Wilson</option>
+													</select>
+												</div>
+												<div class="form-group">
+													<select title="Location" class="selectpicker">
+														<option>New York</option>
+														<option>Los Angeles</option>
+														<option>Chicago</option>
+														<option>Houston</option>
+														<option>Philadelphila</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-xs-12 col-sm-6 col-md-6">
+												<div class="form-group">
+													<div class="input-group">
+														<span class="input-group-addon"><i class="fas fa-dollar-sign"></i></span>
+														<input id="pPrice" type="text" class="form-control" name="user" value="" placeholder="Price">                                        
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="input-group">
+														<span class="input-group-addon"><i class="fas fa-map-signs"></i></span>
+														<input id="pArea" type="text" class="form-control" name="user" value="" placeholder="Area">                                        
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="input-group">
+														<span class="input-group-addon"><i class="fas fa-bath"></i></span>
+														<input id="pBed" type="text" class="form-control" name="user" value="" placeholder="Bed">                                        
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="input-group">
+														<span class="input-group-addon"><i class="fas fa-bed"></i></span>
+														<input id="pBath" type="text" class="form-control" name="user" value="" placeholder="Bath">                                        
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card-white-shadow no-hover">
+										<div class="title-short">
+											<h3 class="heading">Place on Map</h3>
+										</div>
+										<div class="form-group">
+											<input type="text" class="form-control" id="pAddress" placeholder="Enter a location">
+										</div>
+										<div class="form-group">
+											<div class="mapouter height-md">
+												<div class="gmap_canvas height-md">
+													<iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Dhaka&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+												</div>
+											</div>
+										</div>										
+										<div class="row">
+											<div class="col-sm-12 col-md-6">
+												<div class="form-group">
+													<div class="input-group">
+														<span class="input-group-addon"><i class="fas fa-map-marker-alt"></i></span>
+														<input id="pLatitude" type="text" class="form-control" name="user" value="" placeholder="Latitude">                                        
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-12 col-md-6">
+												<div class="form-group">
+													<div class="input-group">
+														<span class="input-group-addon"><i class="fas fa-map-marker-alt"></i></span>
+														<input id="pLontgitude" type="text" class="form-control" name="user" value="" placeholder="Lontgitude">                                        
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card-white-shadow no-hover">
+											<div id="actions" class="row">
+
+												<div class="col-lg-7">
+													<!-- The fileinput-button span is used to style the file input field as button -->
+													<span class="btn btn-success fileinput-button">
+														<i class="glyphicon glyphicon-plus"></i>
+														<span>Add files...</span>
+													</span>
+													<button type="submit" class="btn btn-primary start">
+														<i class="glyphicon glyphicon-upload"></i>
+														<span>Start upload</span>
+													</button>
+													<button type="reset" class="btn btn-warning cancel">
+														<i class="glyphicon glyphicon-ban-circle"></i>
+														<span>Cancel upload</span>
+													</button>
+												</div>
+											
+												<div class="col-lg-5">
+													<!-- The global file processing state -->
+													<span class="fileupload-process">
+													<div id="total-progress" class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+														<div class="progress-bar progress-bar-success" style="width:0%;" data-dz-uploadprogress></div>
+													</div>
+													</span>
+												</div>
+										
+											</div>
+											<div class="table table-striped files" id="previews">
+
+												<div id="template" class="file-row">
+													<!-- This is used as the file preview template -->
+													<div>
+														<span class="preview"><img data-dz-thumbnail /></span>
+													</div>
+													<div>
+														<p class="name" data-dz-name></p>
+														<strong class="error text-danger" data-dz-errormessage></strong>
+													</div>
+													<div>
+														<p class="size" data-dz-size></p>
+														<div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+														<div class="progress-bar progress-bar-success" style="width:0%;" data-dz-uploadprogress></div>
+														</div>
+													</div>
+													<div>
+													<button class="btn btn-primary start">
+														<i class="glyphicon glyphicon-upload"></i>
+														<span>Start</span>
+													</button>
+													<button data-dz-remove class="btn btn-warning cancel">
+														<i class="glyphicon glyphicon-ban-circle"></i>
+														<span>Cancel</span>
+													</button>
+													<button data-dz-remove class="btn btn-danger delete">
+														<i class="glyphicon glyphicon-trash"></i>
+														<span>Delete</span>
+													</button>
+													</div>
+												</div>
+										
+											</div>
+											  
+											  
+									</div>
+								</form>
+							</div>
+							<!-- <div class="col-sm-12 col-md-4">
+
+							</div> -->
+						</div>
+					</div>
+				</div>
+				<!-- /Add property block -->
 
 			</div>
 			<!-- ./Main content -->
@@ -706,7 +929,7 @@
 		
 		<!-- jQuery v1.11.0 -->
 		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-
+		
 		<!-- Bootstrap v3.7 -->
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
@@ -728,9 +951,98 @@
 		<!-- Truncate multiple lines of text -->
 		<script type="text/javascript" src="js/jQuery.succinct.min.js"></script>
 
-		<!-- Initiate Google map -->
-		<script type="text/javascript" src="js/google-map.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbffW2d1fU6_hTHiI2nnCFaTpHPyTH9xU&callback=initMap" async defer></script>
+		<script type="text/javascript" src="js/jquery.fine-uploader.js"></script>
+		<script>
+			// Get the template HTML and remove it from the doument
+			var previewNode = document.querySelector("#template");
+			previewNode.id = "";
+			var previewTemplate = previewNode.parentNode.innerHTML;
+			previewNode.parentNode.removeChild(previewNode);
+
+			var myDropzone = new Dropzone(document.body, { // Make the whole body a dropzone
+				url: "http://www.torrentplease.com/dropzone.php", // Set the url
+				thumbnailWidth: 80,
+				thumbnailHeight: 80,
+				parallelUploads: 20,
+				previewTemplate: previewTemplate,
+				autoQueue: false, // Make sure the files aren't queued until manually added
+				previewsContainer: "#previews", // Define the container to display the previews
+				clickable: ".fileinput-button" // Define the element that should be used as click trigger to select files.
+			});
+
+			myDropzone.on("addedfile", function(file) {
+				// Hookup the start button
+				file.previewElement.querySelector(".start").onclick = function() { myDropzone.enqueueFile(file); };
+			});
+
+			// Update the total progress bar
+			myDropzone.on("totaluploadprogress", function(progress) {
+				document.querySelector("#total-progress .progress-bar").style.width = progress + "%";
+			});
+
+			myDropzone.on("sending", function(file) {
+				// Show the total progress bar when upload starts
+				document.querySelector("#total-progress").style.opacity = "1";
+				// And disable the start button
+				file.previewElement.querySelector(".start").setAttribute("disabled", "disabled");
+			});
+
+			// Hide the total progress bar when nothing's uploading anymore
+			myDropzone.on("queuecomplete", function(progress) {
+				document.querySelector("#total-progress").style.opacity = "0";
+			});
+
+			// Setup the buttons for all transfers
+			// The "add files" button doesn't need to be setup because the config
+			// `clickable` has already been specified.
+			document.querySelector("#actions .start").onclick = function() {
+				myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED));
+			};
+			document.querySelector("#actions .cancel").onclick = function() {
+				myDropzone.removeAllFiles(true);
+			};
+
+			// Now fake the file upload, since GitHub does not handle file uploads
+			// and returns a 404
+
+			var minSteps = 6,
+				maxSteps = 60,
+				timeBetweenSteps = 100,
+				bytesPerStep = 100000;
+
+			myDropzone.uploadFiles = function(files) {
+				var self = this;
+
+				for (var i = 0; i < files.length; i++) {
+
+				var file = files[i];
+				totalSteps = Math.round(Math.min(maxSteps, Math.max(minSteps, file.size / bytesPerStep)));
+
+				for (var step = 0; step < totalSteps; step++) {
+					var duration = timeBetweenSteps * (step + 1);
+					setTimeout(function(file, totalSteps, step) {
+					return function() {
+						file.upload = {
+						progress: 100 * (step + 1) / totalSteps,
+						total: file.size,
+						bytesSent: (step + 1) * file.size / totalSteps
+						};
+
+						self.emit('uploadprogress', file, file.upload.progress, file.upload.bytesSent);
+						if (file.upload.progress == 100) {
+						file.status = Dropzone.SUCCESS;
+						self.emit("success", file, 'success', null);
+						self.emit("complete", file);
+						self.processQueue();
+						}
+					};
+					}(file, totalSteps, step), duration);
+				}
+				}
+			}
+
+
+		</script>
 
 		<!-- Main & custom JavaScripts -->
 		<script type="text/javascript" src="js/theme.js"></script>

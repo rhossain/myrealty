@@ -14,6 +14,7 @@ Table of Contents
 - Button - Socials on modal
 - Button group & divider
 - Disable state
+- Form elements
 - Breadcrumb
 - Page featured items
 - Rating
@@ -21,6 +22,7 @@ Table of Contents
 - Pagination
 - Modal
 - Lightbox
+- Google map
 - Contact or Comment form
 - Quick contact form
 - Agent card (Single)
@@ -586,6 +588,11 @@ Table of Contents
 	-moz-box-shadow: 0 0px 16px 3px rgba(236, 151, 31, 0.08);
 	box-shadow: 0 0px 16px 3px rgba(236, 151, 31, 0.08);
 }
+.card-white-shadow.no-hover:hover {
+	-webkit-box-shadow: 0 0px 16px 3px rgba(0, 0, 0, 0.08);
+	-moz-box-shadow: 0 0px 16px 3px rgba(0, 0, 0, 0.08);
+	box-shadow: 0 0px 16px 3px rgba(0, 0, 0, 0.08);
+}
 .card-white-shadow.with-title {
 	padding: 10px 15px 10px;
 	-webkit-border-radius: 3px;
@@ -896,6 +903,81 @@ a.btn-search:focus i {
 	opacity: 1;
     user-select: initial;
     cursor: pointer;
+}
+
+/* 
+----------------------------------
+- Form elements
+----------------------------------
+*/
+.form-control {
+	height: 50px;
+	border-color: #ebebeb;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.input-group-addon {
+	min-width: 50px;
+	padding: 6px 15px;
+	border-color: #ebebeb;
+}
+.input-group-addon i {
+	color: #63b22c;
+}
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+	width: 100%;
+}
+.bootstrap-select .btn {
+	border: 1px solid #ebebeb;
+	color: #5d5d5d;
+	border-radius: 0;
+    height: 50px;
+    font-weight: 700;
+    outline: none;
+}
+.bootstrap-select .btn:hover,
+.bootstrap-select .btn-default:active,
+.bootstrap-select .btn-default:focus,
+.bootstrap-select.open > .dropdown-toggle.btn-default {
+	background: #ffffff;
+	-webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    box-shadow: none;
+	border-color: #ebebeb;
+	outline: none !important;
+}
+.bootstrap-select > .dropdown-toggle {
+    width: 100%;
+    padding-right: 25px;
+    z-index: 1;
+}
+.bootstrap-select.btn-group .dropdown-toggle .caret {
+    background: white url(../images/select-bg.png) no-repeat right center;
+}
+.bootstrap-select.btn-group .dropdown-toggle .caret {
+    border: none;
+    width: 50px;
+    height: 23px;
+    right: 0;
+    top: 13px;
+    margin-top: 0;
+}
+.bootstrap-select.btn-group .dropdown-menu {
+	margin-top: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    box-shadow: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0; 
+    border-top: 0;
+    border-color: #ebebeb;
+}
+.bootstrap-select .actions-btn {
+	height: 30px;
 }
 
 /* 
@@ -1438,6 +1520,29 @@ a.btn-search:focus i {
 }
 .ekko-lightbox-nav-overlay a:last-child {
 	float: right;
+}
+
+/* 
+----------------------------------
+- Google map
+----------------------------------
+*/
+.mapouter {
+	text-align:right;
+	height:450px;
+	width:100%;
+}
+.gmap_canvas {
+	overflow:hidden;
+	background:none!important;
+	height:450px;
+	width:100%;
+}
+.mapouter.height-md {
+	height:300px !important;
+}
+.gmap_canvas.height-md {
+	height:300px !important;
 }
 
 /* 

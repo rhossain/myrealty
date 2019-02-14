@@ -45,6 +45,12 @@ a:hover, a:focus, a:active {
 	padding-left: 0;
 	padding-right: 0;
 }
+.container-fluid.main-content {
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 40px;
+    padding-bottom: 40px;
+}
 
 /* 
 ----------------------------------
@@ -1061,61 +1067,6 @@ a:hover, a:focus, a:active {
 }
 .search-form-wrapper .easy-autocomplete {
 	width: 100% !important;
-}
-.search-form-wrapper .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
-	width: 100%;
-}
-.search-form-wrapper .bootstrap-select .btn {
-	border: 1px solid #ebebeb;
-	color: #5d5d5d;
-	border-radius: 0;
-    height: 50px;
-    font-weight: 700;
-    outline: none;
-}
-.search-form-wrapper .bootstrap-select .btn:hover,
-.search-form-wrapper .bootstrap-select .btn-default:active,
-.search-form-wrapper .bootstrap-select .btn-default:focus,
-.search-form-wrapper .bootstrap-select.open > .dropdown-toggle.btn-default {
-	background: #ffffff;
-	-webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    -ms-box-shadow: none;
-    box-shadow: none;
-	border-color: #ebebeb;
-	outline: none !important;
-}
-.search-form-wrapper .bootstrap-select > .dropdown-toggle {
-    width: 100%;
-    padding-right: 25px;
-    z-index: 1;
-}
-.search-form-wrapper .bootstrap-select.btn-group .dropdown-toggle .caret {
-    background: white url(../images/select-bg.png) no-repeat right center;
-}
-.search-form-wrapper .bootstrap-select.btn-group .dropdown-toggle .caret {
-    border: none;
-    width: 50px;
-    height: 23px;
-    right: 0;
-    top: 13px;
-    margin-top: 0;
-}
-.search-form-wrapper .bootstrap-select.btn-group .dropdown-menu {
-	margin-top: 0;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    -ms-box-shadow: none;
-    box-shadow: none;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    border-radius: 0; 
-    border-top: 0;
-    border-color: #ebebeb;
-}
-.search-form-wrapper .bootstrap-select .actions-btn {
-	height: 30px;
 }
 .search-form-wrapper .range-slider .range-input {
 	margin-top: 3px;
