@@ -3,7 +3,7 @@
 	<head>
 		<!-- Basic Page Needs -->
 		<meta charset="utf-8">
-		<title>Add property</title>
+		<title>Not found (404)</title>
 		<meta name="description" content="A real estate template built with HTML, CSS & Bootstrap">
 		<meta name="author" content="Robin Hossain">
 		<meta name="keywords" content="Listings, Apartment, Premium, Real Estate, HTML, Site Template, property, mortgage, CSS">
@@ -29,6 +29,9 @@
 		<link rel="stylesheet" href="css/aos.css">
 		<link rel="stylesheet" href="css/owl.carousel.min.css">
 		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+		<link rel="stylesheet" href="css/uikit.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.18.0/css/components/sticky.min.css">
 		
 		<link rel="stylesheet" href="css/utilities.css">
 		<link rel="stylesheet" href="css/global-classes.css">
@@ -368,7 +371,7 @@
 								<div class="col-mobile-12 col-xs-7 col-sm-6">
 									<div class="btn-group btn-breadcrumb">
 										<a href="./index.html" class="btn btn-default"><i class="glyphicon glyphicon-home"></i></a>
-										<a href="#" class="btn btn-default">Add property</a>
+										<a href="#" class="btn btn-default">Agents</a>
 									</div>
 								</div>
 								<div class="col-mobile-12 col-xs-5 col-sm-6">
@@ -385,176 +388,39 @@
 				</div>
 				<!-- ./Page Featured -->
 
-				<!-- Add property block -->
-		        <div id="addProperty" class="container-fluid main-content">
+				<!-- Agents list -->
+		        <div id="notFound" class="container-fluid site-wrapper not-found">
 					<div class="container">
 						<div class="row">
-							<div class="col-sm-12 col-md-12">
-								<form class="form-add-property" id="fileupload" action="https://jquery-file-upload.appspot.com/" method="POST" enctype="multipart/form-data">
-									<div class="card-white-shadow no-hover">
-										<div class="title-short">
-											<h3 class="heading">Basic Information</h3>
-										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" id="pTitle" placeholder="Property Title">
-										</div>
-										<div class="form-group">
-											<textarea  class="form-control" id="pDescription" rows="3" placeholder="Property Description"></textarea>
-										</div>
-									</div>
-									<div class="card-white-shadow no-hover">
-										<div class="title-short">
-											<h3 class="heading">Attributes</h3>
-										</div>
-										<div class="row">
-											<div class="col-xs-12 col-sm-6 col-md-6">
-												<div class="form-group">
-													<select title="Property Type" class="selectpicker">
-														<option>Apartment</option>
-														<option>Condo</option>
-														<option>House</option>
-														<option>Villa</option>
-													</select>
-												</div>
-												<div class="form-group">
-													<select title="Status" class="selectpicker">
-														<option>Rent</option>
-														<option>Sale</option>
-													</select>
-												</div>
-												<div class="form-group">
-													<select title="Agent" class="selectpicker">
-														<option>Carolyn Sloan</option>
-														<option>Charles Watson</option>
-														<option>David Strozier</option>
-														<option>Erika Green</option>
-														<option>Jennie Wilson</option>
-														<option>Kristine Hicks</option>
-														<option>Robert Farley</option>
-														<option>Tom Wilson</option>
-													</select>
-												</div>
-												<div class="form-group">
-													<select title="Location" class="selectpicker">
-														<option>New York</option>
-														<option>Los Angeles</option>
-														<option>Chicago</option>
-														<option>Houston</option>
-														<option>Philadelphila</option>
-													</select>
-												</div>
-											</div>
-											<div class="col-xs-12 col-sm-6 col-md-6">
-												<div class="form-group">
-													<div class="input-group">
-														<span class="input-group-addon"><i class="fas fa-dollar-sign"></i></span>
-														<input id="pPrice" type="text" class="form-control" name="user" value="" placeholder="Price">                                        
-													</div>
-												</div>
-												<div class="form-group">
-													<div class="input-group">
-														<span class="input-group-addon"><i class="fas fa-map-signs"></i></span>
-														<input id="pArea" type="text" class="form-control" name="user" value="" placeholder="Area">                                        
-													</div>
-												</div>
-												<div class="form-group">
-													<div class="input-group">
-														<span class="input-group-addon"><i class="fas fa-bath"></i></span>
-														<input id="pBed" type="text" class="form-control" name="user" value="" placeholder="Bed">                                        
-													</div>
-												</div>
-												<div class="form-group">
-													<div class="input-group">
-														<span class="input-group-addon"><i class="fas fa-bed"></i></span>
-														<input id="pBath" type="text" class="form-control" name="user" value="" placeholder="Bath">                                        
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="card-white-shadow no-hover">
-										<div class="title-short">
-											<h3 class="heading">Place on Map</h3>
-										</div>
-										<div class="form-group">
-											<input type="text" class="form-control" id="pAddress" placeholder="Enter a location">
-										</div>
-										<div class="form-group">
-											<div class="mapouter height-md">
-												<div class="gmap_canvas height-md">
-													<iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Dhaka&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-												</div>
-											</div>
-										</div>										
-										<div class="row">
-											<div class="col-sm-12 col-md-6">
-												<div class="form-group">
-													<div class="input-group">
-														<span class="input-group-addon"><i class="fas fa-map-marker-alt"></i></span>
-														<input id="pLatitude" type="text" class="form-control" name="user" value="" placeholder="Latitude">                                        
-													</div>
-												</div>
-											</div>
-											<div class="col-sm-12 col-md-6">
-												<div class="form-group">
-													<div class="input-group">
-														<span class="input-group-addon"><i class="fas fa-map-marker-alt"></i></span>
-														<input id="pLontgitude" type="text" class="form-control" name="user" value="" placeholder="Lontgitude">                                        
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="card-white-shadow no-hover">
-											
-										<!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
-										<div class="row fileupload-buttonbar">
-											<div class="col-lg-7">
-												<!-- The fileinput-button span is used to style the file input field as button -->
-												<span class="btn btn-success fileinput-button">
-													<i class="glyphicon glyphicon-plus"></i>
-													<span>Add files...</span>
-													<input type="file" name="files[]" multiple>
+							<div class="col-md-12">
+								<div class="text-center not-found-container">
+									<h3>404</h3>
+									<h4>Oops! This page cannot be found.</h4>
+									<p>It looks like nothing was found at this location. Maybe try a search?</p>
+									<div class="col-md-4 col-md-offset-4">
+										<form>
+											<div class="input-group">
+												<input type="text" placeholder="search ..." class="form-control">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
 												</span>
-												<button type="submit" class="btn btn-primary start">
-													<i class="glyphicon glyphicon-upload"></i>
-													<span>Start upload</span>
-												</button>
-												<button type="reset" class="btn btn-warning cancel">
-													<i class="glyphicon glyphicon-ban-circle"></i>
-													<span>Cancel upload</span>
-												</button>
-												<button type="button" class="btn btn-danger delete">
-													<i class="glyphicon glyphicon-trash"></i>
-													<span>Delete</span>
-												</button>
-												<input type="checkbox" class="toggle">
-												<!-- The global file processing state -->
-												<span class="fileupload-process"></span>
 											</div>
-											<!-- The global progress state -->
-											<div class="col-lg-5 fileupload-progress fade">
-												<!-- The global progress bar -->
-												<div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-													<div class="progress-bar progress-bar-success" style="width:0%;"></div>
-												</div>
-												<!-- The extended global progress state -->
-												<div class="progress-extended">&nbsp;</div>
-											</div>
-										</div>
-										<!-- The table listing the files available for upload/download -->
-										<table role="presentation" class="table table-striped"><tbody class="files"></tbody></table>
-											  
+										</form>
 									</div>
-								</form>
+									<div class="clearfix"></div>
+									<p>Or You can go back to Home or give us a Knock</p>
+									<div class="buttons">
+										<div class="btn-group btn-group-justified">
+											<a href="./index.html" title="Homepage" class="btn btn-info"><span class="glyphicon glyphicon-home"></span> Home</a>
+											<a href="./contact.html" title="Contact Us" class="btn btn-warning"><span class="glyphicon glyphicon-envelope"></span> Contact Us</a>
+										</div>
+									</div>
+								</div>
 							</div>
-							<!-- <div class="col-sm-12 col-md-4">
-
-							</div> -->
 						</div>
 					</div>
 				</div>
-				<!-- /Add property block -->
+				<!-- /Agents list -->
 
 			</div>
 			<!-- ./Main content -->
@@ -863,10 +729,6 @@
 
 		<!-- Truncate multiple lines of text -->
 		<script type="text/javascript" src="js/jQuery.succinct.min.js"></script>
-
-		<script>
-
-		</script>
 
 		<!-- Main & custom JavaScripts -->
 		<script type="text/javascript" src="js/theme.js"></script>
