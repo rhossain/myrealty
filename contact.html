@@ -159,6 +159,7 @@
 										<li class="nav-separator"><span role="separator" class="d-block divider"></span></li>
 										<li class="px-0"><a href="./properties.html">Properties</a></li>
 										<li class="px-0"><a href="./property-single.html">Property single</a></li>
+										<li class="px-0"><a href="./add-property.html">Add Property</a></li>
 										<li class="nav-separator"><span role="separator" class="d-block divider"></span></li>
 										<li class="px-0"><a href="./agents.html">Agents</a></li>
 										<li class="px-0"><a href="./agent-single.html">Agents single</a></li>
@@ -166,7 +167,9 @@
 										<li class="px-0"><a href="./blog.html">Blog</a></li>
 										<li class="px-0"><a href="./blog-single.html">Blog single</a></li>
 										<li class="nav-separator"><span role="separator" class="d-block divider"></span></li>
-										<li class="px-0"><a href="./contact.html">Contact</a></li>
+										<li class="px-0"><a href="./not-found.html">Not Found (404)</a></li>
+										<li class="nav-separator"><span role="separator" class="d-block divider"></span></li>
+										<li class="px-0"><a href="#">Contact</a></li>
 									</ul>
 								</li>
 								<li class="dropdown mega-dropdown">
@@ -200,7 +203,7 @@
 														<img class="w-100" src="images/properties/properties-01.jpg" alt="The Last of us">
 													</a>
 												</div>
-												<div class="item">
+											    <div class="item">
 													<a href="./property-single.html" class="p-relative d-block w-100 h-100 property-item-container">
 														<div class="p-absolute d-block w-100 p-0 property-item-badges">
 															<!-- <span class="p-relative pull-left m-0 text-center featured">Featured</span> -->
@@ -281,6 +284,7 @@
 								</li>
 								<li><a class="text-uppercase btn-effect-2" href="./blog.html" data-hover="Blog">Blog</a></li>
 								<li><a class="text-uppercase btn-effect-2" href="./contact.html" data-hover="Contact">Contact</a></li>
+								<li><a class="text-uppercase btn-effect-2" href="./add-property.html"><i class="fas fa-plus-circle fa-lg"></i></a></li>
 							</ul>
 							<ul class="nav navbar-nav navbar-right p-relative mr-0 nav-contact">
 								<li class="w-100 mb-0 dropdown">
@@ -313,7 +317,7 @@
 
 				<div class="collapse-overlay"></div>
 
-				<!-- Page Featured with content -->
+				<!-- Page Featured with content MAP -->
 				<div class="page-featured overlapping-content">
 					<div class="container-fluid">
 						<!-- <div id="mapCanvas" class="map-canvas"></div> -->
@@ -322,103 +326,107 @@
 								<iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Dhaka&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 							</div>
 						</div>
+					</div>
+				</div>
+				<!-- ./Page Featured with content MAP -->
 
-						<div class="container pt-100 pb-100">
-							<div class="row">
-								<div class="col-sm-4">
-									<div class="contact-address">
-										<div class="title-short">
-											<h3 class="heading">
-												Address
-											</h3>
-										</div>
-										<ul class="list-unstyled  mt-0">
-											<li>
-												<i class="fa fa-map-marker" aria-hidden="true"></i>
-												<a href="#" title="">
-													900 Biscayne Blvd Way Miami, FL, USA
-												</a>
-											</li>
-											<li>
-												<i class="fas fa-phone-volume"></i>
-												<a href="#" title="">
-													123-456-789
-												</a>
-											</li>
-											<li>
-												<i class="far fa-envelope"></i>
-												<a href="#" title="">
-													contact@myrealty.com
-												</a>
-											</li>
-										</ul>
+				<!-- Contact info & form -->
+				<div id="contactUs" class="container-fluid site-wrapper contact-us">
+					<div class="container pt-70 pb-70">
+						<div class="row">
+							<div class="col-sm-4">
+								<div class="contact-address">
+									<div class="title-short">
+										<h3 class="heading">
+											Address
+										</h3>
 									</div>
-									<div class="contact-socials">
-										<div class="title-short">
-											<h3 class="heading">
-												Follow Us
-											</h3>
-										</div>
-										<ul class="list-inline mt-0" data-aos="fade-up" data-aos-duration="900">
-											<li>
-												<a href="#" title="">
-													<i class="fab fa-facebook-f"></i>
-												</a>
-											</li>
-											<li>
-												<a href="#" title="">
-													<i class="fab fa-twitter"></i>
-												</a>
-											</li>
-											<li>
-												<a href="#" title="">
-													<i class="fab fa-google-plus-g"></i>
-												</a>
-											</li>
-											<li>
-												<a href="#" title="">
-													<i class="fab fa-linkedin-in"></i>
-												</a>
-											</li>
-											<li>
-												<a href="#" title="">
-													<i class="fab fa-pinterest-p"></i>
-												</a>
-											</li>
-										</ul>
-									</div>
+									<ul class="list-unstyled  mt-0">
+										<li>
+											<i class="fa fa-map-marker" aria-hidden="true"></i>
+											<a href="#" title="">
+												900 Biscayne Blvd Way Miami, FL, USA
+											</a>
+										</li>
+										<li>
+											<i class="fas fa-phone-volume"></i>
+											<a href="#" title="">
+												123-456-789
+											</a>
+										</li>
+										<li>
+											<i class="far fa-envelope"></i>
+											<a href="#" title="">
+												contact@myrealty.com
+											</a>
+										</li>
+									</ul>
 								</div>
-								<div class="col-sm-offset-1 col-sm-7">
-									<div class="d-inline-block w-100 contact-form page-contact">
-										<div class="title-short">
-											<h3 class="heading">
-												Give your feedback or query
-											</h3>
-										</div>
-										<form class="mt-0-imp go-right" method="post" id="commentform">
-											<div class="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-												<input id="author" name="author" type="text" value="" class="form-control" required>
-												<label for="author">Your Name</label>
-											</div>
-											<div class="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-												<input id="email-contact" name="email" type="tel" value="" class="form-control" required>
-												<label for="email">Your Email</label>
-											</div>
-											<div class="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-												<textarea id="message" name="phone" class="form-control" required></textarea>
-												<label for="message">Message</label>
-											</div>
-											<div class="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-												<button class="btn pull-right">Submit</button>
-											</div>
-										</form>
+								<div class="contact-socials">
+									<div class="title-short">
+										<h3 class="heading">
+											Follow Us
+										</h3>
 									</div>
+									<ul class="list-inline mt-0" data-aos="fade-up" data-aos-duration="900">
+										<li>
+											<a href="#" title="">
+												<i class="fab fa-facebook-f"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" title="">
+												<i class="fab fa-twitter"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" title="">
+												<i class="fab fa-google-plus-g"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" title="">
+												<i class="fab fa-linkedin-in"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#" title="">
+												<i class="fab fa-pinterest-p"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-sm-offset-1 col-sm-7">
+								<div class="d-inline-block w-100 contact-form page-contact">
+									<div class="title-short">
+										<h3 class="heading">
+											Give your feedback or query
+										</h3>
+									</div>
+									<form class="mt-0-imp go-right" method="post" id="commentform">
+										<div class="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+											<input id="author" name="author" type="text" value="" class="form-control" required>
+											<label for="author">Your Name</label>
+										</div>
+										<div class="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+											<input id="email-contact" name="email" type="tel" value="" class="form-control" required>
+											<label for="email">Your Email</label>
+										</div>
+										<div class="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+											<textarea id="message" name="phone" class="form-control" required></textarea>
+											<label for="message">Message</label>
+										</div>
+										<div class="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+											<button class="btn pull-right">Submit</button>
+										</div>
+									</form>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<!-- ./Page Featured with content -->
+				<!-- ./Contact info & form -->
 
 			</div>
 			<!-- ./Main content -->

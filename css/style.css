@@ -635,6 +635,9 @@ a:hover, a:focus, a:active {
 	color: rgba(255, 255, 255, 0.8);
 	border: none;
 }
+.modal-account .input-group-addon i {
+	color: #FFFFFF;
+}
 .modal-account .input-group .form-control {
 	background-color: rgba(255, 255, 255, 0.1);
     color: #FFFFFF;
@@ -1035,16 +1038,16 @@ a:hover, a:focus, a:active {
 }
 .search-form-wrapper .nav-tabs > li > a {
 	/* margin-right: 0; */
-	background-color: rgba(255,178,54, 0.5);
+	background-color: rgba(99, 178, 44, 0.5);
 	color: #ffffff;
 }
 .search-form-wrapper .nav-tabs > li > a:hover,
 .search-form-wrapper .nav-tabs > li > a:focus,
 .search-form-wrapper .nav-tabs > li > a:active {
 	/* margin-right: 0; */
-	background-color: #FFB236;
+	background-color: #63b22c;
 	color: #ffffff;
-	border-color: #FFB236;
+	border-color: #63b22c;
 }
 .search-form-wrapper .nav-tabs > li.active > a, 
 .search-form-wrapper .nav-tabs > li.active > a:focus, 
@@ -1652,7 +1655,13 @@ a:hover, a:focus, a:active {
 	margin-top: -143px;
 	padding: 30px 0;
     color: #fff;
-    background-color: rgba(0,0,0,.6);
+	background-color: rgba(0,0,0,.6);
+	-webkit-border-top-left-radius: 100px;
+	-webkit-border-top-right-radius: 100px;
+	-moz-border-radius-topleft: 100px;
+	-moz-border-radius-topright: 100px;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
 }
 .counters p {
 	color: #ffffff;
@@ -2115,12 +2124,13 @@ a:hover, a:focus, a:active {
     letter-spacing: 10px
 }
 .not-found-container h4 {
-	font-size: 16px;
-    font-weight: 300;
-    background-color: rgba(255, 2555, 255, 0.8);
-    position: absolute;
+	position: absolute;
     width: 100%;
 	top: 100px;
+	margin: 0 -15px;
+	font-size: 16px;
+    font-weight: 300;
+    background-color: rgba(255, 2555, 255, 0.8);    
 	color: #d60707;
 }
 .not-found-container p {
@@ -2133,6 +2143,10 @@ a:hover, a:focus, a:active {
 }
 .not-found-container .input-group-btn>.btn i {
 	font-size: 20px;
+}
+.not-found-container .buttons .btn {
+	display: inline-block;
+	min-width: 150px;
 }
 .not-found-container .btn-info {
 	background-color: #448517;

@@ -85,6 +85,24 @@ Table of Contents
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
+.mt-40 {
+	margin-top: 40px;
+}
+.mt-70 {
+	margin-top: 70px;
+}
+.mt-100 {
+	margin-top: 100px;
+}
+.mb-40 {
+	margin-bottom: 40px;
+}
+.mb-70 {
+	margin-bottom: 70px;
+}
+.mb-100 {
+	margin-bottom: 100px;
+}
 .m-0-imp {
 	margin: 0 !important;
 }
@@ -166,11 +184,17 @@ Table of Contents
 .pt-40 {
 	padding-top: 40px;
 }
+.pt-70 {
+	padding-top: 70px;
+}
 .pt-100 {
 	padding-top: 100px;
 }
 .pb-40 {
 	padding-bottom: 40px;
+}
+.pb-70 {
+	padding-bottom: 70px;
 }
 .pb-100 {
 	padding-bottom: 100px;

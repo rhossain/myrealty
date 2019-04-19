@@ -310,10 +310,12 @@
             $radio.closest('label').addClass('selected');
         });
 
+        // Show/hide reviews
         $('#allReviews').on('click', function(event) {
             event.preventDefault();
             console.log('hide modal');
             $('.review-list').toggleClass('show-review hide-review');
+            $(this).text($(this).text() == 'View all reviews' ? 'View less reviews' : 'View all reviews')
         });
 
         //Auto-clamp based on a fixed element height
