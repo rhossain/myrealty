@@ -145,6 +145,51 @@ margin: 5px 10px 5px 0px;
 	margin:20px 0px 20px 0px;
 }
 
+/* Overrite */
+.ajax-file-upload-container {
+    display: inline-block;
+    width: 100%;
+}
+.ajax-file-upload-statusbar {
+    position: relative;
+    display: inline-block;
+    width: 32.4% !important;
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+    border: 0;
+    vertical-align: top;
+}
+.ajax-file-upload-statusbar:hover {
+    background-color: #f6f6f6;
+}
+.ajax-file-upload-filename {
+    margin: 10px auto 10px auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ajax-file-upload-progress {
+    width: 100%;
+}
+.custom-btn-red {
+  position: absolute;
+  top: 5px;
+  right: 16px;
+  width: 22px;
+  height: 25px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.custom-btn-red::before {
+  content: '\f410';
+  font-family: "FontAwesome";
+  font-size: 20px;
+  position: relative;
+  right: 20px;
+  color: red;
+  cursor: pointer;
+}
+
 .upload-status {
   position: fixed;
   bottom: 10%;
