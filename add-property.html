@@ -583,6 +583,9 @@
 									</div>
 								</div>
 								<div class="card-white-shadow no-hover">
+									<div class="title-short">
+										<h3 class="heading">Upload Images</h3>
+									</div>
 									<div id="fileuploader">Upload</div>
 									<div class="upload-status"></div>
 								</div>
@@ -945,8 +948,8 @@
 				fileName: "myfile",
 				returnType: "json",
 				showDelete: true,
-				// showDownload: true,
-				showDone: true,
+				showDownload: false,
+				showDone: false,
 				showPreview: true,
 				showProgress: true,
 				showFileSize: true,
@@ -970,25 +973,25 @@
 					// console.log(this.filename[count]);
 					// console.log(count.length);
 
-					coutarray = [count];
+					// coutarray = [count];
 
-					function fileSize(str){
-						if (typeof str == 'undefined') {   
-							str = '';
-						}
-						else{ 
-							var regular_ex=/(?<=\..* )\(([^)]+)\)/g;
-							var matches = str.match(regular_ex);
-							return matches.join('');
-						}
-					}
-					setTimeout(() => {
-						for (i = 0; i < coutarray.length; i++) {
-							var ret = this.filename[i].innerHTML.replace(fileSize(this.filename[i].innerHTML),'');
-							$('.ajax-file-upload-filename').prepend($('<div> '+fileSize(this.filename[i].innerHTML)+' </div>'));
-							console.log(ret);
-						}
-					}, 1000);
+					// function fileSize(str){
+					// 	if (typeof str == 'undefined') {   
+					// 		str = '';
+					// 	}
+					// 	else{ 
+					// 		var regular_ex=/(?<=\..* )\(([^)]+)\)/g;
+					// 		var matches = str.match(regular_ex);
+					// 		return matches.join('');
+					// 	}
+					// }
+					// setTimeout(() => {
+					// 	for (i = 0; i < coutarray.length; i++) {
+					// 		var ret = this.filename[i].innerHTML.replace(fileSize(this.filename[i].innerHTML),'');
+					// 		$('.ajax-file-upload-filename').prepend($('<div> '+fileSize(this.filename[i].innerHTML)+' </div>'));
+					// 		console.log(ret);
+					// 	}
+					// }, 1000);
 
 
 					this.abort.addClass("custom-btn-red abort");
@@ -1007,15 +1010,14 @@
 						$.post("php/delete.php", { op: "delete", name: data[i] },
 							function (resp, textStatus, jqXHR) {
 								//Show Message
-								$('.upload-status').html('<span>deleted</span>');
+								$('.upload-status').html('<span>deleted</span>').animate({right: '0'}, 'slow');
 								setTimeout(function () {
-									$('.upload-status span').fadeOut(500);
+									$('.upload-status').animate({right: '-100px'}, 'slow');
 								}, 3000);
 								// console.log('Deleted');
 							});
 					}
 					pd.statusbar.hide(); //You choice.
-
 				},
 				downloadCallback: function (filename, pd) {
 					location.href = "php/download.php?filename=" + filename;
