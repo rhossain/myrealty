@@ -323,8 +323,16 @@
 							</li>
 							<li><a class="text-uppercase btn-effect-2" href="./contact.html"
 									data-hover="Contact">Contact</a></li>
-							<li><a class="text-uppercase btn-effect-2" href="#"><i
-										class="fas fa-plus-circle fa-lg"></i></a></li>
+							<li class="hidden visible-xs">
+								<a class="text-uppercase btn-effect-2" href="./add-property.html"
+									data-hover="Add Property">Add Property</a>
+							</li>
+							<li class="hidden-xs">
+								<a class="text-uppercase btn-effect-2" href="./add-property.html" data-toggle="tooltip"
+									data-placement="bottom" title="Add Property">
+									<i class="fas fa-plus-circle fa-lg"></i>
+								</a>
+							</li>
 						</ul>
 						<ul class="nav navbar-nav navbar-right p-relative mr-0 nav-contact">
 							<li class="w-100 mb-0 dropdown">
@@ -589,6 +597,16 @@
 									<div id="fileuploader">Upload</div>
 									<div class="upload-status"></div>
 								</div>
+								<div class="row btn-main-wrapper">
+									<div class="col-sm-12 text-center">
+										<button type="submit" class="pull-right btn-main">
+											<span>Submit property</span>
+											<div class="btn-triangle-left"></div>
+											<div class="btn-triangle-right"></div>
+											<div class="btn-icon"><i class="fas fa-angle-double-right"></i></div>
+										</button>
+									</div>
+								</div>
 							</form>
 						</div>
 						<!-- <div class="col-sm-12 col-md-4">
@@ -803,7 +821,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="row search-button-wrapper">
+							<div class="row btn-main-wrapper">
 								<div class="col-xs-12">
 									<button type="submit" class="pull-right btn-main">
 										<span>Search</span>
@@ -1010,9 +1028,9 @@
 						$.post("php/delete.php", { op: "delete", name: data[i] },
 							function (resp, textStatus, jqXHR) {
 								//Show Message
-								$('.upload-status').html('<span>deleted</span>').animate({right: '0'}, 'slow');
+								$('.upload-status').html('<span>deleted</span>').animate({ right: '0' }, 'slow');
 								setTimeout(function () {
-									$('.upload-status').animate({right: '-100px'}, 'slow');
+									$('.upload-status').animate({ right: '-100px' }, 'slow');
 								}, 3000);
 								// console.log('Deleted');
 							});

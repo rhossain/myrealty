@@ -190,11 +190,6 @@ a:hover, a:focus, a:active {
 .navbar-nav.nav-contact li.dropdown {
     display: none;
 }
-.navbar-nav.nav-contact li a {
-    padding: 7px 5px;
-    line-height: 15px;
-    color: rgba(255, 255, 255, 1);
-}
 .navbar-nav.nav-contact li:nth-child(2) a {
     padding: 8px 5px 6px;
 }
@@ -203,7 +198,8 @@ a:hover, a:focus, a:active {
 }
 .navbar-nav.nav-contact li a {
     padding: 7px 5px;
-    line-height: 15px;
+	line-height: 15px;
+	font-size: 14px;
     color: rgba(255, 255, 255, 1);
 }
 .navbar-nav.nav-contact li a:hover,
@@ -1287,6 +1283,7 @@ a:hover, a:focus, a:active {
 	min-height: 100px;
 	background-image: url('../images/slider/slider-1.jpg');
 	background-repeat: no-repeat;
+	background-size: cover;
 	background-attachment: fixed;
 	overflow: hidden;
 }
@@ -2488,7 +2485,7 @@ a:hover, a:focus, a:active {
 	margin-bottom: 3px;
 }
 .other-posts > li .post-desc ul {
-	margin-top: 10px;
+	margin-top: 15px;
 }
 .other-posts > li .post-desc ul li {
 	margin-bottom: 0;

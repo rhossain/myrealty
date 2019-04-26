@@ -10,7 +10,7 @@ Table of Contents
 - Button - All
 - Button - Load more
 - Button - Search on top featured
-- Button - Search on advanced form
+- Button - Main button style with hover effect
 - Button - Socials on modal
 - Button group & divider
 - Disable state
@@ -736,14 +736,14 @@ a.btn-search:focus i {
 }
 
 /* 
-----------------------------------
-- Button - Search on advanced form
-----------------------------------
+----------------------------------------------
+- Button - Main button style with hover effect
+----------------------------------------------
 */
-.search-button-wrapper {
+.btn-main-wrapper {
 	padding-top: 15px;
 }
-.search-button-wrapper .btn-main {
+.btn-main-wrapper .btn-main {
 	height: 45px;
     line-height: 45px;
     padding: 0 65px 0 25px;
@@ -763,11 +763,11 @@ a.btn-search:focus i {
     background: #63b22c;
     border: 1px #63b22c solid;
 }
-.search-button-wrapper .btn-main span {
+.btn-main-wrapper .btn-main span {
     position: relative;
     z-index: 10;
 }
-.search-button-wrapper .btn-triangle-left {
+.btn-main-wrapper .btn-triangle-left {
 	width: 0;
     height: 0;
     border-style: solid;
@@ -782,10 +782,10 @@ a.btn-search:focus i {
     transition: all .5s ease-in-out;
     border-color: transparent transparent #63b22c transparent;
 }
-.search-button-wrapper .btn-main:hover .btn-triangle-left {
+.btn-main-wrapper .btn-main:hover .btn-triangle-left {
     border-width: 0 0 400px 400px;
 }
-.search-button-wrapper .btn-triangle-right {
+.btn-main-wrapper .btn-triangle-right {
 	width: 0;
     height: 0;
     border-style: solid;
@@ -800,10 +800,10 @@ a.btn-search:focus i {
     transition: all .5s ease-in-out;
     border-color: transparent transparent #ffffff transparent;
 }
-.search-button-wrapper .btn-main:hover .btn-triangle-right {
+.btn-main-wrapper .btn-main:hover .btn-triangle-right {
     border-width: 0;
 }
-.search-button-wrapper .btn-icon {
+.btn-main-wrapper .btn-icon {
     width: 34px;
     height: 34px;
     position: absolute;
@@ -817,7 +817,7 @@ a.btn-search:focus i {
     -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
 }
-.search-button-wrapper .btn-main:hover .btn-icon {
+.btn-main-wrapper .btn-main:hover .btn-icon {
 	color: #ffffff;
 }
 
@@ -953,7 +953,7 @@ a.btn-search:focus i {
     z-index: 1;
 }
 .bootstrap-select.btn-group .dropdown-toggle .caret {
-    background: white url(../images/select-bg.png) no-repeat right center;
+    background: #ffffff url(../images/select-bg.png) no-repeat right center;
 }
 .bootstrap-select.btn-group .dropdown-toggle .caret {
     border: none;
@@ -978,6 +978,35 @@ a.btn-search:focus i {
 }
 .bootstrap-select .actions-btn {
 	height: 30px;
+}
+.bootstrap-select.select-sm .btn {
+	height: 35px;
+	padding-left: 15px;
+    background-color: #63b22c;
+    color: #ffffff;
+    border-color: #63b22c;
+}
+.bootstrap-select.select-sm .btn:hover,
+.bootstrap-select.select-sm .btn-default:active,
+.bootstrap-select.select-sm .btn-default:focus,
+.bootstrap-select.select-sm.open > .dropdown-toggle.btn-default {
+	background: #63b22c;
+	border-color: #63b22c;
+}
+.bootstrap-select.select-sm.btn-group .dropdown-toggle .caret {
+	width: 23px;
+	top: 3px;
+	background-color: transparent;
+	background-position: -15px 0;
+}
+.bootstrap-select.select-sm:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+	width: 90px;
+}
+.bootstrap-select.select-sm>.dropdown-toggle.bs-placeholder, 
+.bootstrap-select.select-sm>.dropdown-toggle.bs-placeholder:active, 
+.bootstrap-select.select-sm>.dropdown-toggle.bs-placeholder:focus, 
+.bootstrap-select.select-sm>.dropdown-toggle.bs-placeholder:hover {
+	color: #ffffff;
 }
 
 /* 
@@ -1412,21 +1441,6 @@ a.btn-search:focus i {
 	background-color: transparent;
 	font-weight: 700;
     letter-spacing: 5px;
-}
-.paginate .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
-	width: 90px;
-}
-.paginate .bootstrap-select .btn {
-	padding-left: 15px;
-	background-color: #63b22c;
-	color: #ffffff;
-	border-color: #63b22c;
-}
-.paginate .bootstrap-select>.dropdown-toggle.bs-placeholder, 
-.paginate .bootstrap-select>.dropdown-toggle.bs-placeholder:active, 
-.paginate .bootstrap-select>.dropdown-toggle.bs-placeholder:focus, 
-.paginate .bootstrap-select>.dropdown-toggle.bs-placeholder:hover {
-	color: #ffffff;
 }
 
 /* 
@@ -2237,7 +2251,7 @@ a.btn-search:focus i {
 	color: #ffffff;
 }
 .property-thumbnails .property-box span.property-title a:hover {
-	color: #FFB236;
+	color: #ffffff;
 	text-decoration: none;
 }
 .property-thumbnails .property-box span.property-address {
@@ -2511,6 +2525,7 @@ a.btn-search:focus i {
 .property-thumbnails.list .thumbnail .property-box .property-info span.property-address {
 	border-bottom: 0px solid #577e7e;
 	font-size: 18px;
+	font-weight: 700;
 }
 .property-thumbnails.list .thumbnail .property-box .property-summary {
   	display: none;

@@ -43,9 +43,16 @@ pre {
     background-color: #086969;
     color: #fff;
     padding: 20px;
+    max-width: 1170px;
+    margin: 0 auto;
 }
 .jumbotron img {
     display: inline-block;
+}
+.jumbotron.jumbotron-light {
+    padding: 50px;
+    background-color: #f9f9f9;
+    color: #777;
 }
 .container-fluid {
     padding: 60px 50px;

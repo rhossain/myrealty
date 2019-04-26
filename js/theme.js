@@ -42,6 +42,9 @@
             $(this).toggleClass('open');
         });
 
+        // Initialize bootstrap tooltip
+        $('[data-toggle="tooltip"]').tooltip()
+
         var owl = $('#homeTopSlider');
         owl.owlCarousel({
             navigation : true,
