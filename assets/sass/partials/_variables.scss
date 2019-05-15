@@ -1,0 +1,135 @@
+/* Global colors */
+$global-color-white: #ffffff;
+$global-color-black: #000000;
+$global-color-link: #1ba3a4;
+$global-color-1: #178c8d; // search button, heading bg, property toggle bg, agent next bg, property-s tab active border
+$global-color-2: #409191; // social toggle button
+$global-color-3: #0a6666; // social toggle button hover
+$global-color-4: #777777; // menu link, social title, login modal
+$global-color-5: #333333; // menu link hover, blog date-time, blog description, property-s tab active, property-s tab content
+$global-color-6: #555555; // contact form text, blog search text, login modal
+$global-color-7: #cfcfcf; // contact form placeholder/label, heading3
+$global-color-8: #75873d;
+$global-color-9: #4e443c; // .heading, .heading2
+$global-color-10: #B5E5E6; // .cl-effect-21
+$global-color-11: #9aa86c; // .ribbon
+$global-color-12: #8B9668; // .ribbon .ribbon-content:before
+
+/* Colors with opacity */
+$color-opacity-01: rgba(0, 0, 0, 0); // .hvr-grow, .hvr-icon-grow-rotate, .hvr-shutter-in-vertical, .hvr-underline-from-center, .hvr-bubble-right, .hvr-outline-out, .hvr-icon-grow, .hvr-bubble-float-left, .hvr-bubble-float-right, .hvr-icon-spin
+$color-opacity-02: rgba(0, 0, 0, 0.1); // .carousel-caption, .summary-info, .ch-item
+$color-opacity-03: rgba(0, 0, 0, 0.2);
+$color-opacity-04: rgba(0, 0, 0, 0.3); // .summary-info, .ch-info h3, .login-modal, .scrollToTop, .scrollToBttom, .featured-info, .heading2 .btn-group, .agent .info-header
+$color-opacity-05: rgba(0, 0, 0, 0.4); // .info-header
+$color-opacity-06: rgba(0, 0, 0, 0.5); // .summary-info, .property-action, .property-detail
+$color-opacity-07: rgba(0, 0, 0, 0.6); // .newsletter
+$color-opacity-08: rgba(0, 0, 0, 0.7); // .summary-info, .hvr-bubble-float-left, .property-type, .property-status
+$color-opacity-09: rgba(0, 0, 0, 0.8); // .modalDialog
+$color-opacity-09-1: rgba(0, 0, 0, 0.9); // footer .container-fluid
+$color-opacity-10: rgba(0, 0, 0, 0.08); // .property-img img, .property-info
+$color-opacity-11: rgba(255, 255, 255, 0.1); // .card-title, .featured-info, .ch-item:hover
+$color-opacity-11-1: rgba(255, 255, 255, 0.3); // .list.btn-default
+$color-opacity-12: rgba(255, 255, 255, 0.5); // .useravatar img, .ch-info p, .agent .top, .agent .bottom
+$color-opacity-12-1: rgba(255, 255, 255, 0.6); // .ch-item
+$color-opacity-13: rgba(255, 255, 255, 0.7); // .ch-info p a, .blog .container-fluid, .property-gallery .container-fluid, .focused-properties .container-fluid, .focused-agents .container-fluid
+$color-opacity-14: rgba(255, 255, 255, 0.8); // .labels-map, .view h2, .shade-white, .nav-collapse
+$color-opacity-15: rgba(255, 255, 255, 0.9); // .property-main .container-fluid, .agent-main .container-fluid, .contact .container-fluid
+$color-opacity-16: rgba(255, 255, 255, 1); // .card.hovercard
+$color-opacity-17: rgba(154, 168, 108, 0.4); // span.property-address
+$color-opacity-18: rgba(154, 168, 108, 0.8); // span.property-title
+$color-opacity-19: rgba(214, 224, 226, 0.2); // .card
+$color-opacity-20: rgba(214, 224, 226, 0.5); // .modal
+$color-opacity-21: rgba(23, 140, 141, 0.7); // .view-first .mask
+$color-opacity-22: rgba(160, 160, 160, 0.2); // .property-action
+$color-opacity-23: rgba(63, 147, 147, 0.8); // .ch-info
+$color-opacity-24: rgba(255, 242, 34, 0.8); // .ch-info p a:hover
+$color-opacity-25: rgba(78, 68, 60, 0.3); // .ch-info p a:hover
+
+/* Header with Navigation */
+$header-color-1: #e1e8ca;
+$header-color-2: #047273; // hvr-shutter-in-vertical
+$header-color-3: #d8eded;
+$header-color-4: #999999;
+$header-color-5: #b3c7c7;
+$header-color-6: #e9f2f2;
+$header-color-7: #397c7d;
+
+/* Footer */
+$footer-color-1: #272727;
+$footer-color-2: #171717;
+$footer-color-3: #a8a5a2; // socials
+
+/* Home slider */
+$slider-color-1: #a7d31a;
+$slider-color-2: #99c11a;
+$slider-color-3: #a7d31a;
+$slider-color-4: #264242; // hvr-outline-out
+
+/* Property boxes */
+$property-color-1: #b6e32b; // title, address, link, agent name
+$property-color-2: #d0ed77; // title hover, link hover, agent name hover
+$property-color-3: #577e7e; // title border, link-price bg, link-price border
+$property-color-4: #f9f9f9; // info bg
+$property-color-5: #789797;
+
+/* Latest blogs */
+$blog-color-1: #c7d6d6; // date-time bg, details bg, description bg
+$blog-color-2: #476969; // details border, description border, social icons
+
+/* Socials */
+$facebook-color-hover: #3b5998;
+$twitter-color-hover: #00aced;
+$googleplus-color-hover: #c32f10;
+$linkedin-color-hover: #0976b4;
+$pinterest-color-hover: #cc2127;
+$youtube-color-hover: #a72121;
+
+/* Related or Latest properties */
+$r-property-color-1: #178c8d;
+$r-property-color-2: #a7d1d1; // .cmn-t-underline:after
+
+/* Contact form */
+$contact-form-color-1: #1571bc;
+$contact-form-color-2: #d0dead;
+$contact-form-color-3: #a8b881;
+$contact-form-color-4: #7b933e;
+
+/* Property - landing page */
+$property-l-color-1: #259999; // filter button
+$property-l-color-2: #084b4b; // filter button active
+
+/* Property - Single page */
+$property-s-color-1: #737373; // tab
+$property-s-color-2: #eeeeee; // tab content border, .hvr-bubble-right:before
+$property-s-color-3: #333333;
+$property-s-color-4: #259999;
+$property-s-color-5: #084b4b; // not found page
+$property-s-color-6: #a6a6a6;
+$property-s-color-7: #404040;
+$property-s-color-8: #8bb0b0;
+
+/* Blog - landing page */
+$blog-l-color-1: #f7f7f7; // date border, description border, prev-next border
+$blog-l-color-2: #3c3c3c; // date, author, title
+$blog-l-color-3: #605e5e; // description
+$blog-l-color-4: #666666; // search button, prev-next button
+$blog-l-color-5: #e4e4e4; // search border
+$blog-l-color-6: #f6f5f5; // prev-next button bg-border
+
+/* Blog - Single page */
+$blog-s-color-1: #fcfcfc; // date border, description border, prev-next border
+$blog-s-color-2: #919191;
+$blog-s-color-3: #999999;
+$blog-s-color-4: #efefef;
+$blog-s-color-5: #2ecc71;
+$blog-s-color-6: #e74c3c;
+$blog-s-color-7: #aaaaaa;
+$blog-s-color-8: #f0f0f0;
+$blog-s-color-9: #8c8c8c;
+$blog-s-color-10: #878787;
+$blog-s-color-11: #f6f6f6;
+$blog-s-color-12: #cccccc;
+
+/* Not Found - page */
+$not-found-color-1: #6c8f01;
+$not-found-color-2: #7FA30F;
