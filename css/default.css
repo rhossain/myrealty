@@ -1,0 +1,96 @@
+/* 
+Table of contents
+===========================================
+- General Style
+- Utility Classes
+- Button Style
+- Form Elements
+- Page Header
+- Breadcrumb
+- Tab
+- Pagination
+===========================================
+*/
+
+/*
+------------------------------------
+- General Style
+------------------------------------
+*/
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+*:focus {
+    outline: 0;
+}
+html {
+	font-size: 62.5%;
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Open Sans', sans-serif;
+}
+body {
+	background: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	font-size: 15px;
+	letter-spacing: 1.5px;
+	color: #888;
+	line-height: 30px;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+button, input, textarea {
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1px;
+}
+/*
+------------------------------------
+- Utility Classes
+------------------------------------
+*/
+
+
+/*
+------------------------------------
+- Button Style
+------------------------------------
+*/
+
+/*
+------------------------------------
+- Form Elements
+------------------------------------
+*/
+
+
+/*
+------------------------------------
+- Page Header
+------------------------------------
+*/
+
+/*
+------------------------------------
+- Bread Crumb
+------------------------------------
+*/
+
+/*
+------------------------------------
+- Pagination
+------------------------------------
+*/
+
+/*
+------------------------------------
+- Tab
+------------------------------------
+*/
