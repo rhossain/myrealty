@@ -1,3 +1,10 @@
+/*!
+ * jQuery Upload File Plugin
+ * version: 4.0.11
+ * @requires jQuery v1.5 or later & form plugin
+ * Copyright (c) 2013 Ravishanker Kusuma
+ * http://hayageek.com/
+ */
 .ajax-file-upload-statusbar {
     border: 1px solid #0ba1b5;
     margin-top: 10px;

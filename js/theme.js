@@ -1,13 +1,44 @@
+/*
+	Template:		My Realty
+	Author: 		Robin Hossain
+	Website: 		http://rhossain.com/demo/myrealty/
+	-------------------------------------------------------------------------------------------------
+	File: 				theme.js ( Main JS - Main Pack )
+	-------------------------------------------------------------------------------------------------
+
+	01. Toggling classes for Sidebar
+	02. Adding active class to main menu
+	03. Initiating mega dropdown
+	04. Toggling class for button
+	05. Initiating Owl Carousel for home slider
+	06. Initiating Owl Carousel for navbar featured properties
+	07. Initiating Owl Carousel for featured agents
+	08. Switching between Login & Regiser form
+	09. Bootstrap modal with animation
+	10. Initiating Bootstrap Select
+	11. Initiating Ekko Lightbox
+	12. Initiating Easy Autocomplete
+	13. Initiating Bootstrap Range slider
+	14. Togging views between List & Grid
+	15. Rating with star
+	16. Show/hide reviews
+	17. Initiating Succinct to shorten texts
+	18. Accordion icon change on toggle
+	19. Toggling sticky class to header
+    20. Custom data attriute for animation delay
+    21. Initiating AOS for animation
+
+	-------------------------------------------------------------------------------------------------
+*/
+
 (function ($) {
 "use strict";
 
-	$( window ).load(function() {        
-        // $('*').removeClass('aos-animate');
-    });
-
     $( document ).ready(function($){
       
-        /* Navbar with left sidebar */
+        // 01.
+        // Toggling classes for sidebar
+        // ---------------------------------------------------------------------------------------------
         var sideslider = $('[data-toggle=collapse-side]');
         var sel = sideslider.attr('data-target');
         var sel2 = sideslider.attr('data-target-2');
@@ -17,46 +48,48 @@
             $('body').toggleClass('side-on side-off');
         });
 
-        // $('.navbar-nav.nav-menu > li').on('mouseenter', function() {
-        //     $(this).addClass('current');
-        // });
+        // 02.
+        // Adding active class to main menu
+        // ---------------------------------------------------------------------------------------------
         $(document).on({
             mouseenter: function () {
                 var mouse_is_inside = true;
-                // console.log('Enter');
                 $(this).addClass('current');
             },
 
             mouseleave: function () {
                 var mouse_is_inside = false;
-                // console.log('Leave');
                 $(this).removeClass('current');
             }
         }, '.navbar-nav.nav-menu > li');
 
+        // 03.
+        // Initiating mega dropdown
+        // ---------------------------------------------------------------------------------------------
         $(document).on('click', '.mega-dropdown', function(e) {
           e.stopPropagation()
         });
 
+        // 04.
+        // Toggling class for button
+        // ---------------------------------------------------------------------------------------------
         $('.btn-toggle').click(function(){
             $(this).toggleClass('open');
         });
 
+        // 05.
+        // Initiating Owl Carousel for home slider
+        // ---------------------------------------------------------------------------------------------
         var owl = $('#homeTopSlider');
         owl.owlCarousel({
             navigation : true,
-            // nav:true,
             dotsContainer: '#homeSliderNavs',
             addClassActive: true,
-            // transitionStyle : "fade",
             animateOut: 'slideOutDown',
             animateIn: 'fadeIn',
             smartSpeed: 1000,
             autoplay: false,
-    		// autoplayTimeout: 5000,
     		loop: true,
-            // slideSpeed : 500,
-            // paginationSpeed : 500,
             items : 1, 
             itemsDesktop : false,
             itemsDesktopSmall : false,
@@ -71,20 +104,9 @@
 		    owl.trigger('prev.owl.carousel');
 		});
 
-        // function testAnim(x) {
-        //     $('.modal .modal-dialog').attr('class', 'modal-dialog  ' + x + '  animated');
-        // };
-        // $('#myModal').on('show.bs.modal', function (e) {
-        //   // var anim = $('#entrance').val();
-        //   var anim = 'zoomInDown';
-        //       testAnim(anim);
-        // });
-        // $('#myModal').on('hide.bs.modal', function (e) {
-        //   // var anim = $('#exit').val();
-        //   var anim = 'zoomOutDown';
-        //       testAnim(anim);
-        // });
-
+        // 06.
+        // Initiating Owl Carousel for navbar featured properties
+        // ---------------------------------------------------------------------------------------------
 		$('#navFeaturedProperties').owlCarousel({
 		    loop:true,
 		    margin:10,
@@ -92,7 +114,6 @@
             dots:false,
             nav:true,
             navText: ["<i class='fa fa-lg fa-arrow-left' aria-hidden='true'></i>","<i class='fa fa-lg fa-arrow-right' aria-hidden='true'></i>"],
-		    // responsiveClass:true,
 		    responsive:{
 		        0:{
 		            items:1
@@ -107,6 +128,9 @@
 		    }
         });
         
+        // 07.
+        // Initiating Owl Carousel for featured agents
+        // ---------------------------------------------------------------------------------------------
         $('#agent-carousel').owlCarousel({
             loop:true,
             margin:10,
@@ -133,7 +157,9 @@
             }
         });
 
+        // 08.
         // Switching between Login & Regiser form
+        // ---------------------------------------------------------------------------------------------
         function showRegisterForm(){
             $('#loginBox').fadeOut('fast',function(){
                 $('#registerBox').fadeIn('fast');
@@ -158,7 +184,9 @@
         $('#showRegisterForm, #linkRegister').on('click', showRegisterForm);
         $('#showLoginForm, #linkLogin').on('click', showLoginForm);
 
+        // 09.
         // Bootstrap modal with animation
+        // ---------------------------------------------------------------------------------------------
         $('.modal').on('show.bs.modal', function (e) {
             console.log('show modal');
             $('body').addClass('pr-0');
@@ -169,11 +197,17 @@
             $('.modal .modal-dialog').attr('class', 'modal-dialog  zoomOut  animated');
         });
 
+        // 10.
+        // Initiating Bootstrap Select
+        // ---------------------------------------------------------------------------------------------
         $('.selectpicker').selectpicker({
             style: 'btn-default',
             size: 4
         });
 
+        // 11.
+        // Initiating Ekko Lightbox
+        // ---------------------------------------------------------------------------------------------
         $(document).on('click', '[data-toggle="lightbox"]', function(event) {
             event.preventDefault();
             $(this).ekkoLightbox({
@@ -183,7 +217,9 @@
             });
         });
 
-        // Autocomplete for search field
+        // 12.
+        // Initiating Easy Autocomplete
+        // ---------------------------------------------------------------------------------------------
         var optionsLocation = {
             data: ["blue", "green", "pink", "red", "yellow"],
             list: {
@@ -210,7 +246,9 @@
         $("#listLocationSale").easyAutocomplete(optionsLocation);
         $("#listLocationRent").easyAutocomplete(optionsLocation);
 
-        // Range slider
+        // 13.
+        // Initiating Bootstrap Range slider
+        // ---------------------------------------------------------------------------------------------
         $("#priceSlider, #areaSlider, #bedSlider, #bathSlider, #priceSliderSale, #areaSliderSale, #bedSliderSale, #bathSliderSale, #priceSliderRent, #areaSliderRent, #bedSliderRent, #bathSliderRent").slider();
         $("#priceSlider").on("slide", function(slideEvt) {
             $("#priceValue").text(slideEvt.value);
@@ -273,17 +311,16 @@
             rangeSliderWidth();
         });
 
-        // Change properties view on Homepage
+        // 14.
+        // Togging views between List & Grid
+        // ---------------------------------------------------------------------------------------------
         $('#grid').addClass('state-current');
-        // $('#grid').css({'opacity' : '0.5', 'user-select' : 'none', 'cursor' : 'not-allowed'});
         $('#list').click(function(event){
             event.preventDefault();
             $('#list').addClass('state-current');
             $('#list').removeClass('state-enable');
-            // $('#list').css({'opacity' : '0.5', 'user-select' : 'none', 'cursor' : 'not-allowed'});
             $('#grid').addClass('state-enable');
             $('#grid').removeClass('state-current');
-            // $('#grid').css({'opacity' : '1', 'user-select' : 'initial', 'cursor' : 'pointer'});
             $('#latest-properties').addClass('list');
             $('#latest-properties .property-box').addClass('flipInX');
             $('#latest-properties .property-box').removeClass('flipInY');
@@ -293,24 +330,26 @@
             event.preventDefault();
             $('#grid').addClass('state-current');
             $('#grid').removeClass('state-enable');
-            // $('#grid').css({'opacity' : '0.5', 'user-select' : 'none', 'cursor' : 'not-allowed'});
             $('#list').addClass('state-enable');
-            $('#list').removeClass('state-current');
-            // $('#list').css({'opacity' : '1', 'user-select' : 'initial', 'cursor' : 'pointer'});            
+            $('#list').removeClass('state-current');         
             $('#latest-properties').removeClass('list');
             $('#latest-properties .property-box').removeClass('flipInX');
             $('#latest-properties').addClass('grid');
             $('#latest-properties .property-box').addClass('flipInY');
         });
 
+        // 15.
         // Rating with star
+        // ---------------------------------------------------------------------------------------------
         $('.rating input').change(function () {
             var $radio = $(this);
             $('.rating .selected').removeClass('selected');
             $radio.closest('label').addClass('selected');
         });
 
+        // 16.
         // Show/hide reviews
+        // ---------------------------------------------------------------------------------------------
         $('#allReviews').on('click', function(event) {
             event.preventDefault();
             console.log('hide modal');
@@ -318,19 +357,19 @@
             $(this).text($(this).text() == 'View all reviews' ? 'View less reviews' : 'View all reviews')
         });
 
-        //Auto-clamp based on a fixed element height
-        // var myParagraph = document.getElementsByClassName("post-paragraph");
-        // $clamp(myParagraph, {clamp: 2});
+        // 17.
+        // Initiating Succinct to shorten texts
+        // ---------------------------------------------------------------------------------------------
         $('.post-paragraph').succinct({
-            // omission: '&rarr;',
             size: 200
         });
         $('.recent-blogs h4').succinct({
-            // omission: '&rarr;',
             size: 50
         });
 
+        // 18.
         // Accordion icon change on toggle
+        // ---------------------------------------------------------------------------------------------
         function toggleChevron(e) {
             $(e.target)
                 .prev('.panel-heading')
@@ -339,12 +378,11 @@
         }
         $('#accordion').on('hidden.bs.collapse', toggleChevron);
         $('#accordion').on('shown.bs.collapse', toggleChevron);
-
-        checkWindowSize();
-        $(window).resize(checkWindowSize);
-        // $(window).resize($("#priceSlider, #areaSlider, #bedSlider, #bathSlider").slider());
     });
 
+    // 19.
+    // Toggling sticky class to header
+    // ---------------------------------------------------------------------------------------------
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) {
             $('.header-wrapper').addClass('sticky');
@@ -355,10 +393,16 @@
         }
     });
 
+    // 20.
+    // Custom data attriute for animation delay
+    // ---------------------------------------------------------------------------------------------
     $('[data-mr-animation-delay]').css('animation-delay', function () {
         return $(this).data('mr-animation-delay')
     });
 
+    // 21.
+    // Initiating AOS for animation
+    // ---------------------------------------------------------------------------------------------
     AOS.init({
         easing: 'ease-out-back',
         offset: 150,
@@ -368,22 +412,5 @@
             return someText;
         }
     });
-
-    function checkWindowSize() {
-        if (window.matchMedia('(max-width: 767px)').matches) {
-            console.log('Max width: 767px');
-            // $(".navbar-top").appendTo(".side-collapse");
-            // $(".nav-contact > li:last-child").prependTo(".nav-menu");
-            // $(".navbar-top .top-left > li:first-child").prependTo(".nav-menu");
-            // $(".nav-contact > li:first-child").prependTo(".nav-menu");
-        }
-        if (window.matchMedia('(min-width: 768px)').matches) {
-            console.log('Min width: 768px');
-            // $(".navbar-top").prependTo(".navbar.header-wrapper .navbar-container");
-            // $(".nav-menu > li:last-child").appendTo(".nav-contact");
-            // $(".nav-menu > li:nth-child(2)").prependTo(".navbar-top .top-left");
-            // $(".nav-menu > li:nth-child(3)").prependTo(".nav-contact");
-        }
-    }
 
 }(jQuery)); 
