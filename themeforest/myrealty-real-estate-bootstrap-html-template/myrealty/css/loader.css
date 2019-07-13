@@ -1,0 +1,43 @@
+/**
+ * @class LoaderJS
+ * @author AnuragHazra <hazru.anurag@gmail.com>
+ * @version 1.0.0
+*/
+
+.page-loader-container {
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    font-size: 34px;
+    padding-top: 25%;
+    color: #63b22c;
+    background-color: #ffffff;
+    overflow: hidden;
+    z-index: 2000;
+}
+
+.page-loader {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.page-loader div {
+    position: absolute;
+    border: 4px solid #63b22c;
+    opacity: 1;
+    border-radius: 50%;
+    animation: page-loader 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.page-loader div:nth-child(2) {
+    animation-delay: -0.5s;
+}
+
+.page-loader-wrapper {
+    overflow: hidden;
+}
